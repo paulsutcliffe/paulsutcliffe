@@ -1,0 +1,2 @@
+module ScwidgetsHelper
+end

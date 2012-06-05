@@ -1,0 +1,23 @@
+<h1>Listing scwidgets</h1>
+
+<table>
+  <tr>
+    <th>Reference</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @scwidgets.each do |scwidget| %>
+  <tr>
+    <td><%= scwidget.reference %></td>
+    <td><%= link_to 'Show', scwidget %></td>
+    <td><%= link_to 'Edit', edit_scwidget_path(scwidget) %></td>
+    <td><%= link_to 'Destroy', scwidget, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Scwidget', new_scwidget_path %>

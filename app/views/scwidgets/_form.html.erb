@@ -1,0 +1,21 @@
+<%= form_for(@scwidget) do |f| %>
+  <% if @scwidget.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@scwidget.errors.count, "error") %> prohibited this scwidget from being saved:</h2>
+
+      <ul>
+      <% @scwidget.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :reference %><br />
+    <%= f.text_field :reference %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
