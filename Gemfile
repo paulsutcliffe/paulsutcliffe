@@ -18,6 +18,7 @@ gem "auto_html"
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem "mysql", "~> 2.8.1"
+gem 'jquery-rails'
 
 # Use unicorn as the web server
 # gem 'unicorn'
