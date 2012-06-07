@@ -1,2 +1,21 @@
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+<p>DJ PAUL SUTCLIFFE</p>
+
+
+<%= link_to 'facebook', "http://www.facebook.com/djpaulsutcliffe" %>
+<%= link_to 'twitter', "http://www.twitter.com/paulyoyo" %>
+<%= link_to 'soundcloud', "http://www.soundcloud.com/djpaulsutcliffe" %>
+
+<h1>DJ PAUL SUTCLIFFE</h1>
+
+
+<h1>MUSIC</h1>
+
+
+<h1>GIGS</h1>
+
+<% @gigs.each do |gig| %>
+	<%= link_to gig.name, gig.link %>
+	<%= gig.place %>
+	<%= gig.date %>
+	<br />
+<% end %>
