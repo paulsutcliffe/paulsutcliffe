@@ -10,9 +10,9 @@ set :scm, :git
 set :scm_passphrase, ""
 set :branch, "master"
 set :scm_verbose, true
-role :web, "djpaulsutcliffe.com"                          # Your HTTP server, Apache/etc
-role :app, "djpaulsutcliffe.com"                          # This may be the same as your `Web` server
-role :db,  "djpaulsutcliffe.com", :primary => true # This is where Rails migrations will run
+role :web, "yorkville.dreamhost.com"                          # Your HTTP server, Apache/etc
+role :app, "yorkville.dreamhost.com"                          # This may be the same as your `Web` server
+role :db,  "yorkville.dreamhost.com", :primary => true # This is where Rails migrations will run
 # role :db,  "your slave db-server here"
 
 # if you want to clean up old releases on each deploy uncomment this:
