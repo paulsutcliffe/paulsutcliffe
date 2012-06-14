@@ -36,6 +36,6 @@ role :db,  domain, :primary => true # This is where Rails migrations will run
 #     run "#{try_sudo} touch #{File.join(current_path,'tmp','restart.txt')}"
 #   end
 # end
-set :chmod755, "app config db lib public vendor script script/*"
+# set :chmod755, "app config db lib public vendor script script/*"
 set :chmod775, "public/dispatch.fcgi"
 set :use_sudo, false
