@@ -5,7 +5,6 @@ require 'fcgi'
 
 ENV['RAILS_ENV'] ||= 'production' 
 
-# Set GEM_PATH and GEM_HOME ("user" is your dreamhost user)
 ENV['GEM_HOME'] ||= '/home/paulsutcliffe/.gems'
 require 'rubygems'
 Gem.clear_paths
