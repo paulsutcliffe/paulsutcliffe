@@ -9,10 +9,12 @@ set :scm, :git
 # Or: `accurev`, `bzr`, `cvs`, `darcs`, `git`, `mercurial`, `perforce`, `subversion` or `none`
 set :scm_passphrase, ""
 set :branch, "master"
+set :deploy_via, :remote_cache
+set :git_shallow_clone, 1
 set :scm_verbose, true
-role :web, "yorkville.dreamhost.com"                          # Your HTTP server, Apache/etc
-role :app, "yorkville.dreamhost.com"                          # This may be the same as your `Web` server
-role :db,  "yorkville.dreamhost.com", :primary => true # This is where Rails migrations will run
+role :web, domain                          # Your HTTP server, Apache/etc
+role :app, domain                          # This may be the same as your `Web` server
+role :db,  domain, :primary => true # This is where Rails migrations will run
 # role :db,  "your slave db-server here"
 
 # if you want to clean up old releases on each deploy uncomment this:
