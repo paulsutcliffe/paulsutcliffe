@@ -34,6 +34,7 @@ production:
   reconnect: false
   database: paulsutcliffe_production
   pool: 5
-  username: root
-  password:
-  socket: /tmp/mysql.sock
+  username: paulsutcliffedb
+  password: chimpance99
+  host: paulsutcliffedb.avance.kosmyka.com
+# socket: /tmp/mysql.sock

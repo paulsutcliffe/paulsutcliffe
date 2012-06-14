@@ -23,104 +23,446 @@ ActionController::RoutingError (No route matches "/favicon.ico"):
 Rendered /Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
 
 
-Started GET "/" for 127.0.0.1 at Wed Jun 06 15:24:27 -0500 2012
+Started GET "/" for 127.0.0.1 at Sat Jun 09 02:31:13 -0500 2012
   Processing by HomeController#index as HTML
-Rendered home/index.html.erb within layouts/application (1.6ms)
-Completed 200 OK in 26ms (Views: 25.8ms | ActiveRecord: 0.0ms)
+Rendered home/index.html.erb within layouts/application (4.1ms)
+Completed   in 12ms
+
+ActionView::Template::Error (No such file or directory - Asset file not found at '/Users/ricardocastaneda/Rails-apps/paulsutcliffe/paulsutcliffe/public/javascripts/libs/adapt/adapt.css'):
+    2: <html>
+    3: <head>
+    4:   <title>Paulsutcliffe</title>
+    5:   <%= stylesheet_link_tag '/javascripts/libs/adapt/adapt.css', '/javascripts/libs/accordion/themes/base/jquery.ui.all.css', '/javascripts/libs/royal-slider/royalslider.css', '/javascripts/libs/royal-slider/royalslider-skins/default/default.css', '/javascripts/libs/royal-slider/royalslider-skins/iskin/iskin.css', 'style.css', :cache => 'powerhouse' %>
+    6:   <%= javascript_include_tag :defaults %>
+    7:   <%= javascript_include_tag '/javascripts/libs/royal-slider/royal-slider-8.1.min.js' %>
+    8:   <%= csrf_meta_tag %>
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__1744207817_2176276800_0'
+
+Rendered /Users/ricardocastaneda/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+Rendered /Users/ricardocastaneda/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.3ms)
+Rendered /Users/ricardocastaneda/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (16.7ms)
 
 
-Started GET "/favicon.ico" for 127.0.0.1 at Wed Jun 06 15:24:28 -0500 2012
+Started GET "/" for 127.0.0.1 at Sat Jun 09 02:32:57 -0500 2012
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (1.1ms)
+Completed   in 9ms
 
-ActionController::RoutingError (No route matches "/favicon.ico"):
-  
+ActionView::Template::Error (No such file or directory - Asset file not found at '/Users/ricardocastaneda/Rails-apps/paulsutcliffe/paulsutcliffe/public/javascripts/libs/accordion/themes/base/jquery.ui.all.css'):
+    2: <html>
+    3: <head>
+    4:   <title>Paulsutcliffe</title>
+    5:   <%= stylesheet_link_tag '/javascripts/libs/adapt/adapt.css', '/javascripts/libs/accordion/themes/base/jquery.ui.all.css', '/javascripts/libs/royal-slider/royalslider.css', '/javascripts/libs/royal-slider/royalslider-skins/default/default.css', '/javascripts/libs/royal-slider/royalslider-skins/iskin/iskin.css', 'style.css', :cache => 'powerhouse' %>
+    6:   <%= javascript_include_tag :defaults %>
+    7:   <%= javascript_include_tag '/javascripts/libs/royal-slider/royal-slider-8.1.min.js' %>
+    8:   <%= csrf_meta_tag %>
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__1744207817_2174751520_0'
 
-Rendered /Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
-
-
-Started GET "/gigs" for 127.0.0.1 at Wed Jun 06 15:24:31 -0500 2012
-  Processing by GigsController#index as HTML
-  [1m[36mGig Load (0.4ms)[0m  [1mSELECT `gigs`.* FROM `gigs`[0m
-Mysql::Error: Table 'paulsutcliffe_development.gigs' doesn't exist: SELECT `gigs`.* FROM `gigs`
-Rendered gigs/index.html.erb within layouts/application (33.3ms)
-Completed   in 49ms
-
-ActionView::Template::Error (Mysql::Error: Table 'paulsutcliffe_development.gigs' doesn't exist: SELECT `gigs`.* FROM `gigs`):
-    11:     <th></th>
-    12:   </tr>
-    13: 
-    14: <% @gigs.each do |gig| %>
-    15:   <tr>
-    16:     <td><%= gig.name %></td>
-    17:     <td><%= gig.place %></td>
-  app/views/gigs/index.html.erb:14:in `_app_views_gigs_index_html_erb__1561863935_2180109640_0'
-
-Rendered /Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
-  [1m[35mGig Load (0.2ms)[0m  SELECT `gigs`.* FROM `gigs`
-Mysql::Error: Table 'paulsutcliffe_development.gigs' doesn't exist: SELECT `gigs`.* FROM `gigs`
-  [1m[36mGig Load (0.2ms)[0m  [1mSELECT `gigs`.* FROM `gigs`[0m
-Mysql::Error: Table 'paulsutcliffe_development.gigs' doesn't exist: SELECT `gigs`.* FROM `gigs`
-Rendered /Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.8ms)
-Rendered /Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.0ms)
+Rendered /Users/ricardocastaneda/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+Rendered /Users/ricardocastaneda/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.1ms)
+Rendered /Users/ricardocastaneda/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.2ms)
 
 
-Started GET "/favicon.ico" for 127.0.0.1 at Wed Jun 06 15:24:32 -0500 2012
+Started GET "/" for 127.0.0.1 at Sat Jun 09 02:33:04 -0500 2012
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (1.1ms)
+Completed   in 9ms
 
-ActionController::RoutingError (No route matches "/favicon.ico"):
-  
+ActionView::Template::Error (No such file or directory - Asset file not found at '/Users/ricardocastaneda/Rails-apps/paulsutcliffe/paulsutcliffe/public/javascripts/libs/accordion/themes/base/jquery.ui.all.css'):
+    2: <html>
+    3: <head>
+    4:   <title>Paulsutcliffe</title>
+    5:   <%= stylesheet_link_tag '/javascripts/libs/adapt/adapt.css', '/javascripts/libs/accordion/themes/base/jquery.ui.all.css', '/javascripts/libs/royal-slider/royalslider.css', '/javascripts/libs/royal-slider/royalslider-skins/default/default.css', '/javascripts/libs/royal-slider/royalslider-skins/iskin/iskin.css', 'style.css', :cache => 'powerhouse' %>
+    6:   <%= javascript_include_tag :defaults %>
+    7:   <%= javascript_include_tag '/javascripts/libs/royal-slider/royal-slider-8.1.min.js' %>
+    8:   <%= csrf_meta_tag %>
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__1744207817_2176943940_0'
 
-Rendered /Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
-  [1m[36mSQL (14.8ms)[0m  [1mSHOW TABLES[0m
-  [1m[35mSQL (0.3ms)[0m  SHOW TABLES
+Rendered /Users/ricardocastaneda/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+Rendered /Users/ricardocastaneda/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.2ms)
+Rendered /Users/ricardocastaneda/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.4ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jun 09 02:33:51 -0500 2012
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (1.8ms)
+Completed   in 9ms
+
+ActionView::Template::Error (No such file or directory - Asset file not found at '/Users/ricardocastaneda/Rails-apps/paulsutcliffe/paulsutcliffe/public/stylesheets/style.css'):
+    2: <html>
+    3: <head>
+    4:   <title>Paulsutcliffe</title>
+    5:   <%= stylesheet_link_tag '/javascripts/libs/adapt/adapt.css', '/javascripts/libs/accordion/themes/base/jquery.ui.all.css', '/javascripts/libs/royal-slider/royalslider.css', '/javascripts/libs/royal-slider/royalslider-skins/default/default.css', '/javascripts/libs/royal-slider/royalslider-skins/iskin/iskin.css', 'style.css', :cache => 'powerhouse' %>
+    6:   <%= javascript_include_tag :defaults %>
+    7:   <%= javascript_include_tag '/javascripts/libs/royal-slider/royal-slider-8.1.min.js' %>
+    8:   <%= csrf_meta_tag %>
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__1744207817_2175700560_0'
+
+Rendered /Users/ricardocastaneda/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+Rendered /Users/ricardocastaneda/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.3ms)
+Rendered /Users/ricardocastaneda/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (11.3ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jun 09 02:34:33 -0500 2012
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 10ms (Views: 9.0ms | ActiveRecord: 0.0ms)
+  [1m[36mSQL (0.4ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (102.7ms)[0m  CREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB
+  [1m[36mSQL (0.6ms)[0m  [1mSHOW KEYS FROM `schema_migrations`[0m
+  [1m[35mSQL (188.9ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)
+  [1m[36mSQL (0.3ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (0.4ms)[0m  SHOW TABLES
   [1m[36mSQL (0.3ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
 Migrating to CreateMetas (20120602223759)
-  [1m[35mSQL (74.2ms)[0m  CREATE TABLE `metas` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `keywords` varchar(255), `description` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
-  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20120602223759')[0m
+  [1m[35mSQL (91.8ms)[0m  CREATE TABLE `metas` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `keywords` varchar(255), `description` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20120602223759')[0m
 Migrating to CreateGigs (20120602224023)
-  [1m[35mSQL (255.2ms)[0m  CREATE TABLE `gigs` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `place` varchar(255), `link` varchar(255), `date` date, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
-  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20120602224023')[0m
+  [1m[35mSQL (125.5ms)[0m  CREATE TABLE `gigs` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `place` varchar(255), `link` varchar(255), `date` date, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36mSQL (1.8ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20120602224023')[0m
 Migrating to AddAttachmentImageToGig (20120602224051)
-  [1m[35mSQL (131.1ms)[0m  ALTER TABLE `gigs` ADD `image_file_name` varchar(255)
-  [1m[36mSQL (110.9ms)[0m  [1mALTER TABLE `gigs` ADD `image_content_type` varchar(255)[0m
-  [1m[35mSQL (113.0ms)[0m  ALTER TABLE `gigs` ADD `image_file_size` int(11)
-  [1m[36mSQL (100.0ms)[0m  [1mALTER TABLE `gigs` ADD `image_updated_at` datetime[0m
-  [1m[35mSQL (0.5ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20120602224051')
+  [1m[35mSQL (148.0ms)[0m  ALTER TABLE `gigs` ADD `image_file_name` varchar(255)
+  [1m[36mSQL (122.7ms)[0m  [1mALTER TABLE `gigs` ADD `image_content_type` varchar(255)[0m
+  [1m[35mSQL (107.5ms)[0m  ALTER TABLE `gigs` ADD `image_file_size` int(11)
+  [1m[36mSQL (98.8ms)[0m  [1mALTER TABLE `gigs` ADD `image_updated_at` datetime[0m
+  [1m[35mSQL (1.7ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20120602224051')
 Migrating to CreateScwidgets (20120602224256)
-  [1m[36mSQL (181.1ms)[0m  [1mCREATE TABLE `scwidgets` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `reference` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
-  [1m[35mSQL (0.4ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20120602224256')
-  [1m[36mSQL (0.8ms)[0m  [1mSHOW TABLES[0m
-  [1m[35mSQL (0.3ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations`
-  [1m[36mSQL (0.4ms)[0m  [1mSHOW TABLES[0m
-  [1m[35mSQL (2.0ms)[0m  describe `gigs`
-  [1m[36mSQL (0.3ms)[0m  [1mSHOW KEYS FROM `gigs`[0m
-  [1m[35mSQL (1.7ms)[0m  describe `metas`
-  [1m[36mSQL (0.3ms)[0m  [1mSHOW KEYS FROM `metas`[0m
-  [1m[35mSQL (1.5ms)[0m  describe `scwidgets`
-  [1m[36mSQL (0.2ms)[0m  [1mSHOW KEYS FROM `scwidgets`[0m
-  [1m[36mSQL (0.3ms)[0m  [1mSHOW TABLES[0m
-  [1m[35mSQL (0.2ms)[0m  SHOW TABLES
+  [1m[36mSQL (205.9ms)[0m  [1mCREATE TABLE `scwidgets` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `reference` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [1m[35mSQL (33.6ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20120602224256')
+Migrating to CreateSlides (20120609073648)
+  [1m[36mSQL (130.6ms)[0m  [1mCREATE TABLE `slides` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `position` int(11), `label` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [1m[35mSQL (1.5ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20120609073648')
+Migrating to AddAttachmentSlideToSlides (20120609073754)
+  [1m[36mSQL (105.0ms)[0m  [1mALTER TABLE `slides` ADD `slide_file_name` varchar(255)[0m
+  [1m[35mSQL (105.9ms)[0m  ALTER TABLE `slides` ADD `slide_content_type` varchar(255)
+  [1m[36mSQL (108.0ms)[0m  [1mALTER TABLE `slides` ADD `slide_file_size` int(11)[0m
+  [1m[35mSQL (99.0ms)[0m  ALTER TABLE `slides` ADD `slide_updated_at` datetime
+  [1m[36mSQL (1.1ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20120609073754')[0m
+  [1m[35mSQL (0.5ms)[0m  SHOW TABLES
   [1m[36mSQL (0.2ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
+  [1m[35mSQL (0.2ms)[0m  SHOW TABLES
+  [1m[36mSQL (4.0ms)[0m  [1mdescribe `gigs`[0m
+  [1m[35mSQL (0.3ms)[0m  SHOW KEYS FROM `gigs`
+  [1m[36mSQL (2.8ms)[0m  [1mdescribe `metas`[0m
+  [1m[35mSQL (0.2ms)[0m  SHOW KEYS FROM `metas`
+  [1m[36mSQL (4.1ms)[0m  [1mdescribe `scwidgets`[0m
+  [1m[35mSQL (0.2ms)[0m  SHOW KEYS FROM `scwidgets`
+  [1m[36mSQL (3.5ms)[0m  [1mdescribe `slides`[0m
+  [1m[35mSQL (0.2ms)[0m  SHOW KEYS FROM `slides`
 
 
-Started GET "/gigs" for 127.0.0.1 at Wed Jun 06 15:25:10 -0500 2012
-  Processing by GigsController#index as HTML
-  [1m[36mGig Load (0.3ms)[0m  [1mSELECT `gigs`.* FROM `gigs`[0m
-Rendered gigs/index.html.erb within layouts/application (2.8ms)
-Completed 200 OK in 18ms (Views: 16.6ms | ActiveRecord: 0.3ms)
+Started GET "/" for 127.0.0.1 at Sat Jun 09 02:51:03 -0500 2012
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 11ms (Views: 10.3ms | ActiveRecord: 0.0ms)
 
 
-Started GET "/favicon.ico" for 127.0.0.1 at Wed Jun 06 15:25:10 -0500 2012
+Started GET "/SLIDES" for 127.0.0.1 at Sat Jun 09 02:53:14 -0500 2012
 
-ActionController::RoutingError (No route matches "/favicon.ico"):
+ActionController::RoutingError (No route matches "/SLIDES"):
   
 
-Rendered /Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+Rendered /Users/ricardocastaneda/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
 
 
-Started GET "/gigs/new" for 127.0.0.1 at Wed Jun 06 15:25:12 -0500 2012
+Started GET "/slides" for 127.0.0.1 at Sat Jun 09 02:54:53 -0500 2012
+  Processing by SlidesController#index as HTML
+  [1m[36mSlide Load (0.4ms)[0m  [1mSELECT `slides`.* FROM `slides`[0m
+Rendered slides/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 19ms (Views: 17.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/slides/new" for 127.0.0.1 at Sat Jun 09 02:57:51 -0500 2012
+  Processing by SlidesController#new as HTML
+Rendered slides/_form.html.erb (278.0ms)
+Rendered slides/new.html.erb within layouts/application (283.2ms)
+Completed 200 OK in 304ms (Views: 298.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/slides/new" for 127.0.0.1 at Sat Jun 09 02:58:59 -0500 2012
+  Processing by SlidesController#new as HTML
+Rendered slides/_form.html.erb (5.8ms)
+Rendered slides/new.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 63ms (Views: 20.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/slides" for 127.0.0.1 at Sat Jun 09 03:00:30 -0500 2012
+  Processing by SlidesController#create as HTML
+  Parameters: {"commit"=>"Create Slide", "authenticity_token"=>"IRNQ1VnCU8GrNUhqAUdc8gIMNrp37q6pDQHb1XFrc1Q=", "utf8"=>"✓", "slide"=>{"label"=>"", "slide"=>#<ActionDispatch::Http::UploadedFile:0x10374f848 @tempfile=#<File:/var/folders/w_/p_bt8h3s5d9_9s3c4x7clq4r0000gn/T/RackMultipart20120609-23524-zrtuy9-0>, @content_type="image/jpeg", @original_filename="slide-1.jpg", @headers="Content-Disposition: form-data; name=\"slide[slide]\"; filename=\"slide-1.jpg\"\r\nContent-Type: image/jpeg\r\n">}}
+[32mCommand[0m :: identify -format %wx%h '/var/folders/w_/p_bt8h3s5d9_9s3c4x7clq4r0000gn/T/stream20120609-23524-1utc5rd-0.jpg[0]'
+[32mCommand[0m :: convert '/var/folders/w_/p_bt8h3s5d9_9s3c4x7clq4r0000gn/T/stream20120609-23524-1utc5rd-0.jpg[0]' -resize "120x450>" '/var/folders/w_/p_bt8h3s5d9_9s3c4x7clq4r0000gn/T/stream20120609-23524-1utc5rd-020120609-23524-1sv6kfc-0.jpg'
+[32mCommand[0m :: identify -format %wx%h '/var/folders/w_/p_bt8h3s5d9_9s3c4x7clq4r0000gn/T/stream20120609-23524-1utc5rd-0.jpg[0]'
+[32mCommand[0m :: convert '/var/folders/w_/p_bt8h3s5d9_9s3c4x7clq4r0000gn/T/stream20120609-23524-1utc5rd-0.jpg[0]' -resize "1200x450>" '/var/folders/w_/p_bt8h3s5d9_9s3c4x7clq4r0000gn/T/stream20120609-23524-1utc5rd-020120609-23524-tzs2ui-0.jpg'
+  [1m[35mSQL (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (3.9ms)[0m  describe `slides`
+  [1m[36mAREL (0.5ms)[0m  [1mINSERT INTO `slides` (`slide_updated_at`, `slide_file_name`, `slide_file_size`, `slide_content_type`, `created_at`, `updated_at`, `position`, `label`) VALUES ('2012-06-09 08:00:30', 'slide-1.jpg', 290693, 'image/jpeg', '2012-06-09 08:00:31', '2012-06-09 08:00:31', NULL, '')[0m
+[paperclip] Saving attachments.
+[paperclip] saving /Users/ricardocastaneda/Rails-apps/paulsutcliffe/paulsutcliffe/public/images/assets/slides/1/min/slide-1.jpg
+[paperclip] saving /Users/ricardocastaneda/Rails-apps/paulsutcliffe/paulsutcliffe/public/images/assets/slides/1/max/slide-1.jpg
+[paperclip] saving /Users/ricardocastaneda/Rails-apps/paulsutcliffe/paulsutcliffe/public/images/assets/slides/1/original/slide-1.jpg
+  [1m[35mSQL (2.9ms)[0m  COMMIT
+Redirected to http://localhost:3000/slides/1
+Completed 302 Found in 1026ms
+
+
+Started GET "/slides/1" for 127.0.0.1 at Sat Jun 09 03:00:31 -0500 2012
+  Processing by SlidesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSlide Load (0.3ms)[0m  [1mSELECT `slides`.* FROM `slides` WHERE (`slides`.`id` = 1) LIMIT 1[0m
+Rendered slides/show.html.erb within layouts/application (11.5ms)
+Completed 200 OK in 28ms (Views: 22.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/slides" for 127.0.0.1 at Sat Jun 09 03:00:36 -0500 2012
+  Processing by SlidesController#index as HTML
+  [1m[35mSlide Load (0.3ms)[0m  SELECT `slides`.* FROM `slides`
+Rendered slides/index.html.erb within layouts/application (47.9ms)
+Completed 200 OK in 60ms (Views: 58.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/slides/new" for 127.0.0.1 at Sat Jun 09 03:00:40 -0500 2012
+  Processing by SlidesController#new as HTML
+Rendered slides/_form.html.erb (63.8ms)
+Rendered slides/new.html.erb within layouts/application (68.6ms)
+Completed 200 OK in 127ms (Views: 81.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/slides" for 127.0.0.1 at Sat Jun 09 03:00:50 -0500 2012
+  Processing by SlidesController#create as HTML
+  Parameters: {"commit"=>"Create Slide", "authenticity_token"=>"IRNQ1VnCU8GrNUhqAUdc8gIMNrp37q6pDQHb1XFrc1Q=", "utf8"=>"✓", "slide"=>{"label"=>"", "slide"=>#<ActionDispatch::Http::UploadedFile:0x1035c51d0 @tempfile=#<File:/var/folders/w_/p_bt8h3s5d9_9s3c4x7clq4r0000gn/T/RackMultipart20120609-23524-nv8u56-0>, @content_type="image/jpeg", @original_filename="slide-2.jpg", @headers="Content-Disposition: form-data; name=\"slide[slide]\"; filename=\"slide-2.jpg\"\r\nContent-Type: image/jpeg\r\n">}}
+[32mCommand[0m :: identify -format %wx%h '/var/folders/w_/p_bt8h3s5d9_9s3c4x7clq4r0000gn/T/stream20120609-23524-1g2xobg-0.jpg[0]'
+[32mCommand[0m :: convert '/var/folders/w_/p_bt8h3s5d9_9s3c4x7clq4r0000gn/T/stream20120609-23524-1g2xobg-0.jpg[0]' -resize "120x450>" '/var/folders/w_/p_bt8h3s5d9_9s3c4x7clq4r0000gn/T/stream20120609-23524-1g2xobg-020120609-23524-19tncm8-0.jpg'
+[32mCommand[0m :: identify -format %wx%h '/var/folders/w_/p_bt8h3s5d9_9s3c4x7clq4r0000gn/T/stream20120609-23524-1g2xobg-0.jpg[0]'
+[32mCommand[0m :: convert '/var/folders/w_/p_bt8h3s5d9_9s3c4x7clq4r0000gn/T/stream20120609-23524-1g2xobg-0.jpg[0]' -resize "1200x450>" '/var/folders/w_/p_bt8h3s5d9_9s3c4x7clq4r0000gn/T/stream20120609-23524-1g2xobg-020120609-23524-j0nbb4-0.jpg'
+  [1m[36mSQL (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (4.8ms)[0m  describe `slides`
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO `slides` (`slide_updated_at`, `slide_file_name`, `updated_at`, `created_at`, `label`, `slide_file_size`, `position`, `slide_content_type`) VALUES ('2012-06-09 08:00:50', 'slide-2.jpg', '2012-06-09 08:00:50', '2012-06-09 08:00:50', '', 167853, NULL, 'image/jpeg')[0m
+[paperclip] Saving attachments.
+[paperclip] saving /Users/ricardocastaneda/Rails-apps/paulsutcliffe/paulsutcliffe/public/images/assets/slides/2/min/slide-2.jpg
+[paperclip] saving /Users/ricardocastaneda/Rails-apps/paulsutcliffe/paulsutcliffe/public/images/assets/slides/2/max/slide-2.jpg
+[paperclip] saving /Users/ricardocastaneda/Rails-apps/paulsutcliffe/paulsutcliffe/public/images/assets/slides/2/original/slide-2.jpg
+  [1m[35mSQL (2.1ms)[0m  COMMIT
+Redirected to http://localhost:3000/slides/2
+Completed 302 Found in 341ms
+
+
+Started GET "/slides/2" for 127.0.0.1 at Sat Jun 09 03:00:50 -0500 2012
+  Processing by SlidesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mSlide Load (0.4ms)[0m  [1mSELECT `slides`.* FROM `slides` WHERE (`slides`.`id` = 2) LIMIT 1[0m
+Rendered slides/show.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 30ms (Views: 23.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/slides" for 127.0.0.1 at Sat Jun 09 03:00:53 -0500 2012
+  Processing by SlidesController#index as HTML
+  [1m[35mSlide Load (0.6ms)[0m  SELECT `slides`.* FROM `slides`
+Rendered slides/index.html.erb within layouts/application (18.4ms)
+Completed 200 OK in 31ms (Views: 28.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/slides/new" for 127.0.0.1 at Sat Jun 09 03:00:58 -0500 2012
+  Processing by SlidesController#new as HTML
+Rendered slides/_form.html.erb (5.9ms)
+Rendered slides/new.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 128ms (Views: 22.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/slides" for 127.0.0.1 at Sat Jun 09 03:01:06 -0500 2012
+  Processing by SlidesController#create as HTML
+  Parameters: {"commit"=>"Create Slide", "authenticity_token"=>"IRNQ1VnCU8GrNUhqAUdc8gIMNrp37q6pDQHb1XFrc1Q=", "utf8"=>"✓", "slide"=>{"label"=>"", "slide"=>#<ActionDispatch::Http::UploadedFile:0x10393c4f8 @tempfile=#<File:/var/folders/w_/p_bt8h3s5d9_9s3c4x7clq4r0000gn/T/RackMultipart20120609-23524-1ram73e-0>, @content_type="image/jpeg", @original_filename="slide-3.jpg", @headers="Content-Disposition: form-data; name=\"slide[slide]\"; filename=\"slide-3.jpg\"\r\nContent-Type: image/jpeg\r\n">}}
+[32mCommand[0m :: identify -format %wx%h '/var/folders/w_/p_bt8h3s5d9_9s3c4x7clq4r0000gn/T/stream20120609-23524-1qjhfmw-0.jpg[0]'
+[32mCommand[0m :: convert '/var/folders/w_/p_bt8h3s5d9_9s3c4x7clq4r0000gn/T/stream20120609-23524-1qjhfmw-0.jpg[0]' -resize "120x450>" '/var/folders/w_/p_bt8h3s5d9_9s3c4x7clq4r0000gn/T/stream20120609-23524-1qjhfmw-020120609-23524-1qey0o5-0.jpg'
+[32mCommand[0m :: identify -format %wx%h '/var/folders/w_/p_bt8h3s5d9_9s3c4x7clq4r0000gn/T/stream20120609-23524-1qjhfmw-0.jpg[0]'
+[32mCommand[0m :: convert '/var/folders/w_/p_bt8h3s5d9_9s3c4x7clq4r0000gn/T/stream20120609-23524-1qjhfmw-0.jpg[0]' -resize "1200x450>" '/var/folders/w_/p_bt8h3s5d9_9s3c4x7clq4r0000gn/T/stream20120609-23524-1qjhfmw-020120609-23524-zgpnqu-0.jpg'
+  [1m[36mSQL (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (3.0ms)[0m  describe `slides`
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO `slides` (`slide_updated_at`, `created_at`, `label`, `updated_at`, `slide_content_type`, `position`, `slide_file_size`, `slide_file_name`) VALUES ('2012-06-09 08:01:06', '2012-06-09 08:01:06', '', '2012-06-09 08:01:06', 'image/jpeg', NULL, 274046, 'slide-3.jpg')[0m
+[paperclip] Saving attachments.
+[paperclip] saving /Users/ricardocastaneda/Rails-apps/paulsutcliffe/paulsutcliffe/public/images/assets/slides/3/min/slide-3.jpg
+[paperclip] saving /Users/ricardocastaneda/Rails-apps/paulsutcliffe/paulsutcliffe/public/images/assets/slides/3/max/slide-3.jpg
+[paperclip] saving /Users/ricardocastaneda/Rails-apps/paulsutcliffe/paulsutcliffe/public/images/assets/slides/3/original/slide-3.jpg
+  [1m[35mSQL (3.4ms)[0m  COMMIT
+Redirected to http://localhost:3000/slides/3
+Completed 302 Found in 292ms
+
+
+Started GET "/slides/3" for 127.0.0.1 at Sat Jun 09 03:01:06 -0500 2012
+  Processing by SlidesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mSlide Load (0.3ms)[0m  [1mSELECT `slides`.* FROM `slides` WHERE (`slides`.`id` = 3) LIMIT 1[0m
+Rendered slides/show.html.erb within layouts/application (13.4ms)
+Completed 200 OK in 32ms (Views: 24.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jun 09 03:01:11 -0500 2012
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed   in 7ms
+
+ActionView::Template::Error (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each):
+    6: 	      <div id="slider-ajax-container">
+    7: 	  <div id="banner-rotator" class="royalSlider default">    
+    8:         <ul class="royalSlidesContainer">
+    9: 	      <% @slides.each do |slide| %>
+    10: 	        <li class="royalSlide">  
+    11: 		      <%= image_tag(slide.imagen(:max), :class => 'royalImage') %>
+    12: 		      <div class="royalCaption">
+  app/views/home/index.html.erb:9:in `_app_views_home_index_html_erb__210583899_2177402580_0'
+
+Rendered /Users/ricardocastaneda/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+Rendered /Users/ricardocastaneda/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.9ms)
+Rendered /Users/ricardocastaneda/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.3ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jun 09 03:01:51 -0500 2012
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed   in 9ms
+
+ActionView::Template::Error (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each):
+    6: 	      <div id="slider-ajax-container">
+    7: 	  <div id="banner-rotator" class="royalSlider default">    
+    8:         <ul class="royalSlidesContainer">
+    9: 	      <% @slides.each do |slide| %>
+    10: 	        <li class="royalSlide">  
+    11: 		      <%= image_tag(slide.slide(:max), :class => 'royalImage') %>
+    12: 		      <div class="royalCaption">
+  app/views/home/index.html.erb:9:in `_app_views_home_index_html_erb__210583899_2175606540_0'
+
+Rendered /Users/ricardocastaneda/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+Rendered /Users/ricardocastaneda/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.8ms)
+Rendered /Users/ricardocastaneda/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.1ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jun 09 03:01:52 -0500 2012
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed   in 65ms
+
+ActionView::Template::Error (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each):
+    6: 	      <div id="slider-ajax-container">
+    7: 	  <div id="banner-rotator" class="royalSlider default">    
+    8:         <ul class="royalSlidesContainer">
+    9: 	      <% @slides.each do |slide| %>
+    10: 	        <li class="royalSlide">  
+    11: 		      <%= image_tag(slide.slide(:max), :class => 'royalImage') %>
+    12: 		      <div class="royalCaption">
+  app/views/home/index.html.erb:9:in `_app_views_home_index_html_erb__210583899_2177849800_0'
+
+Rendered /Users/ricardocastaneda/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+Rendered /Users/ricardocastaneda/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.7ms)
+Rendered /Users/ricardocastaneda/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.9ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jun 09 03:01:58 -0500 2012
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed   in 9ms
+
+ActionView::Template::Error (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each):
+    6: 	      <div id="slider-ajax-container">
+    7: 	  <div id="banner-rotator" class="royalSlider default">    
+    8:         <ul class="royalSlidesContainer">
+    9: 	      <% @slides.each do |slide| %>
+    10: 	        <li class="royalSlide">  
+    11: 		      <%= image_tag(slides.slide(:max), :class => 'royalImage') %>
+    12: 		      <div class="royalCaption">
+  app/views/home/index.html.erb:9:in `_app_views_home_index_html_erb__210583899_2176126140_0'
+
+Rendered /Users/ricardocastaneda/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+Rendered /Users/ricardocastaneda/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.5ms)
+Rendered /Users/ricardocastaneda/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.7ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jun 09 03:02:43 -0500 2012
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed   in 7ms
+
+ActionView::Template::Error (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each):
+    6: 	      <div id="slider-ajax-container">
+    7: 	  <div id="banner-rotator" class="royalSlider default">    
+    8:         <ul class="royalSlidesContainer">
+    9: 	      <% @slides.each do |slide| %>
+    10: 	        <li class="royalSlide">  
+    11: 		      <%= image_tag(slide.slide(:max), :class => 'royalImage') %>
+    12: 		      <div class="royalCaption">
+  app/views/home/index.html.erb:9:in `_app_views_home_index_html_erb__210583899_2174512320_0'
+
+Rendered /Users/ricardocastaneda/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+Rendered /Users/ricardocastaneda/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.6ms)
+Rendered /Users/ricardocastaneda/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.8ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jun 09 03:03:45 -0500 2012
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed   in 8ms
+
+ActionView::Template::Error (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each):
+    6: 	      <div id="slider-ajax-container">
+    7: 	  <div id="banner-rotator" class="royalSlider default">    
+    8:         <ul class="royalSlidesContainer">
+    9: 	      <% @slides.each do |slide| %>
+    10: 	        <li class="royalSlide">  
+    11: 		     
+    12: 		      <div class="royalCaption">
+  app/views/home/index.html.erb:9:in `_app_views_home_index_html_erb__210583899_2177461900_0'
+
+Rendered /Users/ricardocastaneda/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+Rendered /Users/ricardocastaneda/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.5ms)
+Rendered /Users/ricardocastaneda/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jun 09 03:04:12 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[35mSlide Load (0.4ms)[0m  SELECT `slides`.* FROM `slides`
+Rendered home/index.html.erb within layouts/application (43.0ms)
+Completed 200 OK in 65ms (Views: 55.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jun 09 03:10:07 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[36mSlide Load (0.5ms)[0m  [1mSELECT `slides`.* FROM `slides`[0m
+  [1m[35mGig Load (0.4ms)[0m  SELECT `gigs`.* FROM `gigs`
+Rendered home/index.html.erb within layouts/application (50.3ms)
+Completed 200 OK in 118ms (Views: 108.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jun 09 03:10:22 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[36mSlide Load (0.6ms)[0m  [1mSELECT `slides`.* FROM `slides`[0m
+  [1m[35mGig Load (0.3ms)[0m  SELECT `gigs`.* FROM `gigs`
+Rendered home/index.html.erb within layouts/application (52.3ms)
+Completed 200 OK in 69ms (Views: 59.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/gigs" for 127.0.0.1 at Sat Jun 09 03:10:38 -0500 2012
+  Processing by GigsController#index as HTML
+  [1m[36mGig Load (0.5ms)[0m  [1mSELECT `gigs`.* FROM `gigs`[0m
+Rendered gigs/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 16ms (Views: 15.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/gigs/new" for 127.0.0.1 at Sat Jun 09 03:10:43 -0500 2012
   Processing by GigsController#new as HTML
-Rendered gigs/_form.html.erb (90.0ms)
-Rendered gigs/new.html.erb within layouts/application (92.5ms)
-Completed   in 172ms
+Rendered gigs/_form.html.erb (7.2ms)
+Rendered gigs/new.html.erb within layouts/application (9.9ms)
+Completed   in 74ms
 
 ActionView::Template::Error (can't convert Symbol into String):
     25:   </div>
@@ -130,644 +472,754 @@ ActionView::Template::Error (can't convert Symbol into String):
     29:   </div>
     30:   <div class="actions">
     31:     <%= f.submit %>
-  app/views/gigs/_form.html.erb:28:in `_app_views_gigs__form_html_erb___1587745678_2180009540_892030'
-  app/views/gigs/_form.html.erb:1:in `_app_views_gigs__form_html_erb___1587745678_2180009540_892030'
-  app/views/gigs/new.html.erb:3:in `_app_views_gigs_new_html_erb___1296007492_2180021220_0'
+  app/views/gigs/_form.html.erb:28:in `_app_views_gigs__form_html_erb__660145275_2176522720_905470'
+  app/views/gigs/_form.html.erb:1:in `_app_views_gigs__form_html_erb__660145275_2176522720_905470'
+  app/views/gigs/new.html.erb:3:in `_app_views_gigs_new_html_erb__1445595801_2176588480_0'
 
-Rendered /Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
-Rendered /Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (62.6ms)
-Rendered /Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (68.8ms)
-
-
-Started GET "/favicon.ico" for 127.0.0.1 at Wed Jun 06 15:25:12 -0500 2012
-
-ActionController::RoutingError (No route matches "/favicon.ico"):
-  
-
-Rendered /Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+Rendered /Users/ricardocastaneda/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+Rendered /Users/ricardocastaneda/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.0ms)
+Rendered /Users/ricardocastaneda/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.3ms)
 
 
-Started GET "/gigs/new" for 127.0.0.1 at Wed Jun 06 15:30:49 -0500 2012
+Started GET "/gigs/new" for 127.0.0.1 at Sat Jun 09 03:11:27 -0500 2012
   Processing by GigsController#new as HTML
-Rendered gigs/_form.html.erb (62.2ms)
-Rendered gigs/new.html.erb within layouts/application (66.5ms)
-Completed 200 OK in 148ms (Views: 143.4ms | ActiveRecord: 0.0ms)
+Rendered gigs/_form.html.erb (6.7ms)
+Rendered gigs/new.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 27ms (Views: 21.5ms | ActiveRecord: 0.0ms)
 
 
-Started GET "/favicon.ico" for 127.0.0.1 at Wed Jun 06 15:30:50 -0500 2012
-
-ActionController::RoutingError (No route matches "/favicon.ico"):
-  
-
-Rendered /Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
-
-
-Started POST "/gigs" for 127.0.0.1 at Wed Jun 06 15:35:55 -0500 2012
-  [1m[36mSQL (0.4ms)[0m  [1mSHOW TABLES[0m
-  [1m[35mSQL (0.3ms)[0m  SHOW TABLES
-
-ActionController::RoutingError (undefined method `auto_html_for' for #<Class:0x103d55e40>):
-  app/models/gig.rb:2
-  app/controllers/gigs_controller.rb:1
-
-Rendered /Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+Started POST "/gigs" for 127.0.0.1 at Sat Jun 09 03:11:57 -0500 2012
+  Processing by GigsController#create as HTML
+  Parameters: {"commit"=>"Create Gig", "authenticity_token"=>"IRNQ1VnCU8GrNUhqAUdc8gIMNrp37q6pDQHb1XFrc1Q=", "utf8"=>"✓", "gig"=>{"name"=>"Bizarro", "link"=>"", "place"=>"Miraflores, Lima. "}}
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (3.6ms)[0m  [1mdescribe `gigs`[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO `gigs` (`place`, `name`, `image_updated_at`, `image_content_type`, `updated_at`, `image_file_size`, `link`, `image_file_name`, `date`, `created_at`) VALUES ('Miraflores, Lima. ', 'Bizarro', NULL, NULL, '2012-06-09 08:11:57', NULL, '', NULL, NULL, '2012-06-09 08:11:57')
+  [1m[36mSQL (1.3ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/gigs/1
+Completed 302 Found in 37ms
 
 
-Started GET "/favicon.ico" for 127.0.0.1 at Wed Jun 06 15:35:55 -0500 2012
-
-ActionController::RoutingError (No route matches "/favicon.ico"):
-  
-
-Rendered /Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
-
-
-Started GET "/gigs" for 127.0.0.1 at Wed Jun 06 15:36:58 -0500 2012
-  [1m[36mSQL (0.4ms)[0m  [1mSHOW TABLES[0m
-  [1m[35mSQL (0.3ms)[0m  SHOW TABLES
-
-ActionController::RoutingError (undefined method `auto_html_for' for #<Class:0x1041d3148>):
-  app/models/gig.rb:2
-  app/controllers/gigs_controller.rb:1
-
-Rendered /Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+Started GET "/gigs/1" for 127.0.0.1 at Sat Jun 09 03:11:57 -0500 2012
+  Processing by GigsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mGig Load (0.3ms)[0m  SELECT `gigs`.* FROM `gigs` WHERE (`gigs`.`id` = 1) LIMIT 1
+Rendered gigs/show.html.erb within layouts/application (11.8ms)
+Completed 200 OK in 49ms (Views: 42.0ms | ActiveRecord: 0.3ms)
 
 
-Started GET "/favicon.ico" for 127.0.0.1 at Wed Jun 06 15:36:58 -0500 2012
-
-ActionController::RoutingError (No route matches "/favicon.ico"):
-  
-
-Rendered /Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
-
-
-Started GET "/gigs" for 127.0.0.1 at Wed Jun 06 15:36:59 -0500 2012
-  [1m[36mSQL (0.4ms)[0m  [1mSHOW TABLES[0m
-  [1m[35mSQL (0.3ms)[0m  SHOW TABLES
-
-ActionController::RoutingError (undefined method `auto_html_for' for #<Class:0x103e20d98>):
-  app/models/gig.rb:2
-  app/controllers/gigs_controller.rb:1
-
-Rendered /Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
-
-
-Started GET "/favicon.ico" for 127.0.0.1 at Wed Jun 06 15:36:59 -0500 2012
-
-ActionController::RoutingError (No route matches "/favicon.ico"):
-  
-
-Rendered /Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
-
-
-Started GET "/gigs" for 127.0.0.1 at Wed Jun 06 15:37:11 -0500 2012
+Started GET "/gigs" for 127.0.0.1 at Sat Jun 09 03:12:05 -0500 2012
   Processing by GigsController#index as HTML
   [1m[36mGig Load (0.3ms)[0m  [1mSELECT `gigs`.* FROM `gigs`[0m
-Rendered gigs/index.html.erb within layouts/application (2.9ms)
-Completed 200 OK in 17ms (Views: 16.1ms | ActiveRecord: 0.3ms)
+Rendered gigs/index.html.erb within layouts/application (55.9ms)
+Completed 200 OK in 68ms (Views: 66.3ms | ActiveRecord: 0.3ms)
 
 
-Started GET "/favicon.ico" for 127.0.0.1 at Wed Jun 06 15:37:11 -0500 2012
-
-ActionController::RoutingError (No route matches "/favicon.ico"):
-  
-
-Rendered /Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
-
-
-Started GET "/gigs/new" for 127.0.0.1 at Wed Jun 06 15:37:14 -0500 2012
+Started GET "/gigs/new" for 127.0.0.1 at Sat Jun 09 03:12:07 -0500 2012
   Processing by GigsController#new as HTML
-Rendered gigs/_form.html.erb (14.0ms)
-Rendered gigs/new.html.erb within layouts/application (17.3ms)
-Completed 200 OK in 32ms (Views: 31.1ms | ActiveRecord: 0.0ms)
+Rendered gigs/_form.html.erb (6.5ms)
+Rendered gigs/new.html.erb within layouts/application (69.9ms)
+Completed 200 OK in 119ms (Views: 81.4ms | ActiveRecord: 0.0ms)
 
 
-Started GET "/favicon.ico" for 127.0.0.1 at Wed Jun 06 15:37:14 -0500 2012
-
-ActionController::RoutingError (No route matches "/favicon.ico"):
-  
-
-Rendered /Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
-
-
-Started POST "/gigs" for 127.0.0.1 at Wed Jun 06 15:37:31 -0500 2012
+Started POST "/gigs" for 127.0.0.1 at Sat Jun 09 03:12:20 -0500 2012
   Processing by GigsController#create as HTML
-  Parameters: {"commit"=>"Create Gig", "authenticity_token"=>"sAi3gH5Ju6m/EJTLCHEvz6bDF8slOKeGFJjKGzcMeNc=", "utf8"=>"✓", "gig"=>{"name"=>"Bizarro", "date(1i)"=>"2012", "date(2i)"=>"6", "date(3i)"=>"23", "link"=>"www.facebook.com/djpaulsutcliffe", "place"=>"Miraflores, Lima."}}
-  [1m[35mSQL (0.1ms)[0m  BEGIN
-  [1m[36mSQL (0.4ms)[0m  [1mSHOW TABLES[0m
-  [1m[35mSQL (1.9ms)[0m  describe `gigs`
-  [1m[36mAREL (1.7ms)[0m  [1mINSERT INTO `gigs` (`link`, `image_updated_at`, `image_file_size`, `date`, `created_at`, `image_content_type`, `image_file_name`, `name`, `updated_at`, `place`) VALUES ('www.facebook.com/djpaulsutcliffe', NULL, NULL, '2012-06-23', '2012-06-06 20:37:31', NULL, NULL, 'Bizarro', '2012-06-06 20:37:31', 'Miraflores, Lima.')[0m
-  [1m[35mSQL (0.3ms)[0m  COMMIT
-Redirected to http://localhost:3000/gigs/1
-Completed 302 Found in 143ms
+  Parameters: {"commit"=>"Create Gig", "authenticity_token"=>"IRNQ1VnCU8GrNUhqAUdc8gIMNrp37q6pDQHb1XFrc1Q=", "utf8"=>"✓", "gig"=>{"name"=>"Maze", "link"=>"", "place"=>"Miraflores, Lima. "}}
+  [1m[35mSQL (0.6ms)[0m  BEGIN
+  [1m[36mSQL (3.4ms)[0m  [1mdescribe `gigs`[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO `gigs` (`image_updated_at`, `date`, `link`, `updated_at`, `image_file_name`, `name`, `place`, `image_content_type`, `created_at`, `image_file_size`) VALUES (NULL, NULL, '', '2012-06-09 08:12:20', NULL, 'Maze', 'Miraflores, Lima. ', NULL, '2012-06-09 08:12:20', NULL)
+  [1m[36mSQL (1.6ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/gigs/2
+Completed 302 Found in 38ms
 
 
-Started GET "/gigs/1" for 127.0.0.1 at Wed Jun 06 15:37:31 -0500 2012
+Started GET "/gigs/2" for 127.0.0.1 at Sat Jun 09 03:12:20 -0500 2012
   Processing by GigsController#show as HTML
-  Parameters: {"id"=>"1"}
-  [1m[36mGig Load (0.3ms)[0m  [1mSELECT `gigs`.* FROM `gigs` WHERE (`gigs`.`id` = 1) LIMIT 1[0m
-Rendered gigs/show.html.erb within layouts/application (6.5ms)
-Completed 200 OK in 25ms (Views: 20.5ms | ActiveRecord: 0.3ms)
+  Parameters: {"id"=>"2"}
+  [1m[35mGig Load (0.2ms)[0m  SELECT `gigs`.* FROM `gigs` WHERE (`gigs`.`id` = 2) LIMIT 1
+Rendered gigs/show.html.erb within layouts/application (12.9ms)
+Completed 200 OK in 88ms (Views: 23.4ms | ActiveRecord: 0.2ms)
 
 
-Started GET "/favicon.ico" for 127.0.0.1 at Wed Jun 06 15:37:31 -0500 2012
-
-ActionController::RoutingError (No route matches "/favicon.ico"):
-  
-
-Rendered /Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
-
-
-Started GET "/gigs" for 127.0.0.1 at Wed Jun 06 15:37:37 -0500 2012
-  Processing by GigsController#index as HTML
-  [1m[35mGig Load (0.3ms)[0m  SELECT `gigs`.* FROM `gigs`
-Rendered gigs/index.html.erb within layouts/application (8.0ms)
-Completed 200 OK in 22ms (Views: 20.9ms | ActiveRecord: 0.3ms)
-
-
-Started GET "/favicon.ico" for 127.0.0.1 at Wed Jun 06 15:37:37 -0500 2012
-
-ActionController::RoutingError (No route matches "/favicon.ico"):
-  
-
-Rendered /Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
-
-
-Started GET "/" for 127.0.0.1 at Wed Jun 06 15:39:20 -0500 2012
-  Processing by HomeController#index as HTML
-Rendered home/index.html.erb within layouts/application (61.5ms)
-Completed 200 OK in 71ms (Views: 70.0ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/favicon.ico" for 127.0.0.1 at Wed Jun 06 15:39:21 -0500 2012
-
-ActionController::RoutingError (No route matches "/favicon.ico"):
-  
-
-Rendered /Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
-
-
-Started GET "/" for 127.0.0.1 at Wed Jun 06 15:54:51 -0500 2012
-  Processing by HomeController#index as HTML
-  [1m[36mGig Load (0.3ms)[0m  [1mSELECT `gigs`.* FROM `gigs` ORDER BY ASC by date LIMIT 6[0m
-Mysql::Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ASC by date LIMIT 6' at line 1: SELECT  `gigs`.* FROM `gigs` ORDER BY ASC by date LIMIT 6
-Rendered home/index.html.erb within layouts/application (1.4ms)
-Completed   in 16ms
-
-ActionView::Template::Error (Mysql::Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ASC by date LIMIT 6' at line 1: SELECT  `gigs`.* FROM `gigs` ORDER BY ASC by date LIMIT 6):
-    7: <%= link_to 'soundcloud', "http://www.soundcloud.com/djpaulsutcliffe" %>
-    8: 
-    9: 
-    10: <%= @gigs.each do |gig| %>
-    11: 	<%= link_to gig.name, gig.link_html %>
-    12: 	<%= gig.place %>
-    13: 	<%= gig.date %>
-  app/views/home/index.html.erb:10:in `_app_views_home_index_html_erb___2037307054_2179534680_0'
-
-Rendered /Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
-  [1m[35mGig Load (0.2ms)[0m  SELECT `gigs`.* FROM `gigs` ORDER BY ASC by date LIMIT 6
-Mysql::Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ASC by date LIMIT 6' at line 1: SELECT  `gigs`.* FROM `gigs` ORDER BY ASC by date LIMIT 6
-  [1m[36mGig Load (0.1ms)[0m  [1mSELECT `gigs`.* FROM `gigs` ORDER BY ASC by date LIMIT 6[0m
-Mysql::Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ASC by date LIMIT 6' at line 1: SELECT  `gigs`.* FROM `gigs` ORDER BY ASC by date LIMIT 6
-Rendered /Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.8ms)
-Rendered /Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.1ms)
-
-
-Started GET "/favicon.ico" for 127.0.0.1 at Wed Jun 06 15:54:52 -0500 2012
-
-ActionController::RoutingError (No route matches "/favicon.ico"):
-  
-
-Rendered /Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
-
-
-Started GET "/" for 127.0.0.1 at Wed Jun 06 15:55:16 -0500 2012
-  Processing by HomeController#index as HTML
-  [1m[35mGig Load (0.3ms)[0m  SELECT `gigs`.* FROM `gigs` ORDER BY ASC date LIMIT 6
-Mysql::Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ASC date LIMIT 6' at line 1: SELECT  `gigs`.* FROM `gigs` ORDER BY ASC date LIMIT 6
-Rendered home/index.html.erb within layouts/application (1.4ms)
-Completed   in 16ms
-
-ActionView::Template::Error (Mysql::Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ASC date LIMIT 6' at line 1: SELECT  `gigs`.* FROM `gigs` ORDER BY ASC date LIMIT 6):
-    7: <%= link_to 'soundcloud', "http://www.soundcloud.com/djpaulsutcliffe" %>
-    8: 
-    9: 
-    10: <%= @gigs.each do |gig| %>
-    11: 	<%= link_to gig.name, gig.link_html %>
-    12: 	<%= gig.place %>
-    13: 	<%= gig.date %>
-  app/views/home/index.html.erb:10:in `_app_views_home_index_html_erb___2037307054_2177608880_0'
-
-Rendered /Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
-  [1m[36mGig Load (0.2ms)[0m  [1mSELECT `gigs`.* FROM `gigs` ORDER BY ASC date LIMIT 6[0m
-Mysql::Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ASC date LIMIT 6' at line 1: SELECT  `gigs`.* FROM `gigs` ORDER BY ASC date LIMIT 6
-  [1m[35mGig Load (0.1ms)[0m  SELECT `gigs`.* FROM `gigs` ORDER BY ASC date LIMIT 6
-Mysql::Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ASC date LIMIT 6' at line 1: SELECT  `gigs`.* FROM `gigs` ORDER BY ASC date LIMIT 6
-Rendered /Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.5ms)
-Rendered /Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.3ms)
-
-
-Started GET "/favicon.ico" for 127.0.0.1 at Wed Jun 06 15:55:16 -0500 2012
-
-ActionController::RoutingError (No route matches "/favicon.ico"):
-  
-
-Rendered /Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
-
-
-Started GET "/" for 127.0.0.1 at Wed Jun 06 15:55:17 -0500 2012
-  Processing by HomeController#index as HTML
-  [1m[36mGig Load (0.3ms)[0m  [1mSELECT `gigs`.* FROM `gigs` ORDER BY ASC date LIMIT 6[0m
-Mysql::Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ASC date LIMIT 6' at line 1: SELECT  `gigs`.* FROM `gigs` ORDER BY ASC date LIMIT 6
-Rendered home/index.html.erb within layouts/application (1.5ms)
-Completed   in 17ms
-
-ActionView::Template::Error (Mysql::Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ASC date LIMIT 6' at line 1: SELECT  `gigs`.* FROM `gigs` ORDER BY ASC date LIMIT 6):
-    7: <%= link_to 'soundcloud', "http://www.soundcloud.com/djpaulsutcliffe" %>
-    8: 
-    9: 
-    10: <%= @gigs.each do |gig| %>
-    11: 	<%= link_to gig.name, gig.link_html %>
-    12: 	<%= gig.place %>
-    13: 	<%= gig.date %>
-  app/views/home/index.html.erb:10:in `_app_views_home_index_html_erb___2037307054_2180576100_0'
-
-Rendered /Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
-  [1m[35mGig Load (0.2ms)[0m  SELECT `gigs`.* FROM `gigs` ORDER BY ASC date LIMIT 6
-Mysql::Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ASC date LIMIT 6' at line 1: SELECT  `gigs`.* FROM `gigs` ORDER BY ASC date LIMIT 6
-  [1m[36mGig Load (0.1ms)[0m  [1mSELECT `gigs`.* FROM `gigs` ORDER BY ASC date LIMIT 6[0m
-Mysql::Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ASC date LIMIT 6' at line 1: SELECT  `gigs`.* FROM `gigs` ORDER BY ASC date LIMIT 6
-Rendered /Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.7ms)
-Rendered /Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.7ms)
-
-
-Started GET "/favicon.ico" for 127.0.0.1 at Wed Jun 06 15:55:17 -0500 2012
-
-ActionController::RoutingError (No route matches "/favicon.ico"):
-  
-
-Rendered /Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
-
-
-Started GET "/" for 127.0.0.1 at Wed Jun 06 15:55:27 -0500 2012
-  Processing by HomeController#index as HTML
-  [1m[35mGig Load (0.3ms)[0m  SELECT `gigs`.* FROM `gigs` ORDER BY date LIMIT 6
-Rendered home/index.html.erb within layouts/application (6.7ms)
-Completed 200 OK in 22ms (Views: 14.5ms | ActiveRecord: 0.9ms)
-
-
-Started GET "/favicon.ico" for 127.0.0.1 at Wed Jun 06 15:55:27 -0500 2012
-
-ActionController::RoutingError (No route matches "/favicon.ico"):
-  
-
-Rendered /Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
-
-
-Started GET "/" for 127.0.0.1 at Wed Jun 06 15:55:48 -0500 2012
-  Processing by HomeController#index as HTML
-  [1m[36mGig Load (0.3ms)[0m  [1mSELECT `gigs`.* FROM `gigs` ORDER BY date LIMIT 6[0m
-Rendered home/index.html.erb within layouts/application (6.4ms)
-Completed 200 OK in 22ms (Views: 14.5ms | ActiveRecord: 0.3ms)
-
-
-Started GET "/favicon.ico" for 127.0.0.1 at Wed Jun 06 15:55:48 -0500 2012
-
-ActionController::RoutingError (No route matches "/favicon.ico"):
-  
-
-Rendered /Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
-
-
-Started GET "/" for 127.0.0.1 at Wed Jun 06 16:02:01 -0500 2012
-  Processing by HomeController#index as HTML
-  [1m[35mGig Load (0.3ms)[0m  SELECT `gigs`.* FROM `gigs` ORDER BY date LIMIT 6
-Rendered home/index.html.erb within layouts/application (6.7ms)
-Completed 200 OK in 21ms (Views: 14.1ms | ActiveRecord: 0.3ms)
-
-
-Started GET "/favicon.ico" for 127.0.0.1 at Wed Jun 06 16:02:01 -0500 2012
-
-ActionController::RoutingError (No route matches "/favicon.ico"):
-  
-
-Rendered /Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
-
-
-Started GET "/" for 127.0.0.1 at Wed Jun 06 16:02:17 -0500 2012
-  Processing by HomeController#index as HTML
-  [1m[36mGig Load (0.3ms)[0m  [1mSELECT `gigs`.* FROM `gigs` ORDER BY date LIMIT 6[0m
-Rendered home/index.html.erb within layouts/application (6.4ms)
-Completed 200 OK in 22ms (Views: 14.4ms | ActiveRecord: 0.3ms)
-
-
-Started GET "/favicon.ico" for 127.0.0.1 at Wed Jun 06 16:02:17 -0500 2012
-
-ActionController::RoutingError (No route matches "/favicon.ico"):
-  
-
-Rendered /Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
-
-
-Started GET "/" for 127.0.0.1 at Wed Jun 06 16:06:43 -0500 2012
-  Processing by HomeController#index as HTML
-  [1m[35mGig Load (0.3ms)[0m  SELECT `gigs`.* FROM `gigs` ORDER BY date LIMIT 6
-Rendered home/index.html.erb within layouts/application (6.2ms)
-Completed 200 OK in 21ms (Views: 14.2ms | ActiveRecord: 0.3ms)
-
-
-Started GET "/favicon.ico" for 127.0.0.1 at Wed Jun 06 16:06:43 -0500 2012
-
-ActionController::RoutingError (No route matches "/favicon.ico"):
-  
-
-Rendered /Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
-
-
-Started GET "/gigs" for 127.0.0.1 at Wed Jun 06 16:07:21 -0500 2012
+Started GET "/gigs" for 127.0.0.1 at Sat Jun 09 03:12:25 -0500 2012
   Processing by GigsController#index as HTML
   [1m[36mGig Load (0.4ms)[0m  [1mSELECT `gigs`.* FROM `gigs`[0m
-Rendered gigs/index.html.erb within layouts/application (8.2ms)
-Completed 200 OK in 82ms (Views: 20.5ms | ActiveRecord: 0.4ms)
+Rendered gigs/index.html.erb within layouts/application (55.1ms)
+Completed 200 OK in 68ms (Views: 66.0ms | ActiveRecord: 0.4ms)
 
 
-Started GET "/favicon.ico" for 127.0.0.1 at Wed Jun 06 16:07:21 -0500 2012
-
-ActionController::RoutingError (No route matches "/favicon.ico"):
-  
-
-Rendered /Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
-
-
-Started GET "/gigs/1/edit" for 127.0.0.1 at Wed Jun 06 16:07:24 -0500 2012
-  Processing by GigsController#edit as HTML
-  Parameters: {"id"=>"1"}
-  [1m[35mGig Load (0.5ms)[0m  SELECT `gigs`.* FROM `gigs` WHERE (`gigs`.`id` = 1) LIMIT 1
-Rendered gigs/_form.html.erb (9.1ms)
-Rendered gigs/edit.html.erb within layouts/application (12.3ms)
-Completed 200 OK in 37ms (Views: 32.3ms | ActiveRecord: 0.5ms)
+Started GET "/gigs/new" for 127.0.0.1 at Sat Jun 09 03:12:39 -0500 2012
+  Processing by GigsController#new as HTML
+Rendered gigs/_form.html.erb (6.6ms)
+Rendered gigs/new.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 68ms (Views: 21.7ms | ActiveRecord: 0.0ms)
 
 
-Started GET "/favicon.ico" for 127.0.0.1 at Wed Jun 06 16:07:24 -0500 2012
-
-ActionController::RoutingError (No route matches "/favicon.ico"):
-  
-
-Rendered /Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
-
-
-Started POST "/gigs/1" for 127.0.0.1 at Wed Jun 06 16:07:32 -0500 2012
-  Processing by GigsController#update as HTML
-  Parameters: {"commit"=>"Update Gig", "authenticity_token"=>"sAi3gH5Ju6m/EJTLCHEvz6bDF8slOKeGFJjKGzcMeNc=", "utf8"=>"✓", "gig"=>{"name"=>"Bizarro", "date(1i)"=>"2012", "date(2i)"=>"6", "date(3i)"=>"23", "link"=>"http://www.facebook.com/djpaulsutcliffe", "place"=>"Miraflores, Lima."}, "id"=>"1"}
-  [1m[36mGig Load (0.2ms)[0m  [1mSELECT `gigs`.* FROM `gigs` WHERE (`gigs`.`id` = 1) LIMIT 1[0m
+Started POST "/gigs" for 127.0.0.1 at Sat Jun 09 03:12:50 -0500 2012
+  Processing by GigsController#create as HTML
+  Parameters: {"commit"=>"Create Gig", "authenticity_token"=>"IRNQ1VnCU8GrNUhqAUdc8gIMNrp37q6pDQHb1XFrc1Q=", "utf8"=>"✓", "gig"=>{"name"=>"D-Edge", "link"=>"", "place"=>"Sao Paulo, Brasil. "}}
   [1m[35mSQL (0.1ms)[0m  BEGIN
-  [1m[36mAREL (0.3ms)[0m  [1mUPDATE `gigs` SET `link` = 'http://www.facebook.com/djpaulsutcliffe', `updated_at` = '2012-06-06 21:07:32' WHERE (`gigs`.`id` = 1)[0m
-  [1m[35mSQL (0.4ms)[0m  COMMIT
-Redirected to http://localhost:3000/gigs/1
-Completed 302 Found in 28ms
+  [1m[36mSQL (4.0ms)[0m  [1mdescribe `gigs`[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO `gigs` (`image_updated_at`, `link`, `place`, `updated_at`, `date`, `image_file_size`, `image_file_name`, `image_content_type`, `created_at`, `name`) VALUES (NULL, '', 'Sao Paulo, Brasil. ', '2012-06-09 08:12:50', NULL, NULL, NULL, NULL, '2012-06-09 08:12:50', 'D-Edge')
+  [1m[36mSQL (0.8ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/gigs/3
+Completed 302 Found in 36ms
 
 
-Started GET "/gigs/1" for 127.0.0.1 at Wed Jun 06 16:07:32 -0500 2012
+Started GET "/gigs/3" for 127.0.0.1 at Sat Jun 09 03:12:50 -0500 2012
   Processing by GigsController#show as HTML
-  Parameters: {"id"=>"1"}
-  [1m[36mGig Load (0.2ms)[0m  [1mSELECT `gigs`.* FROM `gigs` WHERE (`gigs`.`id` = 1) LIMIT 1[0m
-Rendered gigs/show.html.erb within layouts/application (6.3ms)
-Completed 200 OK in 23ms (Views: 19.2ms | ActiveRecord: 0.2ms)
+  Parameters: {"id"=>"3"}
+  [1m[35mGig Load (0.2ms)[0m  SELECT `gigs`.* FROM `gigs` WHERE (`gigs`.`id` = 3) LIMIT 1
+Rendered gigs/show.html.erb within layouts/application (12.8ms)
+Completed 200 OK in 31ms (Views: 24.3ms | ActiveRecord: 0.2ms)
 
 
-Started GET "/favicon.ico" for 127.0.0.1 at Wed Jun 06 16:07:33 -0500 2012
-
-ActionController::RoutingError (No route matches "/favicon.ico"):
-  
-
-Rendered /Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
-
-
-Started GET "/gigs" for 127.0.0.1 at Wed Jun 06 16:07:34 -0500 2012
+Started GET "/gigs" for 127.0.0.1 at Sat Jun 09 03:12:56 -0500 2012
   Processing by GigsController#index as HTML
+  [1m[36mGig Load (0.4ms)[0m  [1mSELECT `gigs`.* FROM `gigs`[0m
+Rendered gigs/index.html.erb within layouts/application (54.6ms)
+Completed 200 OK in 67ms (Views: 65.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/gigs/new" for 127.0.0.1 at Sat Jun 09 03:13:08 -0500 2012
+  Processing by GigsController#new as HTML
+Rendered gigs/_form.html.erb (6.8ms)
+Rendered gigs/new.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 61ms (Views: 22.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/gigs" for 127.0.0.1 at Sat Jun 09 03:13:18 -0500 2012
+  Processing by GigsController#create as HTML
+  Parameters: {"commit"=>"Create Gig", "authenticity_token"=>"IRNQ1VnCU8GrNUhqAUdc8gIMNrp37q6pDQHb1XFrc1Q=", "utf8"=>"✓", "gig"=>{"name"=>"Aura", "link"=>"", "place"=>"Miraflores, Lima. "}}
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (6.5ms)[0m  [1mdescribe `gigs`[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO `gigs` (`image_file_size`, `image_file_name`, `image_updated_at`, `link`, `date`, `image_content_type`, `place`, `updated_at`, `created_at`, `name`) VALUES (NULL, NULL, NULL, '', NULL, NULL, 'Miraflores, Lima. ', '2012-06-09 08:13:18', '2012-06-09 08:13:18', 'Aura')
+  [1m[36mSQL (0.7ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/gigs/4
+Completed 302 Found in 42ms
+
+
+Started GET "/gigs/4" for 127.0.0.1 at Sat Jun 09 03:13:18 -0500 2012
+  Processing by GigsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mGig Load (0.3ms)[0m  SELECT `gigs`.* FROM `gigs` WHERE (`gigs`.`id` = 4) LIMIT 1
+Rendered gigs/show.html.erb within layouts/application (16.3ms)
+Completed 200 OK in 34ms (Views: 27.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/gigs" for 127.0.0.1 at Sat Jun 09 03:13:22 -0500 2012
+  Processing by GigsController#index as HTML
+  [1m[36mGig Load (0.5ms)[0m  [1mSELECT `gigs`.* FROM `gigs`[0m
+Rendered gigs/index.html.erb within layouts/application (112.7ms)
+Completed 200 OK in 125ms (Views: 123.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/gigs/new" for 127.0.0.1 at Sat Jun 09 03:13:25 -0500 2012
+  Processing by GigsController#new as HTML
+Rendered gigs/_form.html.erb (6.8ms)
+Rendered gigs/new.html.erb within layouts/application (11.1ms)
+Completed 200 OK in 70ms (Views: 23.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/gigs" for 127.0.0.1 at Sat Jun 09 03:13:43 -0500 2012
+  Processing by GigsController#create as HTML
+  Parameters: {"commit"=>"Create Gig", "authenticity_token"=>"IRNQ1VnCU8GrNUhqAUdc8gIMNrp37q6pDQHb1XFrc1Q=", "utf8"=>"✓", "gig"=>{"name"=>"Fiesta Proyecto X", "link"=>"", "place"=>"La Molina, Lima. "}}
+  [1m[35mSQL (0.2ms)[0m  BEGIN
+  [1m[36mSQL (3.9ms)[0m  [1mdescribe `gigs`[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO `gigs` (`place`, `image_content_type`, `link`, `created_at`, `updated_at`, `image_updated_at`, `image_file_name`, `name`, `date`, `image_file_size`) VALUES ('La Molina, Lima. ', NULL, '', '2012-06-09 08:13:43', '2012-06-09 08:13:43', NULL, NULL, 'Fiesta Proyecto X', NULL, NULL)
+  [1m[36mSQL (1.2ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/gigs/5
+Completed 302 Found in 37ms
+
+
+Started GET "/gigs/5" for 127.0.0.1 at Sat Jun 09 03:13:43 -0500 2012
+  Processing by GigsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mGig Load (0.2ms)[0m  SELECT `gigs`.* FROM `gigs` WHERE (`gigs`.`id` = 5) LIMIT 1
+Rendered gigs/show.html.erb within layouts/application (12.5ms)
+Completed 200 OK in 31ms (Views: 24.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jun 09 03:13:48 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[36mSlide Load (0.5ms)[0m  [1mSELECT `slides`.* FROM `slides`[0m
+  [1m[35mGig Load (0.4ms)[0m  SELECT `gigs`.* FROM `gigs`
+Rendered home/index.html.erb within layouts/application (60.6ms)
+Completed 200 OK in 77ms (Views: 67.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jun 09 03:14:26 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[36mSlide Load (0.4ms)[0m  [1mSELECT `slides`.* FROM `slides`[0m
+  [1m[35mGig Load (0.4ms)[0m  SELECT `gigs`.* FROM `gigs`
+Rendered home/index.html.erb within layouts/application (54.6ms)
+Completed 200 OK in 122ms (Views: 112.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jun 09 03:15:37 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[36mSlide Load (0.4ms)[0m  [1mSELECT `slides`.* FROM `slides`[0m
   [1m[35mGig Load (0.3ms)[0m  SELECT `gigs`.* FROM `gigs`
-Rendered gigs/index.html.erb within layouts/application (7.7ms)
-Completed 200 OK in 22ms (Views: 20.7ms | ActiveRecord: 0.3ms)
+Rendered home/index.html.erb within layouts/application (58.1ms)
+Completed 200 OK in 77ms (Views: 65.7ms | ActiveRecord: 0.7ms)
 
 
-Started GET "/favicon.ico" for 127.0.0.1 at Wed Jun 06 16:07:34 -0500 2012
-
-ActionController::RoutingError (No route matches "/favicon.ico"):
-  
-
-Rendered /Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
-
-
-Started GET "/" for 127.0.0.1 at Wed Jun 06 16:07:37 -0500 2012
+Started GET "/" for 127.0.0.1 at Sat Jun 09 03:19:28 -0500 2012
   Processing by HomeController#index as HTML
-  [1m[36mGig Load (0.3ms)[0m  [1mSELECT `gigs`.* FROM `gigs` ORDER BY date LIMIT 6[0m
-Rendered home/index.html.erb within layouts/application (6.3ms)
-Completed 200 OK in 21ms (Views: 14.1ms | ActiveRecord: 0.3ms)
+  [1m[36mSlide Load (0.5ms)[0m  [1mSELECT `slides`.* FROM `slides`[0m
+  [1m[35mGig Load (0.3ms)[0m  SELECT `gigs`.* FROM `gigs`
+Rendered home/index.html.erb within layouts/application (55.0ms)
+Completed 200 OK in 73ms (Views: 62.0ms | ActiveRecord: 0.8ms)
 
 
-Started GET "/favicon.ico" for 127.0.0.1 at Wed Jun 06 16:07:37 -0500 2012
+Started GET "/adapt/1200.css" for 127.0.0.1 at Sat Jun 09 03:19:29 -0500 2012
 
-ActionController::RoutingError (No route matches "/favicon.ico"):
+ActionController::RoutingError (No route matches "/adapt/1200.css"):
   
 
-Rendered /Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+Rendered /Users/ricardocastaneda/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
 
 
-Started GET "/metas" for 127.0.0.1 at Wed Jun 06 16:10:54 -0500 2012
-  Processing by MetasController#index as HTML
-  [1m[35mMeta Load (0.3ms)[0m  SELECT `metas`.* FROM `metas`
-Rendered metas/index.html.erb within layouts/application (2.9ms)
-Completed 200 OK in 30ms (Views: 28.7ms | ActiveRecord: 0.3ms)
-
-
-Started GET "/favicon.ico" for 127.0.0.1 at Wed Jun 06 16:10:54 -0500 2012
-
-ActionController::RoutingError (No route matches "/favicon.ico"):
-  
-
-Rendered /Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
-
-
-Started GET "/metas/new" for 127.0.0.1 at Wed Jun 06 16:10:58 -0500 2012
-  Processing by MetasController#new as HTML
-Rendered metas/_form.html.erb (5.6ms)
-Rendered metas/new.html.erb within layouts/application (9.7ms)
-Completed 200 OK in 49ms (Views: 45.3ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/favicon.ico" for 127.0.0.1 at Wed Jun 06 16:10:58 -0500 2012
-
-ActionController::RoutingError (No route matches "/favicon.ico"):
-  
-
-Rendered /Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
-
-
-Started GET "/" for 127.0.0.1 at Wed Jun 06 18:46:48 -0500 2012
+Started GET "/" for 127.0.0.1 at Sat Jun 09 03:21:26 -0500 2012
   Processing by HomeController#index as HTML
-  [1m[36mGig Load (0.3ms)[0m  [1mSELECT `gigs`.* FROM `gigs` ORDER BY date LIMIT 6[0m
-Rendered home/index.html.erb within layouts/application (6.2ms)
-Completed 200 OK in 20ms (Views: 13.8ms | ActiveRecord: 0.3ms)
+  [1m[36mSlide Load (0.3ms)[0m  [1mSELECT `slides`.* FROM `slides`[0m
+  [1m[35mGig Load (0.4ms)[0m  SELECT `gigs`.* FROM `gigs`
+Rendered home/index.html.erb within layouts/application (61.1ms)
+Completed 200 OK in 78ms (Views: 68.0ms | ActiveRecord: 0.7ms)
 
 
-Started GET "/favicon.ico" for 127.0.0.1 at Wed Jun 06 18:46:48 -0500 2012
+Started GET "/" for 127.0.0.1 at Sat Jun 09 03:23:26 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[36mSlide Load (0.6ms)[0m  [1mSELECT `slides`.* FROM `slides`[0m
+  [1m[35mGig Load (0.4ms)[0m  SELECT `gigs`.* FROM `gigs`
+Rendered home/index.html.erb within layouts/application (57.5ms)
+Completed 200 OK in 74ms (Views: 64.5ms | ActiveRecord: 0.9ms)
 
-ActionController::RoutingError (No route matches "/favicon.ico"):
-  
 
-Rendered /Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
-  [1m[36mSQL (0.3ms)[0m  [1mSHOW TABLES[0m
-  [1m[35mSQL (0.2ms)[0m  SHOW TABLES
-  [1m[36mSQL (0.2ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
+Started GET "/" for 127.0.0.1 at Sat Jun 09 16:44:08 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[36mSlide Load (31.9ms)[0m  [1mSELECT `slides`.* FROM `slides`[0m
+  [1m[35mGig Load (19.7ms)[0m  SELECT `gigs`.* FROM `gigs`
+Rendered home/index.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 122ms (Views: 44.1ms | ActiveRecord: 51.6ms)
+
+
+Started GET "/scwidgets" for 127.0.0.1 at Sat Jun 09 16:46:52 -0500 2012
+  Processing by ScwidgetsController#index as HTML
+  [1m[36mScwidget Load (22.7ms)[0m  [1mSELECT `scwidgets`.* FROM `scwidgets`[0m
+Rendered scwidgets/index.html.erb within layouts/application (27.9ms)
+Completed 200 OK in 41ms (Views: 17.7ms | ActiveRecord: 22.7ms)
+
+
+Started GET "/scwidgets" for 127.0.0.1 at Sat Jun 09 16:55:52 -0500 2012
+  Processing by ScwidgetsController#index as HTML
+  [1m[36mScwidget Load (0.6ms)[0m  [1mSELECT `scwidgets`.* FROM `scwidgets`[0m
+Rendered scwidgets/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 20ms (Views: 18.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/scwidgets/new" for 127.0.0.1 at Sat Jun 09 16:55:58 -0500 2012
+  Processing by ScwidgetsController#new as HTML
+Rendered scwidgets/_form.html.erb (71.1ms)
+Rendered scwidgets/new.html.erb within layouts/application (76.3ms)
+Completed 200 OK in 102ms (Views: 99.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/scwidgets" for 127.0.0.1 at Sat Jun 09 16:56:40 -0500 2012
+  Processing by ScwidgetsController#create as HTML
+  Parameters: {"scwidget"=>{"reference"=>"http://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F48984291&amp;auto_play=false&amp;show_artwork=true&amp;color=ff7700"}, "commit"=>"Create Scwidget", "authenticity_token"=>"xr9gvp0wtAct7VRBs1X809W+QEY6NUnqyHALj2FQMw4=", "utf8"=>"✓"}
+  [1m[35mSQL (0.2ms)[0m  BEGIN
+  [1m[36mSQL (27.4ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (4.0ms)[0m  describe `scwidgets`
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO `scwidgets` (`updated_at`, `reference`, `created_at`) VALUES ('2012-06-09 21:56:40', 'http://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F48984291&amp;auto_play=false&amp;show_artwork=true&amp;color=ff7700', '2012-06-09 21:56:40')[0m
+  [1m[35mSQL (1.3ms)[0m  COMMIT
+Redirected to http://localhost:3000/scwidgets/1
+Completed 302 Found in 78ms
+
+
+Started GET "/scwidgets/1" for 127.0.0.1 at Sat Jun 09 16:56:40 -0500 2012
+  Processing by ScwidgetsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mScwidget Load (0.4ms)[0m  [1mSELECT `scwidgets`.* FROM `scwidgets` WHERE (`scwidgets`.`id` = 1) LIMIT 1[0m
+Rendered scwidgets/show.html.erb within layouts/application (63.3ms)
+Completed 200 OK in 101ms (Views: 95.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jun 09 16:57:10 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[35mSlide Load (0.6ms)[0m  SELECT `slides`.* FROM `slides`
+  [1m[36mGig Load (0.5ms)[0m  [1mSELECT `gigs`.* FROM `gigs`[0m
+  [1m[35mScwidget Load (0.4ms)[0m  SELECT `scwidgets`.* FROM `scwidgets`
+Rendered home/index.html.erb within layouts/application (24.4ms)
+Completed 200 OK in 92ms (Views: 35.5ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jun 09 16:57:34 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[36mSlide Load (0.4ms)[0m  [1mSELECT `slides`.* FROM `slides`[0m
+  [1m[35mGig Load (0.3ms)[0m  SELECT `gigs`.* FROM `gigs`
+  [1m[36mScwidget Load (0.3ms)[0m  [1mSELECT `scwidgets`.* FROM `scwidgets`[0m
+Rendered home/index.html.erb within layouts/application (10.3ms)
+Completed   in 71ms
+
+ActionView::Template::Error (undefined method `soundcloud' for #<AutoHtml::Builder:0x10345be98>):
+    52:       <h2 class="title">Music</h2>
+    53:       <% @scwidgets.each do |scwidget| %>
+    54:   
+    55:     <%= scwidget.reference_html %>
+    56: 	  <% end %>
+    57:     </div>
+    58:   </section>
+  app/models/scwidget.rb:4
+  app/views/home/index.html.erb:55:in `_app_views_home_index_html_erb__210583899_2175296140_0'
+  app/views/home/index.html.erb:53:in `each'
+  app/views/home/index.html.erb:53:in `_app_views_home_index_html_erb__210583899_2175296140_0'
+
+Rendered /Users/ricardocastaneda/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Users/ricardocastaneda/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (69.3ms)
+Rendered /Users/ricardocastaneda/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (90.5ms)
+
+
+Started GET "/scwidgets" for 127.0.0.1 at Sat Jun 09 17:00:33 -0500 2012
+  Processing by ScwidgetsController#index as HTML
+  [1m[35mScwidget Load (0.3ms)[0m  SELECT `scwidgets`.* FROM `scwidgets`
+Rendered scwidgets/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 23ms (Views: 21.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/scwidgets" for 127.0.0.1 at Sat Jun 09 17:00:50 -0500 2012
+  Processing by ScwidgetsController#index as HTML
+  [1m[36mScwidget Load (0.3ms)[0m  [1mSELECT `scwidgets`.* FROM `scwidgets`[0m
+Rendered scwidgets/index.html.erb within layouts/application (13.0ms)
+Completed   in 34ms
+
+ActionView::Template::Error (undefined local variable or method `scwidget_html' for #<#<Class:0x10384dbc8>:0x10384a590>):
+    11: <% @scwidgets.each do |scwidget| %>
+    12:   <tr>
+    13:     <td><%= scwidget.reference %></td>
+    14:     <td><%= link_to 'Show', scwidget_html %></td>
+    15:     <td><%= link_to 'Edit', edit_scwidget_path(scwidget) %></td>
+    16:     <td><%= link_to 'Destroy', scwidget, :confirm => 'Are you sure?', :method => :delete %></td>
+    17:   </tr>
+  app/views/scwidgets/index.html.erb:14:in `_app_views_scwidgets_index_html_erb___2134983132_2176984060_0'
+  app/views/scwidgets/index.html.erb:11:in `_app_views_scwidgets_index_html_erb___2134983132_2176984060_0'
+
+Rendered /Users/ricardocastaneda/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Users/ricardocastaneda/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.3ms)
+Rendered /Users/ricardocastaneda/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (16.4ms)
+
+
+Started GET "/scwidgets" for 127.0.0.1 at Sat Jun 09 17:00:58 -0500 2012
+  Processing by ScwidgetsController#index as HTML
+  [1m[35mScwidget Load (0.3ms)[0m  SELECT `scwidgets`.* FROM `scwidgets`
+Rendered scwidgets/index.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 23ms (Views: 21.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/scwidgets/1/edit" for 127.0.0.1 at Sat Jun 09 17:01:54 -0500 2012
+  Processing by ScwidgetsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSQL (0.5ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mScwidget Load (0.3ms)[0m  SELECT `scwidgets`.* FROM `scwidgets` WHERE (`scwidgets`.`id` = 1) LIMIT 1
+Rendered scwidgets/_form.html.erb (7.9ms)
+Rendered scwidgets/edit.html.erb within layouts/application (13.2ms)
+Completed 200 OK in 38ms (Views: 29.6ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/scwidgets/1" for 127.0.0.1 at Sat Jun 09 17:02:00 -0500 2012
+  Processing by ScwidgetsController#update as HTML
+  Parameters: {"scwidget"=>{"reference"=>"http://youtu.be/HvBw2taIb3I"}, "commit"=>"Update Scwidget", "authenticity_token"=>"xr9gvp0wtAct7VRBs1X809W+QEY6NUnqyHALj2FQMw4=", "utf8"=>"✓", "id"=>"1"}
+  [1m[36mScwidget Load (0.3ms)[0m  [1mSELECT `scwidgets`.* FROM `scwidgets` WHERE (`scwidgets`.`id` = 1) LIMIT 1[0m
   [1m[35mSQL (0.1ms)[0m  BEGIN
-  [1m[36mSQL (1.5ms)[0m  [1mdescribe `metas`[0m
-  [1m[35mAREL (0.2ms)[0m  INSERT INTO `metas` (`keywords`, `updated_at`, `description`, `created_at`) VALUES ('Deep House Music, Funk, Clubs', '2012-06-06 23:55:31', 'Dj Paul Sutcliffe, 8 years making the crowd jump all night.', '2012-06-06 23:55:31')
-  [1m[36mSQL (0.4ms)[0m  [1mCOMMIT[0m
-  [1m[35mSQL (0.1ms)[0m  BEGIN
-  [1m[36mSQL (2.0ms)[0m  [1mdescribe `gigs`[0m
-  [1m[35mAREL (0.2ms)[0m  INSERT INTO `gigs` (`image_file_size`, `date`, `place`, `image_content_type`, `image_updated_at`, `link`, `updated_at`, `image_file_name`, `created_at`, `name`) VALUES (NULL, '2012-06-30', 'Miraflores, Lima.', NULL, NULL, 'http://www.facebook.com/djpaulsutcliffe', '2012-06-06 23:55:31', NULL, '2012-06-06 23:55:31', 'Bizarro, #{i}')
-  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO `gigs` (`image_file_size`, `date`, `place`, `image_content_type`, `image_updated_at`, `link`, `updated_at`, `image_file_name`, `created_at`, `name`) VALUES (NULL, '2012-06-30', 'Miraflores, Lima.', NULL, NULL, 'http://www.facebook.com/djpaulsutcliffe', '2012-06-06 23:55:31', NULL, '2012-06-06 23:55:31', 'Bizarro, #{i}')[0m
-  [1m[35mAREL (0.1ms)[0m  INSERT INTO `gigs` (`image_file_size`, `date`, `place`, `image_content_type`, `image_updated_at`, `link`, `updated_at`, `image_file_name`, `created_at`, `name`) VALUES (NULL, '2012-06-30', 'Miraflores, Lima.', NULL, NULL, 'http://www.facebook.com/djpaulsutcliffe', '2012-06-06 23:55:31', NULL, '2012-06-06 23:55:31', 'Bizarro, #{i}')
-  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO `gigs` (`image_file_size`, `date`, `place`, `image_content_type`, `image_updated_at`, `link`, `updated_at`, `image_file_name`, `created_at`, `name`) VALUES (NULL, '2012-06-30', 'Miraflores, Lima.', NULL, NULL, 'http://www.facebook.com/djpaulsutcliffe', '2012-06-06 23:55:31', NULL, '2012-06-06 23:55:31', 'Bizarro, #{i}')[0m
-  [1m[35mAREL (0.1ms)[0m  INSERT INTO `gigs` (`image_file_size`, `date`, `place`, `image_content_type`, `image_updated_at`, `link`, `updated_at`, `image_file_name`, `created_at`, `name`) VALUES (NULL, '2012-06-30', 'Miraflores, Lima.', NULL, NULL, 'http://www.facebook.com/djpaulsutcliffe', '2012-06-06 23:55:31', NULL, '2012-06-06 23:55:31', 'Bizarro, #{i}')
-  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO `gigs` (`image_file_size`, `date`, `place`, `image_content_type`, `image_updated_at`, `link`, `updated_at`, `image_file_name`, `created_at`, `name`) VALUES (NULL, '2012-06-30', 'Miraflores, Lima.', NULL, NULL, 'http://www.facebook.com/djpaulsutcliffe', '2012-06-06 23:55:31', NULL, '2012-06-06 23:55:31', 'Bizarro, #{i}')[0m
-  [1m[35mAREL (0.1ms)[0m  INSERT INTO `gigs` (`image_file_size`, `date`, `place`, `image_content_type`, `image_updated_at`, `link`, `updated_at`, `image_file_name`, `created_at`, `name`) VALUES (NULL, '2012-06-30', 'Miraflores, Lima.', NULL, NULL, 'http://www.facebook.com/djpaulsutcliffe', '2012-06-06 23:55:31', NULL, '2012-06-06 23:55:31', 'Bizarro, #{i}')
-  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO `gigs` (`image_file_size`, `date`, `place`, `image_content_type`, `image_updated_at`, `link`, `updated_at`, `image_file_name`, `created_at`, `name`) VALUES (NULL, '2012-06-30', 'Miraflores, Lima.', NULL, NULL, 'http://www.facebook.com/djpaulsutcliffe', '2012-06-06 23:55:31', NULL, '2012-06-06 23:55:31', 'Bizarro, #{i}')[0m
-  [1m[35mAREL (0.1ms)[0m  INSERT INTO `gigs` (`image_file_size`, `date`, `place`, `image_content_type`, `image_updated_at`, `link`, `updated_at`, `image_file_name`, `created_at`, `name`) VALUES (NULL, '2012-06-30', 'Miraflores, Lima.', NULL, NULL, 'http://www.facebook.com/djpaulsutcliffe', '2012-06-06 23:55:31', NULL, '2012-06-06 23:55:31', 'Bizarro, #{i}')
-  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO `gigs` (`image_file_size`, `date`, `place`, `image_content_type`, `image_updated_at`, `link`, `updated_at`, `image_file_name`, `created_at`, `name`) VALUES (NULL, '2012-06-30', 'Miraflores, Lima.', NULL, NULL, 'http://www.facebook.com/djpaulsutcliffe', '2012-06-06 23:55:31', NULL, '2012-06-06 23:55:31', 'Bizarro, #{i}')[0m
-  [1m[35mAREL (0.1ms)[0m  INSERT INTO `gigs` (`image_file_size`, `date`, `place`, `image_content_type`, `image_updated_at`, `link`, `updated_at`, `image_file_name`, `created_at`, `name`) VALUES (NULL, '2012-06-30', 'Miraflores, Lima.', NULL, NULL, 'http://www.facebook.com/djpaulsutcliffe', '2012-06-06 23:55:31', NULL, '2012-06-06 23:55:31', 'Bizarro, #{i}')
-  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO `gigs` (`image_file_size`, `date`, `place`, `image_content_type`, `image_updated_at`, `link`, `updated_at`, `image_file_name`, `created_at`, `name`) VALUES (NULL, '2012-06-30', 'Miraflores, Lima.', NULL, NULL, 'http://www.facebook.com/djpaulsutcliffe', '2012-06-06 23:55:31', NULL, '2012-06-06 23:55:31', 'Bizarro, #{i}')[0m
-  [1m[35mAREL (0.1ms)[0m  INSERT INTO `gigs` (`image_file_size`, `date`, `place`, `image_content_type`, `image_updated_at`, `link`, `updated_at`, `image_file_name`, `created_at`, `name`) VALUES (NULL, '2012-06-30', 'Miraflores, Lima.', NULL, NULL, 'http://www.facebook.com/djpaulsutcliffe', '2012-06-06 23:55:31', NULL, '2012-06-06 23:55:31', 'Bizarro, #{i}')
-  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO `gigs` (`image_file_size`, `date`, `place`, `image_content_type`, `image_updated_at`, `link`, `updated_at`, `image_file_name`, `created_at`, `name`) VALUES (NULL, '2012-06-30', 'Miraflores, Lima.', NULL, NULL, 'http://www.facebook.com/djpaulsutcliffe', '2012-06-06 23:55:31', NULL, '2012-06-06 23:55:31', 'Bizarro, #{i}')[0m
-  [1m[35mAREL (0.1ms)[0m  INSERT INTO `gigs` (`image_file_size`, `date`, `place`, `image_content_type`, `image_updated_at`, `link`, `updated_at`, `image_file_name`, `created_at`, `name`) VALUES (NULL, '2012-06-30', 'Miraflores, Lima.', NULL, NULL, 'http://www.facebook.com/djpaulsutcliffe', '2012-06-06 23:55:31', NULL, '2012-06-06 23:55:31', 'Bizarro, #{i}')
-  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO `gigs` (`image_file_size`, `date`, `place`, `image_content_type`, `image_updated_at`, `link`, `updated_at`, `image_file_name`, `created_at`, `name`) VALUES (NULL, '2012-06-30', 'Miraflores, Lima.', NULL, NULL, 'http://www.facebook.com/djpaulsutcliffe', '2012-06-06 23:55:31', NULL, '2012-06-06 23:55:31', 'Bizarro, #{i}')[0m
-  [1m[35mAREL (0.1ms)[0m  INSERT INTO `gigs` (`image_file_size`, `date`, `place`, `image_content_type`, `image_updated_at`, `link`, `updated_at`, `image_file_name`, `created_at`, `name`) VALUES (NULL, '2012-06-30', 'Miraflores, Lima.', NULL, NULL, 'http://www.facebook.com/djpaulsutcliffe', '2012-06-06 23:55:31', NULL, '2012-06-06 23:55:31', 'Bizarro, #{i}')
-  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO `gigs` (`image_file_size`, `date`, `place`, `image_content_type`, `image_updated_at`, `link`, `updated_at`, `image_file_name`, `created_at`, `name`) VALUES (NULL, '2012-06-30', 'Miraflores, Lima.', NULL, NULL, 'http://www.facebook.com/djpaulsutcliffe', '2012-06-06 23:55:31', NULL, '2012-06-06 23:55:31', 'Bizarro, #{i}')[0m
-  [1m[35mAREL (0.1ms)[0m  INSERT INTO `gigs` (`image_file_size`, `date`, `place`, `image_content_type`, `image_updated_at`, `link`, `updated_at`, `image_file_name`, `created_at`, `name`) VALUES (NULL, '2012-06-30', 'Miraflores, Lima.', NULL, NULL, 'http://www.facebook.com/djpaulsutcliffe', '2012-06-06 23:55:31', NULL, '2012-06-06 23:55:31', 'Bizarro, #{i}')
-  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO `gigs` (`image_file_size`, `date`, `place`, `image_content_type`, `image_updated_at`, `link`, `updated_at`, `image_file_name`, `created_at`, `name`) VALUES (NULL, '2012-06-30', 'Miraflores, Lima.', NULL, NULL, 'http://www.facebook.com/djpaulsutcliffe', '2012-06-06 23:55:31', NULL, '2012-06-06 23:55:31', 'Bizarro, #{i}')[0m
-  [1m[35mAREL (0.1ms)[0m  INSERT INTO `gigs` (`image_file_size`, `date`, `place`, `image_content_type`, `image_updated_at`, `link`, `updated_at`, `image_file_name`, `created_at`, `name`) VALUES (NULL, '2012-06-30', 'Miraflores, Lima.', NULL, NULL, 'http://www.facebook.com/djpaulsutcliffe', '2012-06-06 23:55:31', NULL, '2012-06-06 23:55:31', 'Bizarro, #{i}')
-  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO `gigs` (`image_file_size`, `date`, `place`, `image_content_type`, `image_updated_at`, `link`, `updated_at`, `image_file_name`, `created_at`, `name`) VALUES (NULL, '2012-06-30', 'Miraflores, Lima.', NULL, NULL, 'http://www.facebook.com/djpaulsutcliffe', '2012-06-06 23:55:31', NULL, '2012-06-06 23:55:31', 'Bizarro, #{i}')[0m
-  [1m[35mAREL (0.1ms)[0m  INSERT INTO `gigs` (`image_file_size`, `date`, `place`, `image_content_type`, `image_updated_at`, `link`, `updated_at`, `image_file_name`, `created_at`, `name`) VALUES (NULL, '2012-06-30', 'Miraflores, Lima.', NULL, NULL, 'http://www.facebook.com/djpaulsutcliffe', '2012-06-06 23:55:31', NULL, '2012-06-06 23:55:31', 'Bizarro, #{i}')
-  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO `gigs` (`image_file_size`, `date`, `place`, `image_content_type`, `image_updated_at`, `link`, `updated_at`, `image_file_name`, `created_at`, `name`) VALUES (NULL, '2012-06-30', 'Miraflores, Lima.', NULL, NULL, 'http://www.facebook.com/djpaulsutcliffe', '2012-06-06 23:55:31', NULL, '2012-06-06 23:55:31', 'Bizarro, #{i}')[0m
-  [1m[35mAREL (0.1ms)[0m  INSERT INTO `gigs` (`image_file_size`, `date`, `place`, `image_content_type`, `image_updated_at`, `link`, `updated_at`, `image_file_name`, `created_at`, `name`) VALUES (NULL, '2012-06-30', 'Miraflores, Lima.', NULL, NULL, 'http://www.facebook.com/djpaulsutcliffe', '2012-06-06 23:55:31', NULL, '2012-06-06 23:55:31', 'Bizarro, #{i}')
-  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO `gigs` (`image_file_size`, `date`, `place`, `image_content_type`, `image_updated_at`, `link`, `updated_at`, `image_file_name`, `created_at`, `name`) VALUES (NULL, '2012-06-30', 'Miraflores, Lima.', NULL, NULL, 'http://www.facebook.com/djpaulsutcliffe', '2012-06-06 23:55:31', NULL, '2012-06-06 23:55:31', 'Bizarro, #{i}')[0m
-  [1m[35mAREL (0.1ms)[0m  INSERT INTO `gigs` (`image_file_size`, `date`, `place`, `image_content_type`, `image_updated_at`, `link`, `updated_at`, `image_file_name`, `created_at`, `name`) VALUES (NULL, '2012-06-30', 'Miraflores, Lima.', NULL, NULL, 'http://www.facebook.com/djpaulsutcliffe', '2012-06-06 23:55:31', NULL, '2012-06-06 23:55:31', 'Bizarro, #{i}')
-  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO `gigs` (`image_file_size`, `date`, `place`, `image_content_type`, `image_updated_at`, `link`, `updated_at`, `image_file_name`, `created_at`, `name`) VALUES (NULL, '2012-06-30', 'Miraflores, Lima.', NULL, NULL, 'http://www.facebook.com/djpaulsutcliffe', '2012-06-06 23:55:31', NULL, '2012-06-06 23:55:31', 'Bizarro, #{i}')[0m
-  [1m[35mAREL (0.1ms)[0m  INSERT INTO `gigs` (`image_file_size`, `date`, `place`, `image_content_type`, `image_updated_at`, `link`, `updated_at`, `image_file_name`, `created_at`, `name`) VALUES (NULL, '2012-06-30', 'Miraflores, Lima.', NULL, NULL, 'http://www.facebook.com/djpaulsutcliffe', '2012-06-06 23:55:31', NULL, '2012-06-06 23:55:31', 'Bizarro, #{i}')
-  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO `gigs` (`image_file_size`, `date`, `place`, `image_content_type`, `image_updated_at`, `link`, `updated_at`, `image_file_name`, `created_at`, `name`) VALUES (NULL, '2012-06-30', 'Miraflores, Lima.', NULL, NULL, 'http://www.facebook.com/djpaulsutcliffe', '2012-06-06 23:55:31', NULL, '2012-06-06 23:55:31', 'Bizarro, #{i}')[0m
-  [1m[35mSQL (0.4ms)[0m  COMMIT
+  [1m[36mAREL (0.9ms)[0m  [1mUPDATE `scwidgets` SET `updated_at` = '2012-06-09 22:02:00', `reference` = 'http://youtu.be/HvBw2taIb3I' WHERE (`scwidgets`.`id` = 1)[0m
+  [1m[35mSQL (1.2ms)[0m  COMMIT
+Redirected to http://localhost:3000/scwidgets/1
+Completed 302 Found in 37ms
 
 
-Started GET "/" for 127.0.0.1 at Wed Jun 06 18:55:39 -0500 2012
+Started GET "/scwidgets/1" for 127.0.0.1 at Sat Jun 09 17:02:00 -0500 2012
+  Processing by ScwidgetsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mScwidget Load (0.3ms)[0m  [1mSELECT `scwidgets`.* FROM `scwidgets` WHERE (`scwidgets`.`id` = 1) LIMIT 1[0m
+Rendered scwidgets/show.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 26ms (Views: 18.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jun 09 17:02:04 -0500 2012
   Processing by HomeController#index as HTML
-  [1m[36mGig Load (0.4ms)[0m  [1mSELECT `gigs`.* FROM `gigs` ORDER BY date LIMIT 6[0m
-Rendered home/index.html.erb within layouts/application (9.3ms)
-Completed 200 OK in 26ms (Views: 17.6ms | ActiveRecord: 0.4ms)
+  [1m[35mSlide Load (0.3ms)[0m  SELECT `slides`.* FROM `slides`
+  [1m[36mGig Load (0.4ms)[0m  [1mSELECT `gigs`.* FROM `gigs`[0m
+  [1m[35mScwidget Load (0.3ms)[0m  SELECT `scwidgets`.* FROM `scwidgets`
+Rendered home/index.html.erb within layouts/application (23.6ms)
+Completed 200 OK in 94ms (Views: 33.6ms | ActiveRecord: 1.0ms)
 
 
-Started GET "/favicon.ico" for 127.0.0.1 at Wed Jun 06 18:55:39 -0500 2012
-
-ActionController::RoutingError (No route matches "/favicon.ico"):
-  
-
-Rendered /Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
-  [1m[36mSQL (0.2ms)[0m  [1mSHOW TABLES[0m
-  [1m[35mSQL (53.9ms)[0m  CREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB
-  [1m[36mSQL (0.5ms)[0m  [1mSHOW KEYS FROM `schema_migrations`[0m
-  [1m[35mSQL (183.5ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)
-  [1m[36mSQL (0.3ms)[0m  [1mSHOW TABLES[0m
-  [1m[35mSQL (0.2ms)[0m  SHOW TABLES
-  [1m[36mSQL (0.1ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
-Migrating to CreateMetas (20120602223759)
-  [1m[35mSQL (112.5ms)[0m  CREATE TABLE `metas` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `keywords` varchar(255), `description` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
-  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20120602223759')[0m
-Migrating to CreateGigs (20120602224023)
-  [1m[35mSQL (127.7ms)[0m  CREATE TABLE `gigs` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `place` varchar(255), `link` varchar(255), `date` date, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
-  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20120602224023')[0m
-Migrating to AddAttachmentImageToGig (20120602224051)
-  [1m[35mSQL (109.8ms)[0m  ALTER TABLE `gigs` ADD `image_file_name` varchar(255)
-  [1m[36mSQL (121.5ms)[0m  [1mALTER TABLE `gigs` ADD `image_content_type` varchar(255)[0m
-  [1m[35mSQL (99.9ms)[0m  ALTER TABLE `gigs` ADD `image_file_size` int(11)
-  [1m[36mSQL (100.4ms)[0m  [1mALTER TABLE `gigs` ADD `image_updated_at` datetime[0m
-  [1m[35mSQL (0.5ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20120602224051')
-Migrating to CreateScwidgets (20120602224256)
-  [1m[36mSQL (116.3ms)[0m  [1mCREATE TABLE `scwidgets` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `reference` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
-  [1m[35mSQL (0.6ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20120602224256')
-  [1m[36mSQL (0.4ms)[0m  [1mSHOW TABLES[0m
-  [1m[35mSQL (0.2ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations`
-  [1m[36mSQL (0.3ms)[0m  [1mSHOW TABLES[0m
-  [1m[35mSQL (2.0ms)[0m  describe `gigs`
-  [1m[36mSQL (0.2ms)[0m  [1mSHOW KEYS FROM `gigs`[0m
-  [1m[35mSQL (1.4ms)[0m  describe `metas`
-  [1m[36mSQL (0.2ms)[0m  [1mSHOW KEYS FROM `metas`[0m
-  [1m[35mSQL (1.2ms)[0m  describe `scwidgets`
-  [1m[36mSQL (0.2ms)[0m  [1mSHOW KEYS FROM `scwidgets`[0m
-  [1m[36mSQL (0.3ms)[0m  [1mSHOW TABLES[0m
-  [1m[35mSQL (0.2ms)[0m  SHOW TABLES
-  [1m[36mSQL (0.2ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
-  [1m[35mSQL (0.1ms)[0m  BEGIN
-  [1m[36mSQL (1.4ms)[0m  [1mdescribe `metas`[0m
-  [1m[35mAREL (0.2ms)[0m  INSERT INTO `metas` (`keywords`, `updated_at`, `created_at`, `description`) VALUES ('Deep House Music, Funk, Clubs', '2012-06-07 00:00:15', '2012-06-07 00:00:15', 'Dj Paul Sutcliffe, 8 years making the crowd jump all night.')
-  [1m[36mSQL (0.3ms)[0m  [1mCOMMIT[0m
-  [1m[35mSQL (0.1ms)[0m  BEGIN
-  [1m[36mSQL (2.0ms)[0m  [1mdescribe `gigs`[0m
-  [1m[35mAREL (0.2ms)[0m  INSERT INTO `gigs` (`link`, `image_file_size`, `created_at`, `image_content_type`, `place`, `image_updated_at`, `image_file_name`, `date`, `name`, `updated_at`) VALUES ('http://www.facebook.com/djpaulsutcliffe', NULL, '2012-06-07 00:00:15', NULL, 'Miraflores, Lima.', NULL, NULL, '2012-06-30', 'Bizarro 1', '2012-06-07 00:00:15')
-  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO `gigs` (`link`, `image_file_size`, `created_at`, `image_content_type`, `place`, `image_updated_at`, `image_file_name`, `date`, `name`, `updated_at`) VALUES ('http://www.facebook.com/djpaulsutcliffe', NULL, '2012-06-07 00:00:15', NULL, 'Miraflores, Lima.', NULL, NULL, '2012-06-30', 'Bizarro 2', '2012-06-07 00:00:15')[0m
-  [1m[35mAREL (0.1ms)[0m  INSERT INTO `gigs` (`link`, `image_file_size`, `created_at`, `image_content_type`, `place`, `image_updated_at`, `image_file_name`, `date`, `name`, `updated_at`) VALUES ('http://www.facebook.com/djpaulsutcliffe', NULL, '2012-06-07 00:00:15', NULL, 'Miraflores, Lima.', NULL, NULL, '2012-06-30', 'Bizarro 3', '2012-06-07 00:00:15')
-  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO `gigs` (`link`, `image_file_size`, `created_at`, `image_content_type`, `place`, `image_updated_at`, `image_file_name`, `date`, `name`, `updated_at`) VALUES ('http://www.facebook.com/djpaulsutcliffe', NULL, '2012-06-07 00:00:15', NULL, 'Miraflores, Lima.', NULL, NULL, '2012-06-30', 'Bizarro 4', '2012-06-07 00:00:15')[0m
-  [1m[35mAREL (0.1ms)[0m  INSERT INTO `gigs` (`link`, `image_file_size`, `created_at`, `image_content_type`, `place`, `image_updated_at`, `image_file_name`, `date`, `name`, `updated_at`) VALUES ('http://www.facebook.com/djpaulsutcliffe', NULL, '2012-06-07 00:00:15', NULL, 'Miraflores, Lima.', NULL, NULL, '2012-06-30', 'Bizarro 5', '2012-06-07 00:00:15')
-  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO `gigs` (`link`, `image_file_size`, `created_at`, `image_content_type`, `place`, `image_updated_at`, `image_file_name`, `date`, `name`, `updated_at`) VALUES ('http://www.facebook.com/djpaulsutcliffe', NULL, '2012-06-07 00:00:15', NULL, 'Miraflores, Lima.', NULL, NULL, '2012-06-30', 'Bizarro 6', '2012-06-07 00:00:15')[0m
-  [1m[35mAREL (0.1ms)[0m  INSERT INTO `gigs` (`link`, `image_file_size`, `created_at`, `image_content_type`, `place`, `image_updated_at`, `image_file_name`, `date`, `name`, `updated_at`) VALUES ('http://www.facebook.com/djpaulsutcliffe', NULL, '2012-06-07 00:00:15', NULL, 'Miraflores, Lima.', NULL, NULL, '2012-06-30', 'Bizarro 7', '2012-06-07 00:00:15')
-  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO `gigs` (`link`, `image_file_size`, `created_at`, `image_content_type`, `place`, `image_updated_at`, `image_file_name`, `date`, `name`, `updated_at`) VALUES ('http://www.facebook.com/djpaulsutcliffe', NULL, '2012-06-07 00:00:15', NULL, 'Miraflores, Lima.', NULL, NULL, '2012-06-30', 'Bizarro 8', '2012-06-07 00:00:15')[0m
-  [1m[35mAREL (0.1ms)[0m  INSERT INTO `gigs` (`link`, `image_file_size`, `created_at`, `image_content_type`, `place`, `image_updated_at`, `image_file_name`, `date`, `name`, `updated_at`) VALUES ('http://www.facebook.com/djpaulsutcliffe', NULL, '2012-06-07 00:00:15', NULL, 'Miraflores, Lima.', NULL, NULL, '2012-06-30', 'Bizarro 9', '2012-06-07 00:00:15')
-  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO `gigs` (`link`, `image_file_size`, `created_at`, `image_content_type`, `place`, `image_updated_at`, `image_file_name`, `date`, `name`, `updated_at`) VALUES ('http://www.facebook.com/djpaulsutcliffe', NULL, '2012-06-07 00:00:15', NULL, 'Miraflores, Lima.', NULL, NULL, '2012-06-30', 'Bizarro 10', '2012-06-07 00:00:15')[0m
-  [1m[35mAREL (0.1ms)[0m  INSERT INTO `gigs` (`link`, `image_file_size`, `created_at`, `image_content_type`, `place`, `image_updated_at`, `image_file_name`, `date`, `name`, `updated_at`) VALUES ('http://www.facebook.com/djpaulsutcliffe', NULL, '2012-06-07 00:00:15', NULL, 'Miraflores, Lima.', NULL, NULL, '2012-06-30', 'Bizarro 11', '2012-06-07 00:00:15')
-  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO `gigs` (`link`, `image_file_size`, `created_at`, `image_content_type`, `place`, `image_updated_at`, `image_file_name`, `date`, `name`, `updated_at`) VALUES ('http://www.facebook.com/djpaulsutcliffe', NULL, '2012-06-07 00:00:15', NULL, 'Miraflores, Lima.', NULL, NULL, '2012-06-30', 'Bizarro 12', '2012-06-07 00:00:15')[0m
-  [1m[35mAREL (0.1ms)[0m  INSERT INTO `gigs` (`link`, `image_file_size`, `created_at`, `image_content_type`, `place`, `image_updated_at`, `image_file_name`, `date`, `name`, `updated_at`) VALUES ('http://www.facebook.com/djpaulsutcliffe', NULL, '2012-06-07 00:00:15', NULL, 'Miraflores, Lima.', NULL, NULL, '2012-06-30', 'Bizarro 13', '2012-06-07 00:00:15')
-  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO `gigs` (`link`, `image_file_size`, `created_at`, `image_content_type`, `place`, `image_updated_at`, `image_file_name`, `date`, `name`, `updated_at`) VALUES ('http://www.facebook.com/djpaulsutcliffe', NULL, '2012-06-07 00:00:15', NULL, 'Miraflores, Lima.', NULL, NULL, '2012-06-30', 'Bizarro 14', '2012-06-07 00:00:15')[0m
-  [1m[35mAREL (0.1ms)[0m  INSERT INTO `gigs` (`link`, `image_file_size`, `created_at`, `image_content_type`, `place`, `image_updated_at`, `image_file_name`, `date`, `name`, `updated_at`) VALUES ('http://www.facebook.com/djpaulsutcliffe', NULL, '2012-06-07 00:00:15', NULL, 'Miraflores, Lima.', NULL, NULL, '2012-06-30', 'Bizarro 15', '2012-06-07 00:00:15')
-  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO `gigs` (`link`, `image_file_size`, `created_at`, `image_content_type`, `place`, `image_updated_at`, `image_file_name`, `date`, `name`, `updated_at`) VALUES ('http://www.facebook.com/djpaulsutcliffe', NULL, '2012-06-07 00:00:15', NULL, 'Miraflores, Lima.', NULL, NULL, '2012-06-30', 'Bizarro 16', '2012-06-07 00:00:15')[0m
-  [1m[35mAREL (0.1ms)[0m  INSERT INTO `gigs` (`link`, `image_file_size`, `created_at`, `image_content_type`, `place`, `image_updated_at`, `image_file_name`, `date`, `name`, `updated_at`) VALUES ('http://www.facebook.com/djpaulsutcliffe', NULL, '2012-06-07 00:00:15', NULL, 'Miraflores, Lima.', NULL, NULL, '2012-06-30', 'Bizarro 17', '2012-06-07 00:00:15')
-  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO `gigs` (`link`, `image_file_size`, `created_at`, `image_content_type`, `place`, `image_updated_at`, `image_file_name`, `date`, `name`, `updated_at`) VALUES ('http://www.facebook.com/djpaulsutcliffe', NULL, '2012-06-07 00:00:15', NULL, 'Miraflores, Lima.', NULL, NULL, '2012-06-30', 'Bizarro 18', '2012-06-07 00:00:15')[0m
-  [1m[35mAREL (0.1ms)[0m  INSERT INTO `gigs` (`link`, `image_file_size`, `created_at`, `image_content_type`, `place`, `image_updated_at`, `image_file_name`, `date`, `name`, `updated_at`) VALUES ('http://www.facebook.com/djpaulsutcliffe', NULL, '2012-06-07 00:00:15', NULL, 'Miraflores, Lima.', NULL, NULL, '2012-06-30', 'Bizarro 19', '2012-06-07 00:00:15')
-  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO `gigs` (`link`, `image_file_size`, `created_at`, `image_content_type`, `place`, `image_updated_at`, `image_file_name`, `date`, `name`, `updated_at`) VALUES ('http://www.facebook.com/djpaulsutcliffe', NULL, '2012-06-07 00:00:15', NULL, 'Miraflores, Lima.', NULL, NULL, '2012-06-30', 'Bizarro 20', '2012-06-07 00:00:15')[0m
-  [1m[35mAREL (0.1ms)[0m  INSERT INTO `gigs` (`link`, `image_file_size`, `created_at`, `image_content_type`, `place`, `image_updated_at`, `image_file_name`, `date`, `name`, `updated_at`) VALUES ('http://www.facebook.com/djpaulsutcliffe', NULL, '2012-06-07 00:00:15', NULL, 'Miraflores, Lima.', NULL, NULL, '2012-06-30', 'Bizarro 21', '2012-06-07 00:00:15')
-  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO `gigs` (`link`, `image_file_size`, `created_at`, `image_content_type`, `place`, `image_updated_at`, `image_file_name`, `date`, `name`, `updated_at`) VALUES ('http://www.facebook.com/djpaulsutcliffe', NULL, '2012-06-07 00:00:15', NULL, 'Miraflores, Lima.', NULL, NULL, '2012-06-30', 'Bizarro 22', '2012-06-07 00:00:15')[0m
-  [1m[35mAREL (0.1ms)[0m  INSERT INTO `gigs` (`link`, `image_file_size`, `created_at`, `image_content_type`, `place`, `image_updated_at`, `image_file_name`, `date`, `name`, `updated_at`) VALUES ('http://www.facebook.com/djpaulsutcliffe', NULL, '2012-06-07 00:00:15', NULL, 'Miraflores, Lima.', NULL, NULL, '2012-06-30', 'Bizarro 23', '2012-06-07 00:00:15')
-  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO `gigs` (`link`, `image_file_size`, `created_at`, `image_content_type`, `place`, `image_updated_at`, `image_file_name`, `date`, `name`, `updated_at`) VALUES ('http://www.facebook.com/djpaulsutcliffe', NULL, '2012-06-07 00:00:15', NULL, 'Miraflores, Lima.', NULL, NULL, '2012-06-30', 'Bizarro 24', '2012-06-07 00:00:15')[0m
-  [1m[35mAREL (0.1ms)[0m  INSERT INTO `gigs` (`link`, `image_file_size`, `created_at`, `image_content_type`, `place`, `image_updated_at`, `image_file_name`, `date`, `name`, `updated_at`) VALUES ('http://www.facebook.com/djpaulsutcliffe', NULL, '2012-06-07 00:00:15', NULL, 'Miraflores, Lima.', NULL, NULL, '2012-06-30', 'Bizarro 25', '2012-06-07 00:00:15')
-  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO `gigs` (`link`, `image_file_size`, `created_at`, `image_content_type`, `place`, `image_updated_at`, `image_file_name`, `date`, `name`, `updated_at`) VALUES ('http://www.facebook.com/djpaulsutcliffe', NULL, '2012-06-07 00:00:15', NULL, 'Miraflores, Lima.', NULL, NULL, '2012-06-30', 'Bizarro 26', '2012-06-07 00:00:15')[0m
-  [1m[35mAREL (0.1ms)[0m  INSERT INTO `gigs` (`link`, `image_file_size`, `created_at`, `image_content_type`, `place`, `image_updated_at`, `image_file_name`, `date`, `name`, `updated_at`) VALUES ('http://www.facebook.com/djpaulsutcliffe', NULL, '2012-06-07 00:00:15', NULL, 'Miraflores, Lima.', NULL, NULL, '2012-06-30', 'Bizarro 27', '2012-06-07 00:00:15')
-  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO `gigs` (`link`, `image_file_size`, `created_at`, `image_content_type`, `place`, `image_updated_at`, `image_file_name`, `date`, `name`, `updated_at`) VALUES ('http://www.facebook.com/djpaulsutcliffe', NULL, '2012-06-07 00:00:15', NULL, 'Miraflores, Lima.', NULL, NULL, '2012-06-30', 'Bizarro 28', '2012-06-07 00:00:15')[0m
-  [1m[35mAREL (0.1ms)[0m  INSERT INTO `gigs` (`link`, `image_file_size`, `created_at`, `image_content_type`, `place`, `image_updated_at`, `image_file_name`, `date`, `name`, `updated_at`) VALUES ('http://www.facebook.com/djpaulsutcliffe', NULL, '2012-06-07 00:00:15', NULL, 'Miraflores, Lima.', NULL, NULL, '2012-06-30', 'Bizarro 29', '2012-06-07 00:00:15')
-  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO `gigs` (`link`, `image_file_size`, `created_at`, `image_content_type`, `place`, `image_updated_at`, `image_file_name`, `date`, `name`, `updated_at`) VALUES ('http://www.facebook.com/djpaulsutcliffe', NULL, '2012-06-07 00:00:15', NULL, 'Miraflores, Lima.', NULL, NULL, '2012-06-30', 'Bizarro 30', '2012-06-07 00:00:15')[0m
-  [1m[35mSQL (0.5ms)[0m  COMMIT
+Started GET "/scwidgets/1/edit" for 127.0.0.1 at Sat Jun 09 17:03:54 -0500 2012
+  Processing by ScwidgetsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mScwidget Load (0.2ms)[0m  [1mSELECT `scwidgets`.* FROM `scwidgets` WHERE (`scwidgets`.`id` = 1) LIMIT 1[0m
+Rendered scwidgets/_form.html.erb (4.3ms)
+Rendered scwidgets/edit.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 27ms (Views: 21.1ms | ActiveRecord: 0.2ms)
 
 
-Started GET "/" for 127.0.0.1 at Wed Jun 06 19:00:37 -0500 2012
+Started POST "/scwidgets/1" for 127.0.0.1 at Sat Jun 09 17:04:02 -0500 2012
+  Processing by ScwidgetsController#update as HTML
+  Parameters: {"scwidget"=>{"reference"=>"http://soundcloud.com/djpaulsutcliffe/01-dont-like"}, "commit"=>"Update Scwidget", "authenticity_token"=>"xr9gvp0wtAct7VRBs1X809W+QEY6NUnqyHALj2FQMw4=", "utf8"=>"✓", "id"=>"1"}
+  [1m[35mScwidget Load (0.4ms)[0m  SELECT `scwidgets`.* FROM `scwidgets` WHERE (`scwidgets`.`id` = 1) LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.5ms)[0m  UPDATE `scwidgets` SET `reference` = 'http://soundcloud.com/djpaulsutcliffe/01-dont-like', `updated_at` = '2012-06-09 22:04:02' WHERE (`scwidgets`.`id` = 1)
+  [1m[36mSQL (1.5ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/scwidgets/1
+Completed 302 Found in 84ms
+
+
+Started GET "/scwidgets/1" for 127.0.0.1 at Sat Jun 09 17:04:02 -0500 2012
+  Processing by ScwidgetsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mScwidget Load (0.3ms)[0m  SELECT `scwidgets`.* FROM `scwidgets` WHERE (`scwidgets`.`id` = 1) LIMIT 1
+Rendered scwidgets/show.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 30ms (Views: 22.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jun 09 17:04:10 -0500 2012
   Processing by HomeController#index as HTML
-  [1m[36mGig Load (0.4ms)[0m  [1mSELECT `gigs`.* FROM `gigs` ORDER BY date LIMIT 6[0m
-Rendered home/index.html.erb within layouts/application (9.3ms)
-Completed 200 OK in 25ms (Views: 17.4ms | ActiveRecord: 0.4ms)
+  [1m[36mSlide Load (0.4ms)[0m  [1mSELECT `slides`.* FROM `slides`[0m
+  [1m[35mGig Load (0.4ms)[0m  SELECT `gigs`.* FROM `gigs`
+  [1m[36mScwidget Load (0.4ms)[0m  [1mSELECT `scwidgets`.* FROM `scwidgets`[0m
+Rendered home/index.html.erb within layouts/application (10.8ms)
+Completed   in 78ms
+
+ActionView::Template::Error (undefined method `soundcloud' for #<AutoHtml::Builder:0x10378f358>):
+    51:     <div class="container_12">
+    52:       <h2 class="title">Music</h2>
+    53:       <% @scwidgets.each do |scwidget| %>
+    54:         <%= scwidget.reference_html %>
+    55: 	  <% end %>
+    56:     </div>
+    57:   </section>
+  app/models/scwidget.rb:4
+  app/views/home/index.html.erb:54:in `_app_views_home_index_html_erb__210583899_2176928480_0'
+  app/views/home/index.html.erb:53:in `each'
+  app/views/home/index.html.erb:53:in `_app_views_home_index_html_erb__210583899_2176928480_0'
+
+Rendered /Users/ricardocastaneda/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Users/ricardocastaneda/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (11.9ms)
+Rendered /Users/ricardocastaneda/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (17.3ms)
 
 
-Started GET "/favicon.ico" for 127.0.0.1 at Wed Jun 06 19:00:37 -0500 2012
-
-ActionController::RoutingError (No route matches "/favicon.ico"):
-  
-
-Rendered /Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
-
-
-Started GET "/" for 127.0.0.1 at Wed Jun 06 19:01:11 -0500 2012
+Started GET "/" for 127.0.0.1 at Sat Jun 09 17:19:00 -0500 2012
   Processing by HomeController#index as HTML
-  [1m[35mGig Load (0.4ms)[0m  SELECT `gigs`.* FROM `gigs` ORDER BY date LIMIT 6
-Rendered home/index.html.erb within layouts/application (7.7ms)
-Completed 200 OK in 23ms (Views: 15.6ms | ActiveRecord: 0.4ms)
+  [1m[35mSlide Load (0.6ms)[0m  SELECT `slides`.* FROM `slides`
+  [1m[36mGig Load (0.4ms)[0m  [1mSELECT `gigs`.* FROM `gigs`[0m
+Completed   in 12ms
+
+SyntaxError (/Users/ricardocastaneda/Rails-apps/paulsutcliffe/paulsutcliffe/app/models/scwidget.rb:34: syntax error, unexpected $end, expecting kEND):
+  app/controllers/home_controller.rb:5:in `index'
+
+Rendered /Users/ricardocastaneda/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+Rendered /Users/ricardocastaneda/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (15.6ms)
+Rendered /Users/ricardocastaneda/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (19.9ms)
 
 
-Started GET "/favicon.ico" for 127.0.0.1 at Wed Jun 06 19:01:11 -0500 2012
+Started GET "/" for 127.0.0.1 at Sat Jun 09 17:19:59 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[35mSlide Load (0.5ms)[0m  SELECT `slides`.* FROM `slides`
+  [1m[36mGig Load (0.4ms)[0m  [1mSELECT `gigs`.* FROM `gigs`[0m
+  [1m[35mScwidget Load (0.4ms)[0m  SELECT `scwidgets`.* FROM `scwidgets`
+Rendered home/index.html.erb within layouts/application (11.6ms)
+Completed   in 72ms
 
-ActionController::RoutingError (No route matches "/favicon.ico"):
-  
+ActionView::Template::Error (undefined method `soundcloud' for #<AutoHtml::Builder:0x103676d90>):
+    51:     <div class="container_12">
+    52:       <h2 class="title">Music</h2>
+    53:       <% @scwidgets.each do |scwidget| %>
+    54:         <%= scwidget.reference_html %>
+    55: 	  <% end %>
+    56:     </div>
+    57:   </section>
+  app/models/scwidget.rb:4
+  app/views/home/index.html.erb:54:in `_app_views_home_index_html_erb__210583899_2176499900_0'
+  app/views/home/index.html.erb:53:in `each'
+  app/views/home/index.html.erb:53:in `_app_views_home_index_html_erb__210583899_2176499900_0'
 
-Rendered /Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+Rendered /Users/ricardocastaneda/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+Rendered /Users/ricardocastaneda/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (12.5ms)
+Rendered /Users/ricardocastaneda/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (17.8ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jun 09 17:20:11 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[36mSlide Load (0.4ms)[0m  [1mSELECT `slides`.* FROM `slides`[0m
+  [1m[35mGig Load (0.3ms)[0m  SELECT `gigs`.* FROM `gigs`
+  [1m[36mScwidget Load (0.3ms)[0m  [1mSELECT `scwidgets`.* FROM `scwidgets`[0m
+Rendered home/index.html.erb within layouts/application (11.8ms)
+Completed   in 78ms
+
+ActionView::Template::Error (undefined method `scloud' for #<AutoHtml::Builder:0x10316df38>):
+    51:     <div class="container_12">
+    52:       <h2 class="title">Music</h2>
+    53:       <% @scwidgets.each do |scwidget| %>
+    54:         <%= scwidget.reference_html %>
+    55: 	  <% end %>
+    56:     </div>
+    57:   </section>
+  app/models/scwidget.rb:4
+  app/views/home/index.html.erb:54:in `_app_views_home_index_html_erb__210583899_2173627940_0'
+  app/views/home/index.html.erb:53:in `each'
+  app/views/home/index.html.erb:53:in `_app_views_home_index_html_erb__210583899_2173627940_0'
+
+Rendered /Users/ricardocastaneda/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+Rendered /Users/ricardocastaneda/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (76.9ms)
+Rendered /Users/ricardocastaneda/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (81.6ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jun 09 17:21:51 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[35mSlide Load (0.4ms)[0m  SELECT `slides`.* FROM `slides`
+  [1m[36mGig Load (0.3ms)[0m  [1mSELECT `gigs`.* FROM `gigs`[0m
+  [1m[35mScwidget Load (0.2ms)[0m  SELECT `scwidgets`.* FROM `scwidgets`
+Rendered home/index.html.erb within layouts/application (54.3ms)
+Completed   in 76ms
+
+ActionView::Template::Error (undefined method `reference_html' for #<Scwidget:0x10364a308>):
+    51:     <div class="container_12">
+    52:       <h2 class="title">Music</h2>
+    53:       <% @scwidgets.each do |scwidget| %>
+    54:         <%= scwidget.reference_html %>
+    55: 	  <% end %>
+    56:     </div>
+    57:   </section>
+  app/views/home/index.html.erb:54:in `_app_views_home_index_html_erb__210583899_2175918240_0'
+  app/views/home/index.html.erb:53:in `each'
+  app/views/home/index.html.erb:53:in `_app_views_home_index_html_erb__210583899_2175918240_0'
+
+Rendered /Users/ricardocastaneda/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+Rendered /Users/ricardocastaneda/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (13.0ms)
+Rendered /Users/ricardocastaneda/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (17.9ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jun 09 17:25:47 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[36mSlide Load (0.4ms)[0m  [1mSELECT `slides`.* FROM `slides`[0m
+  [1m[35mGig Load (0.3ms)[0m  SELECT `gigs`.* FROM `gigs`
+  [1m[36mScwidget Load (0.2ms)[0m  [1mSELECT `scwidgets`.* FROM `scwidgets`[0m
+Rendered home/index.html.erb within layouts/application (126.9ms)
+Completed 200 OK in 147ms (Views: 134.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/scwidgets/1/edit" for 127.0.0.1 at Sat Jun 09 17:25:52 -0500 2012
+  Processing by ScwidgetsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mScwidget Load (0.3ms)[0m  SELECT `scwidgets`.* FROM `scwidgets` WHERE (`scwidgets`.`id` = 1) LIMIT 1
+Rendered scwidgets/_form.html.erb (7.9ms)
+Rendered scwidgets/edit.html.erb within layouts/application (13.1ms)
+Completed 200 OK in 34ms (Views: 27.7ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/scwidgets/1" for 127.0.0.1 at Sat Jun 09 17:25:59 -0500 2012
+  Processing by ScwidgetsController#update as HTML
+  Parameters: {"scwidget"=>{"reference"=>"<iframe width=\"100%\" height=\"166\" scrolling=\"no\" frameborder=\"no\" src=\"http://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F48984291&amp;auto_play=false&amp;show_artwork=true&amp;color=ff7700\"></iframe>"}, "commit"=>"Update Scwidget", "authenticity_token"=>"xr9gvp0wtAct7VRBs1X809W+QEY6NUnqyHALj2FQMw4=", "utf8"=>"✓", "id"=>"1"}
+  [1m[36mScwidget Load (0.5ms)[0m  [1mSELECT `scwidgets`.* FROM `scwidgets` WHERE (`scwidgets`.`id` = 1) LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  BEGIN
+  [1m[36mAREL (0.4ms)[0m  [1mUPDATE `scwidgets` SET `reference` = '<iframe width=\"100%\" height=\"166\" scrolling=\"no\" frameborder=\"no\" src=\"http://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F48984291&amp;auto_play=false&amp;show_artwork=true&amp;color=ff7700\"></iframe>', `updated_at` = '2012-06-09 22:25:59' WHERE (`scwidgets`.`id` = 1)[0m
+  [1m[35mSQL (1.2ms)[0m  COMMIT
+Redirected to http://localhost:3000/scwidgets/1
+Completed 302 Found in 74ms
+
+
+Started GET "/scwidgets/1" for 127.0.0.1 at Sat Jun 09 17:25:59 -0500 2012
+  Processing by ScwidgetsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mScwidget Load (0.3ms)[0m  [1mSELECT `scwidgets`.* FROM `scwidgets` WHERE (`scwidgets`.`id` = 1) LIMIT 1[0m
+Rendered scwidgets/show.html.erb within layouts/application (13.6ms)
+Completed 200 OK in 39ms (Views: 33.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jun 09 17:26:07 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[35mSlide Load (0.4ms)[0m  SELECT `slides`.* FROM `slides`
+  [1m[36mGig Load (0.4ms)[0m  [1mSELECT `gigs`.* FROM `gigs`[0m
+  [1m[35mScwidget Load (0.4ms)[0m  SELECT `scwidgets`.* FROM `scwidgets`
+Rendered home/index.html.erb within layouts/application (61.5ms)
+Completed 200 OK in 82ms (Views: 68.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jun 09 17:26:25 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[36mSlide Load (0.4ms)[0m  [1mSELECT `slides`.* FROM `slides`[0m
+  [1m[35mGig Load (0.3ms)[0m  SELECT `gigs`.* FROM `gigs`
+  [1m[36mScwidget Load (0.4ms)[0m  [1mSELECT `scwidgets`.* FROM `scwidgets`[0m
+Rendered home/index.html.erb within layouts/application (107.1ms)
+Completed 200 OK in 127ms (Views: 114.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jun 09 17:31:47 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[35mSlide Load (0.5ms)[0m  SELECT `slides`.* FROM `slides`
+  [1m[36mGig Load (0.3ms)[0m  [1mSELECT `gigs`.* FROM `gigs`[0m
+  [1m[35mScwidget Load (0.4ms)[0m  SELECT `scwidgets`.* FROM `scwidgets`
+Rendered home/index.html.erb within layouts/application (49.3ms)
+Completed 200 OK in 70ms (Views: 56.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jun 09 17:32:06 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[36mSlide Load (0.5ms)[0m  [1mSELECT `slides`.* FROM `slides`[0m
+  [1m[35mGig Load (0.3ms)[0m  SELECT `gigs`.* FROM `gigs`
+  [1m[36mScwidget Load (0.3ms)[0m  [1mSELECT `scwidgets`.* FROM `scwidgets`[0m
+Rendered home/index.html.erb within layouts/application (25.5ms)
+Completed 200 OK in 98ms (Views: 33.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jun 09 17:32:24 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[35mSlide Load (0.4ms)[0m  SELECT `slides`.* FROM `slides`
+  [1m[36mGig Load (0.3ms)[0m  [1mSELECT `gigs`.* FROM `gigs`[0m
+  [1m[35mScwidget Load (0.3ms)[0m  SELECT `scwidgets`.* FROM `scwidgets`
+Rendered home/index.html.erb within layouts/application (29.1ms)
+Completed 200 OK in 54ms (Views: 36.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/scwidgets/1/edit" for 127.0.0.1 at Sat Jun 09 17:33:01 -0500 2012
+  Processing by ScwidgetsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mScwidget Load (0.3ms)[0m  [1mSELECT `scwidgets`.* FROM `scwidgets` WHERE (`scwidgets`.`id` = 1) LIMIT 1[0m
+Rendered scwidgets/_form.html.erb (8.4ms)
+Rendered scwidgets/edit.html.erb within layouts/application (15.8ms)
+Completed 200 OK in 46ms (Views: 28.3ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/scwidgets/1" for 127.0.0.1 at Sat Jun 09 17:33:20 -0500 2012
+  Processing by ScwidgetsController#update as HTML
+  Parameters: {"scwidget"=>{"reference"=>"http://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F48984291&amp;auto_play=false&amp;show_artwork=true&amp;color=ff7700"}, "commit"=>"Update Scwidget", "authenticity_token"=>"xr9gvp0wtAct7VRBs1X809W+QEY6NUnqyHALj2FQMw4=", "utf8"=>"✓", "id"=>"1"}
+  [1m[35mScwidget Load (0.2ms)[0m  SELECT `scwidgets`.* FROM `scwidgets` WHERE (`scwidgets`.`id` = 1) LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.3ms)[0m  UPDATE `scwidgets` SET `updated_at` = '2012-06-09 22:33:20', `reference` = 'http://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F48984291&amp;auto_play=false&amp;show_artwork=true&amp;color=ff7700' WHERE (`scwidgets`.`id` = 1)
+  [1m[36mSQL (34.1ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/scwidgets/1
+Completed 302 Found in 62ms
+
+
+Started GET "/scwidgets/1" for 127.0.0.1 at Sat Jun 09 17:33:20 -0500 2012
+  Processing by ScwidgetsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mScwidget Load (0.3ms)[0m  SELECT `scwidgets`.* FROM `scwidgets` WHERE (`scwidgets`.`id` = 1) LIMIT 1
+Rendered scwidgets/show.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 29ms (Views: 22.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jun 09 17:33:48 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[36mSlide Load (0.5ms)[0m  [1mSELECT `slides`.* FROM `slides`[0m
+  [1m[35mGig Load (0.4ms)[0m  SELECT `gigs`.* FROM `gigs`
+  [1m[36mScwidget Load (0.4ms)[0m  [1mSELECT `scwidgets`.* FROM `scwidgets`[0m
+Rendered home/index.html.erb within layouts/application (145.4ms)
+Completed 200 OK in 166ms (Views: 152.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/scwidgets" for 127.0.0.1 at Sat Jun 09 17:34:12 -0500 2012
+  Processing by ScwidgetsController#index as HTML
+  [1m[35mScwidget Load (0.4ms)[0m  SELECT `scwidgets`.* FROM `scwidgets`
+Rendered scwidgets/index.html.erb within layouts/application (46.9ms)
+Completed 200 OK in 59ms (Views: 57.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/scwidgets/new" for 127.0.0.1 at Sat Jun 09 17:34:14 -0500 2012
+  Processing by ScwidgetsController#new as HTML
+Rendered scwidgets/_form.html.erb (4.1ms)
+Rendered scwidgets/new.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 61ms (Views: 21.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/scwidgets" for 127.0.0.1 at Sat Jun 09 17:34:59 -0500 2012
+  Processing by ScwidgetsController#create as HTML
+  Parameters: {"scwidget"=>{"reference"=>"http://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F48984292&auto_play=false&show_artwork=true&color=ff7700"}, "commit"=>"Create Scwidget", "authenticity_token"=>"xr9gvp0wtAct7VRBs1X809W+QEY6NUnqyHALj2FQMw4=", "utf8"=>"✓"}
+  [1m[36mSQL (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (4.0ms)[0m  describe `scwidgets`
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO `scwidgets` (`reference`, `created_at`, `updated_at`) VALUES ('http://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F48984292&auto_play=false&show_artwork=true&color=ff7700', '2012-06-09 22:34:59', '2012-06-09 22:34:59')[0m
+  [1m[35mSQL (1.2ms)[0m  COMMIT
+Redirected to http://localhost:3000/scwidgets/2
+Completed 302 Found in 96ms
+
+
+Started GET "/scwidgets/2" for 127.0.0.1 at Sat Jun 09 17:34:59 -0500 2012
+  Processing by ScwidgetsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mScwidget Load (0.3ms)[0m  [1mSELECT `scwidgets`.* FROM `scwidgets` WHERE (`scwidgets`.`id` = 2) LIMIT 1[0m
+Rendered scwidgets/show.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 28ms (Views: 21.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/scwidgets" for 127.0.0.1 at Sat Jun 09 17:35:02 -0500 2012
+  Processing by ScwidgetsController#index as HTML
+  [1m[35mScwidget Load (0.4ms)[0m  SELECT `scwidgets`.* FROM `scwidgets`
+Rendered scwidgets/index.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 25ms (Views: 23.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/scwidgets/new" for 127.0.0.1 at Sat Jun 09 17:35:04 -0500 2012
+  Processing by ScwidgetsController#new as HTML
+Rendered scwidgets/_form.html.erb (3.9ms)
+Rendered scwidgets/new.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 28ms (Views: 22.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/scwidgets" for 127.0.0.1 at Sat Jun 09 17:35:44 -0500 2012
+  Processing by ScwidgetsController#create as HTML
+  Parameters: {"scwidget"=>{"reference"=>"http://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F48984290&amp;auto_play=false&amp;show_artwork=true&amp;color=00ff55"}, "commit"=>"Create Scwidget", "authenticity_token"=>"xr9gvp0wtAct7VRBs1X809W+QEY6NUnqyHALj2FQMw4=", "utf8"=>"✓"}
+  [1m[36mSQL (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (3.8ms)[0m  describe `scwidgets`
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO `scwidgets` (`created_at`, `reference`, `updated_at`) VALUES ('2012-06-09 22:35:44', 'http://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F48984290&amp;auto_play=false&amp;show_artwork=true&amp;color=00ff55', '2012-06-09 22:35:44')[0m
+  [1m[35mSQL (1.2ms)[0m  COMMIT
+Redirected to http://localhost:3000/scwidgets/3
+Completed 302 Found in 34ms
+
+
+Started GET "/scwidgets/3" for 127.0.0.1 at Sat Jun 09 17:35:44 -0500 2012
+  Processing by ScwidgetsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mScwidget Load (0.3ms)[0m  [1mSELECT `scwidgets`.* FROM `scwidgets` WHERE (`scwidgets`.`id` = 3) LIMIT 1[0m
+Rendered scwidgets/show.html.erb within layouts/application (13.3ms)
+Completed 200 OK in 32ms (Views: 26.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/scwidgets" for 127.0.0.1 at Sat Jun 09 17:35:53 -0500 2012
+  Processing by ScwidgetsController#index as HTML
+  [1m[35mScwidget Load (0.3ms)[0m  SELECT `scwidgets`.* FROM `scwidgets`
+Rendered scwidgets/index.html.erb within layouts/application (50.6ms)
+Completed 200 OK in 63ms (Views: 61.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/scwidgets/new" for 127.0.0.1 at Sat Jun 09 17:35:55 -0500 2012
+  Processing by ScwidgetsController#new as HTML
+Rendered scwidgets/_form.html.erb (3.9ms)
+Rendered scwidgets/new.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 61ms (Views: 20.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/scwidgets" for 127.0.0.1 at Sat Jun 09 17:36:11 -0500 2012
+  Processing by ScwidgetsController#create as HTML
+  Parameters: {"scwidget"=>{"reference"=>"http://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F48986847&amp;auto_play=false&amp;show_artwork=true&amp;color=ff7700"}, "commit"=>"Create Scwidget", "authenticity_token"=>"xr9gvp0wtAct7VRBs1X809W+QEY6NUnqyHALj2FQMw4=", "utf8"=>"✓"}
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (4.2ms)[0m  describe `scwidgets`
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO `scwidgets` (`updated_at`, `created_at`, `reference`) VALUES ('2012-06-09 22:36:11', '2012-06-09 22:36:11', 'http://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F48986847&amp;auto_play=false&amp;show_artwork=true&amp;color=ff7700')[0m
+  [1m[35mSQL (1.1ms)[0m  COMMIT
+Redirected to http://localhost:3000/scwidgets/4
+Completed 302 Found in 32ms
+
+
+Started GET "/scwidgets/4" for 127.0.0.1 at Sat Jun 09 17:36:11 -0500 2012
+  Processing by ScwidgetsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mScwidget Load (0.2ms)[0m  [1mSELECT `scwidgets`.* FROM `scwidgets` WHERE (`scwidgets`.`id` = 4) LIMIT 1[0m
+Rendered scwidgets/show.html.erb within layouts/application (12.1ms)
+Completed 200 OK in 32ms (Views: 25.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Jun 09 17:36:16 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[35mSlide Load (0.5ms)[0m  SELECT `slides`.* FROM `slides`
+  [1m[36mGig Load (0.4ms)[0m  [1mSELECT `gigs`.* FROM `gigs`[0m
+  [1m[35mScwidget Load (0.4ms)[0m  SELECT `scwidgets`.* FROM `scwidgets`
+Rendered home/index.html.erb within layouts/application (86.4ms)
+Completed 200 OK in 107ms (Views: 93.0ms | ActiveRecord: 1.3ms)

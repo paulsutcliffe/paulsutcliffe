@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120602224256) do
+ActiveRecord::Schema.define(:version => 20120609073754) do
 
   create_table "gigs", :force => true do |t|
     t.string   "name"
@@ -36,6 +36,17 @@ ActiveRecord::Schema.define(:version => 20120602224256) do
     t.string   "reference"
     t.datetime "created_at"
     t.datetime "updated_at"
+  end
+
+  create_table "slides", :force => true do |t|
+    t.integer  "position"
+    t.string   "label"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "slide_file_name"
+    t.string   "slide_content_type"
+    t.integer  "slide_file_size"
+    t.datetime "slide_updated_at"
   end
 
 end

@@ -1,12 +1,43 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Paulsutcliffe</title>
-  <%= stylesheet_link_tag :all %>
+  <title>dj Paulsutcliffe</title>
+  <%= stylesheet_link_tag '/javascripts/libs/adapt/adapt.css', '/javascripts/libs/accordion/themes/base/jquery.ui.all.css', '/javascripts/libs/royal-slider/royalslider-min.css', '/javascripts/libs/royal-slider/royalslider-skins/default/default.css', '/javascripts/libs/royal-slider/royalslider-skins/iskin/iskin.css', 'style.css', :cache => 'powerhouse' %>
   <%= javascript_include_tag :defaults %>
+  <%= javascript_include_tag '/javascripts/libs/royal-slider/royal-slider-8.1.min.js', '/javascripts/libs/adapt/adapt-init.js', '/javascripts/libs/adapt/adapt.min.js', 'scripts.js', :cache => 'powerfactory' %>
   <%= csrf_meta_tag %>
 </head>
 <body>
+
+  <header>
+    <div class="container_12">
+      <h1 class="title">
+	    <%= link_to content_tag(:b, 'Dj') + ' Paul Sutcliffe', root_path %>
+	  </h1>
+      <%= render 'shared/social_links' %>
+    </div>
+  </header>
+  
+  <section id="introduction">
+    <div class="container_12">
+      <div class="grid_4 alpha">
+        <h2 class="title">Dj Paul Sutcliffe</h3>
+        <p>
+          dj paul sutcliffe, con más de 8 años de trayectoria, se mueve como un pez en el agua en los diversos géneros que toca.
+        </p>
+        <p>
+			su contagiante música suena en exclusivos eventos y discotecas de todo Lima, 
+            logrando que cada noche sea siempre diferente a la anterior. con el oído musical, 
+            criterio e incomparable talento de DJ Sutcliffe. Dicha combinación asegurará que 
+            comience el reventón en cualquier fiesta y creará un auténtico clímax en la pista de baile, 
+            manteniendo la energía de la gente en lo más alto…
+        </p>
+      </div>
+      <div>
+        <%= render 'shared/social_links' %>
+      </div>
+    </div>
+  </section>
 
 <%= yield %>
 

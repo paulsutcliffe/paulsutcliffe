@@ -1,21 +1,112 @@
-<p>DJ PAUL SUTCLIFFE</p>
 
 
-<%= link_to 'facebook', "http://www.facebook.com/djpaulsutcliffe" %>
-<%= link_to 'twitter', "http://www.twitter.com/paulyoyo" %>
-<%= link_to 'soundcloud', "http://www.soundcloud.com/djpaulsutcliffe" %>
+  
+  <div id="preface-top">
+    <div class="container_12">
+	      <div id="slider-ajax-container">
+	  <div id="banner-rotator" class="royalSlider default">    
+        <ul class="royalSlidesContainer">
+	      <% @slides.each do |slide| %>
+	        <li class="royalSlide">  
+		      <%= image_tag(slide.slide(:max), :class => 'royalImage') %>
+		      <div class="royalCaption">
+			    
+              </div>
+		    </li>
+	      <% end %>
+        </ul>  
+      </div>
+    </div>		
+    
 
-<h1>DJ PAUL SUTCLIFFE</h1>
+	<script>     	
+	jQuery(document).ready(function() {		
+		$('#banner-rotator').royalSlider({			
+	   		imageAlignCenter:true,
+	   		imageScaleMode: "fill",
+	   		
+	   		hideArrowOnLastSlide:true,
+	   		slideSpacing:20,
+	   		
+	   		autoScaleSlider: true,
+	   		autoScaleSliderWidth: 1150,
+	   		autoScaleSliderHeight: 400
+	    });		
+	});
+    </script>
+	<style>
+	  #banner-rotator {
+	width: 100%;
+	height: 400px;
 
+	margin: 0 auto;
+}
+	</style>
+	
+      
+    </div>
+  </div>
 
-<h1>MUSIC</h1>
+  <section id="preface-bottom">
+    <div class="container_12">
+      <h2 class="title big">
+	    <%= content_tag(:b, 'Dj') + ' Paul Sutcliffe' %>
+	  </h2>
+    </div>
+  </section>
 
+  <section id="music">
+    <div class="container_12">
+      <h2 class="title">Music</h2>
+      <ul>
+      <% @scwidgets.each do |scwidget| %>
+        <li>
+	      <iframe width="100%" height="166" scrolling="no" frameborder="no" src="<%= scwidget.reference %>"></iframe>    
+        </li>
+	  <% end %>
+	  </ul>
+    </div>
+  </section>
+  
+  <section id="gigs">
+    <div class="container_12">
+      <h2 class="title">Gigs</h2>
+      <ol>
+	    <% @gigs.each do |gig| %>
+	    <li>
+          <div class="date">
+            <%= gig.date.strftime("%b") %>
+            <span>
+             <%= gig.date.strftime("%d") %>
+            </span>
+          </div>
+          <h3 class="location">
+            <%= gig.name %>
+            <span>
+              <%= gig.place %>
+            </span>
+          </h3>
+        </li>
+        <% end %>
+<!--
+        <li>
+          <div class="date">
+            May
+            <span>
+              31
+            </span>
+          </div>
+          <h3 class="location">
+            Bizarro
+            <span>
+              Miraflores, Lima.
+            </span>
+          </h3>
+        </li>
+        -->
+      </ol>
+    </div>
+  </section>
+  
 
-<h1>GIGS</h1>
-
-<% @gigs.each do |gig| %>
-	<%= link_to gig.name, gig.link %>
-	<%= gig.place %>
-	<%= gig.date %>
-	<br />
-<% end %>
+</div>

@@ -1,0 +1,1976 @@
+
+
+Started GET "/" for 189.28.239.49 at Sun Jun 10 10:00:26 -0700 2012
+
+Mysql::Error (Can't connect to local MySQL server through socket '/tmp/mysql.sock' (2)):
+  
+
+
+
+Started GET "/" for 199.21.99.68 at Sun Jun 10 10:00:27 -0700 2012
+
+Mysql::Error (Can't connect to local MySQL server through socket '/tmp/mysql.sock' (2)):
+  
+
+
+
+Started GET "/" for 189.28.239.49 at Sun Jun 10 10:35:29 -0700 2012
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (205.4ms)
+Completed 200 OK in 250ms (Views: 245.7ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/royal-slider/img/cursors/grab.png" for 189.28.239.49 at Sun Jun 10 10:35:35 -0700 2012
+
+ActionController::RoutingError (No route matches "/royal-slider/img/cursors/grab.png"):
+  
+
+
+
+Started GET "/stylesheets/controls-sprite.png" for 189.28.239.49 at Sun Jun 10 10:35:36 -0700 2012
+
+ActionController::RoutingError (No route matches "/stylesheets/controls-sprite.png"):
+  
+
+
+
+Started GET "/gigs" for 189.28.239.49 at Sun Jun 10 10:53:47 -0700 2012
+  Processing by GigsController#index as HTML
+Rendered gigs/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 34ms (Views: 32.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/gigs/new" for 189.28.239.49 at Sun Jun 10 10:54:04 -0700 2012
+  Processing by GigsController#new as HTML
+Rendered gigs/_form.html.erb (28.5ms)
+Rendered gigs/new.html.erb within layouts/application (48.7ms)
+Completed 200 OK in 201ms (Views: 191.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/gigs" for 189.28.239.49 at Sun Jun 10 10:54:21 -0700 2012
+  Processing by GigsController#create as HTML
+  Parameters: {"commit"=>"Create Gig", "authenticity_token"=>"/A+0zfgSlmLRRZjQllDLlo2HGN7RdHmetnXWuI036l4=", "utf8"=>"✓", "gig"=>{"name"=>"Bizarro", "link"=>"", "place"=>"Miraflores, Lima."}}
+Redirected to http://djpaulsutcliffe.com/gigs/1
+Completed 302 Found in 51ms
+
+
+Started GET "/gigs/1" for 189.28.239.49 at Sun Jun 10 10:54:21 -0700 2012
+  Processing by GigsController#show as HTML
+  Parameters: {"id"=>"1"}
+Rendered gigs/show.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 20ms (Views: 18.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/gigs/1/edit" for 189.28.239.49 at Sun Jun 10 10:54:25 -0700 2012
+  Processing by GigsController#edit as HTML
+  Parameters: {"id"=>"1"}
+Rendered gigs/_form.html.erb (3.0ms)
+Rendered gigs/edit.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 24ms (Views: 19.3ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/gigs" for 189.28.239.49 at Sun Jun 10 10:54:29 -0700 2012
+  Processing by GigsController#index as HTML
+Rendered gigs/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 5ms (Views: 3.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 189.28.239.49 at Sun Jun 10 11:19:08 -0700 2012
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 19ms (Views: 13.0ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/royal-slider/img/cursors/grab.png" for 189.28.239.49 at Sun Jun 10 11:19:08 -0700 2012
+
+ActionController::RoutingError (No route matches "/royal-slider/img/cursors/grab.png"):
+  
+
+
+
+Started GET "/stylesheets/controls-sprite.png" for 189.28.239.49 at Sun Jun 10 11:19:08 -0700 2012
+
+ActionController::RoutingError (No route matches "/stylesheets/controls-sprite.png"):
+  
+
+
+
+Started GET "/" for 190.235.17.143 at Sun Jun 10 14:00:31 -0700 2012
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (80.4ms)
+Completed 200 OK in 92ms (Views: 87.0ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/stylesheets/controls-sprite.png" for 190.235.17.143 at Sun Jun 10 14:00:35 -0700 2012
+
+ActionController::RoutingError (No route matches "/stylesheets/controls-sprite.png"):
+  
+
+
+
+Started GET "/royal-slider/img/cursors/grab.png" for 190.235.17.143 at Sun Jun 10 14:00:35 -0700 2012
+
+ActionController::RoutingError (No route matches "/royal-slider/img/cursors/grab.png"):
+  
+
+
+
+Started GET "/" for 190.235.17.143 at Sun Jun 10 14:02:52 -0700 2012
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 5ms (Views: 1.6ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/" for 190.235.17.143 at Sun Jun 10 14:03:40 -0700 2012
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 6ms (Views: 2.5ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/royal-slider/img/cursors/grab.png" for 190.235.17.143 at Sun Jun 10 14:03:43 -0700 2012
+
+ActionController::RoutingError (No route matches "/royal-slider/img/cursors/grab.png"):
+  
+
+
+
+Started GET "/stylesheets/controls-sprite.png" for 190.235.17.143 at Sun Jun 10 14:03:43 -0700 2012
+
+ActionController::RoutingError (No route matches "/stylesheets/controls-sprite.png"):
+  
+
+
+
+Started GET "/" for 190.235.17.143 at Sun Jun 10 14:04:16 -0700 2012
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 5ms (Views: 1.7ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/royal-slider/img/cursors/grab.png" for 190.235.17.143 at Sun Jun 10 14:04:17 -0700 2012
+
+ActionController::RoutingError (No route matches "/royal-slider/img/cursors/grab.png"):
+  
+
+
+
+Started GET "/stylesheets/controls-sprite.png" for 190.235.17.143 at Sun Jun 10 14:04:17 -0700 2012
+
+ActionController::RoutingError (No route matches "/stylesheets/controls-sprite.png"):
+  
+
+
+
+Started GET "/" for 190.235.17.143 at Sun Jun 10 14:04:39 -0700 2012
+  Processing by HomeController#index as HTML
+Rendered shared/_social_links.html.erb (0.2ms)
+Rendered shared/_social_links.html.erb (0.0ms)
+Rendered home/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 19ms (Views: 14.5ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/royal-slider/img/cursors/grab.png" for 190.235.17.143 at Sun Jun 10 14:04:40 -0700 2012
+
+ActionController::RoutingError (No route matches "/royal-slider/img/cursors/grab.png"):
+  
+
+
+
+Started GET "/stylesheets/controls-sprite.png" for 190.235.17.143 at Sun Jun 10 14:04:40 -0700 2012
+
+ActionController::RoutingError (No route matches "/stylesheets/controls-sprite.png"):
+  
+
+
+
+Started GET "/" for 190.235.17.143 at Sun Jun 10 14:06:14 -0700 2012
+  Processing by HomeController#index as HTML
+Rendered shared/_social_links.html.erb (0.0ms)
+Rendered shared/_social_links.html.erb (0.0ms)
+Rendered home/index.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 11ms (Views: 7.8ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/royal-slider/img/cursors/grab.png" for 190.235.17.143 at Sun Jun 10 14:06:15 -0700 2012
+
+ActionController::RoutingError (No route matches "/royal-slider/img/cursors/grab.png"):
+  
+
+
+
+Started GET "/stylesheets/controls-sprite.png" for 190.235.17.143 at Sun Jun 10 14:06:15 -0700 2012
+
+ActionController::RoutingError (No route matches "/stylesheets/controls-sprite.png"):
+  
+
+
+
+Started GET "/slides" for 190.235.17.143 at Sun Jun 10 14:06:50 -0700 2012
+  Processing by SlidesController#index as HTML
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered slides/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 14ms (Views: 12.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/slides/new" for 190.235.17.143 at Sun Jun 10 14:06:54 -0700 2012
+  Processing by SlidesController#new as HTML
+Rendered slides/_form.html.erb (12.9ms)
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered slides/new.html.erb within layouts/application (16.5ms)
+Completed 200 OK in 37ms (Views: 18.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/slides" for 190.235.17.143 at Sun Jun 10 14:07:22 -0700 2012
+  Processing by SlidesController#create as HTML
+  Parameters: {"commit"=>"Create Slide", "authenticity_token"=>"RPd/50yqJYkV4hf4UhpZKsLlSa0PDDGuqX75sGpngo0=", "utf8"=>"✓", "slide"=>{"label"=>"", "slide"=>#<ActionDispatch::Http::UploadedFile:0x2c5fda15a98 @headers="Content-Disposition: form-data; name=\"slide[slide]\"; filename=\"slide-1.jpg\"\r\nContent-Type: image/jpeg\r\n", @tempfile=#<File:/tmp/RackMultipart20120610-17284-mni5de-0>, @content_type="image/jpeg", @original_filename="slide-1.jpg">}}
+[32mCommand[0m :: identify -format %wx%h '/tmp/stream20120610-17284-159e3nn-0.jpg[0]'
+[32mCommand[0m :: convert '/tmp/stream20120610-17284-159e3nn-0.jpg[0]' -resize "120x450>" '/tmp/stream20120610-17284-159e3nn-020120610-17284-bdiw5z-0.jpg'
+[32mCommand[0m :: identify -format %wx%h '/tmp/stream20120610-17284-159e3nn-0.jpg[0]'
+[32mCommand[0m :: convert '/tmp/stream20120610-17284-159e3nn-0.jpg[0]' -resize "1200x450>" '/tmp/stream20120610-17284-159e3nn-020120610-17284-1tmg2ku-0.jpg'
+[paperclip] Saving attachments.
+[paperclip] saving /home/paulsutcliffe/paulsutcliffe/public/images/assets/slides/1/original/slide-1.jpg
+[paperclip] saving /home/paulsutcliffe/paulsutcliffe/public/images/assets/slides/1/min/slide-1.jpg
+[paperclip] saving /home/paulsutcliffe/paulsutcliffe/public/images/assets/slides/1/max/slide-1.jpg
+Redirected to http://djpaulsutcliffe.com/slides/1
+Completed 302 Found in 821ms
+
+
+Started GET "/slides/1" for 190.235.17.143 at Sun Jun 10 14:07:24 -0700 2012
+  Processing by SlidesController#show as HTML
+  Parameters: {"id"=>"1"}
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered slides/show.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 12ms (Views: 7.2ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/slides" for 190.235.17.143 at Sun Jun 10 14:07:27 -0700 2012
+  Processing by SlidesController#index as HTML
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered slides/index.html.erb within layouts/application (12.3ms)
+Completed 200 OK in 14ms (Views: 6.0ms | ActiveRecord: 6.9ms)
+
+
+Started GET "/slides/new" for 190.235.17.143 at Sun Jun 10 14:07:31 -0700 2012
+  Processing by SlidesController#new as HTML
+Rendered slides/_form.html.erb (3.7ms)
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered slides/new.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 9ms (Views: 7.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/slides" for 190.235.17.143 at Sun Jun 10 14:07:43 -0700 2012
+  Processing by SlidesController#create as HTML
+  Parameters: {"commit"=>"Create Slide", "authenticity_token"=>"RPd/50yqJYkV4hf4UhpZKsLlSa0PDDGuqX75sGpngo0=", "utf8"=>"✓", "slide"=>{"label"=>"", "slide"=>#<ActionDispatch::Http::UploadedFile:0x2c5fd7e6650 @headers="Content-Disposition: form-data; name=\"slide[slide]\"; filename=\"slide-2.jpg\"\r\nContent-Type: image/jpeg\r\n", @tempfile=#<File:/tmp/RackMultipart20120610-17284-1gqpejo-0>, @content_type="image/jpeg", @original_filename="slide-2.jpg">}}
+[32mCommand[0m :: identify -format %wx%h '/tmp/stream20120610-17284-tm2tx8-0.jpg[0]'
+[32mCommand[0m :: convert '/tmp/stream20120610-17284-tm2tx8-0.jpg[0]' -resize "120x450>" '/tmp/stream20120610-17284-tm2tx8-020120610-17284-ctyfwl-0.jpg'
+[32mCommand[0m :: identify -format %wx%h '/tmp/stream20120610-17284-tm2tx8-0.jpg[0]'
+[32mCommand[0m :: convert '/tmp/stream20120610-17284-tm2tx8-0.jpg[0]' -resize "1200x450>" '/tmp/stream20120610-17284-tm2tx8-020120610-17284-cqsfxa-0.jpg'
+[paperclip] Saving attachments.
+[paperclip] saving /home/paulsutcliffe/paulsutcliffe/public/images/assets/slides/2/original/slide-2.jpg
+[paperclip] saving /home/paulsutcliffe/paulsutcliffe/public/images/assets/slides/2/min/slide-2.jpg
+[paperclip] saving /home/paulsutcliffe/paulsutcliffe/public/images/assets/slides/2/max/slide-2.jpg
+Redirected to http://djpaulsutcliffe.com/slides/2
+Completed 302 Found in 323ms
+
+
+Started GET "/slides/2" for 190.235.17.143 at Sun Jun 10 14:07:44 -0700 2012
+  Processing by SlidesController#show as HTML
+  Parameters: {"id"=>"2"}
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered slides/show.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 9ms (Views: 5.3ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/slides" for 190.235.17.143 at Sun Jun 10 14:07:48 -0700 2012
+  Processing by SlidesController#index as HTML
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered slides/index.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 9ms (Views: 7.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/slides/new" for 190.235.17.143 at Sun Jun 10 14:07:51 -0700 2012
+  Processing by SlidesController#new as HTML
+Rendered slides/_form.html.erb (2.3ms)
+Rendered shared/_social_links.html.erb (0.0ms)
+Rendered shared/_social_links.html.erb (0.0ms)
+Rendered slides/new.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/slides" for 190.235.17.143 at Sun Jun 10 14:08:07 -0700 2012
+  Processing by SlidesController#create as HTML
+  Parameters: {"commit"=>"Create Slide", "authenticity_token"=>"RPd/50yqJYkV4hf4UhpZKsLlSa0PDDGuqX75sGpngo0=", "utf8"=>"✓", "slide"=>{"label"=>"", "slide"=>#<ActionDispatch::Http::UploadedFile:0x2c5fd62c238 @headers="Content-Disposition: form-data; name=\"slide[slide]\"; filename=\"slide-3.jpg\"\r\nContent-Type: image/jpeg\r\n", @tempfile=#<File:/tmp/RackMultipart20120610-17284-1orkwnr-0>, @content_type="image/jpeg", @original_filename="slide-3.jpg">}}
+[32mCommand[0m :: identify -format %wx%h '/tmp/stream20120610-17284-15iofef-0.jpg[0]'
+[32mCommand[0m :: convert '/tmp/stream20120610-17284-15iofef-0.jpg[0]' -resize "120x450>" '/tmp/stream20120610-17284-15iofef-020120610-17284-1iuzm1r-0.jpg'
+[32mCommand[0m :: identify -format %wx%h '/tmp/stream20120610-17284-15iofef-0.jpg[0]'
+[32mCommand[0m :: convert '/tmp/stream20120610-17284-15iofef-0.jpg[0]' -resize "1200x450>" '/tmp/stream20120610-17284-15iofef-020120610-17284-uj9pxx-0.jpg'
+[paperclip] Saving attachments.
+[paperclip] saving /home/paulsutcliffe/paulsutcliffe/public/images/assets/slides/3/original/slide-3.jpg
+[paperclip] saving /home/paulsutcliffe/paulsutcliffe/public/images/assets/slides/3/min/slide-3.jpg
+[paperclip] saving /home/paulsutcliffe/paulsutcliffe/public/images/assets/slides/3/max/slide-3.jpg
+Redirected to http://djpaulsutcliffe.com/slides/3
+Completed 302 Found in 440ms
+
+
+Started GET "/slides/3" for 190.235.17.143 at Sun Jun 10 14:08:08 -0700 2012
+  Processing by SlidesController#show as HTML
+  Parameters: {"id"=>"3"}
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered slides/show.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 5ms (Views: 2.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/gigs" for 190.235.17.143 at Sun Jun 10 14:08:27 -0700 2012
+  Processing by GigsController#index as HTML
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered shared/_social_links.html.erb (0.0ms)
+Rendered gigs/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 10ms (Views: 8.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/gigs/new" for 190.235.17.143 at Sun Jun 10 14:09:45 -0700 2012
+  Processing by GigsController#new as HTML
+Rendered gigs/_form.html.erb (5.3ms)
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered shared/_social_links.html.erb (0.0ms)
+Rendered gigs/new.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 12ms (Views: 10.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/gigs" for 190.235.17.143 at Sun Jun 10 14:09:59 -0700 2012
+  Processing by GigsController#create as HTML
+  Parameters: {"commit"=>"Create Gig", "authenticity_token"=>"RPd/50yqJYkV4hf4UhpZKsLlSa0PDDGuqX75sGpngo0=", "utf8"=>"✓", "gig"=>{"name"=>"Maze", "link"=>"", "place"=>"Miraflores, Lima."}}
+Redirected to http://djpaulsutcliffe.com/gigs/2
+Completed 302 Found in 24ms
+
+
+Started GET "/gigs/2" for 190.235.17.143 at Sun Jun 10 14:10:00 -0700 2012
+  Processing by GigsController#show as HTML
+  Parameters: {"id"=>"2"}
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered gigs/show.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 9ms (Views: 5.7ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/gigs" for 190.235.17.143 at Sun Jun 10 14:10:14 -0700 2012
+  Processing by GigsController#index as HTML
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered gigs/index.html.erb within layouts/application (14.3ms)
+Completed 200 OK in 16ms (Views: 7.4ms | ActiveRecord: 7.7ms)
+
+
+Started GET "/gigs/new" for 190.235.17.143 at Sun Jun 10 14:10:16 -0700 2012
+  Processing by GigsController#new as HTML
+Rendered gigs/_form.html.erb (2.5ms)
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered shared/_social_links.html.erb (0.0ms)
+Rendered gigs/new.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 5ms (Views: 4.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/gigs" for 190.235.17.143 at Sun Jun 10 14:10:35 -0700 2012
+  Processing by GigsController#create as HTML
+  Parameters: {"commit"=>"Create Gig", "authenticity_token"=>"RPd/50yqJYkV4hf4UhpZKsLlSa0PDDGuqX75sGpngo0=", "utf8"=>"✓", "gig"=>{"name"=>"D-Edge", "link"=>"", "place"=>"Sao Paulo, Brasil. "}}
+Redirected to http://djpaulsutcliffe.com/gigs/3
+Completed 302 Found in 10ms
+
+
+Started GET "/gigs/3" for 190.235.17.143 at Sun Jun 10 14:10:36 -0700 2012
+  Processing by GigsController#show as HTML
+  Parameters: {"id"=>"3"}
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered shared/_social_links.html.erb (0.0ms)
+Rendered gigs/show.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 5ms (Views: 3.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/gigs" for 190.235.17.143 at Sun Jun 10 14:10:39 -0700 2012
+  Processing by GigsController#index as HTML
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered gigs/index.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 9ms (Views: 7.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/gigs/new" for 190.235.17.143 at Sun Jun 10 14:10:53 -0700 2012
+  Processing by GigsController#new as HTML
+Rendered gigs/_form.html.erb (4.3ms)
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered gigs/new.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 10ms (Views: 8.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/gigs" for 190.235.17.143 at Sun Jun 10 14:11:05 -0700 2012
+  Processing by GigsController#create as HTML
+  Parameters: {"commit"=>"Create Gig", "authenticity_token"=>"RPd/50yqJYkV4hf4UhpZKsLlSa0PDDGuqX75sGpngo0=", "utf8"=>"✓", "gig"=>{"name"=>"Aura", "link"=>"", "place"=>"Miraflores, Lima. "}}
+Redirected to http://djpaulsutcliffe.com/gigs/4
+Completed 302 Found in 16ms
+
+
+Started GET "/gigs/4" for 190.235.17.143 at Sun Jun 10 14:11:06 -0700 2012
+  Processing by GigsController#show as HTML
+  Parameters: {"id"=>"4"}
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered gigs/show.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 6ms (Views: 4.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/gigs" for 190.235.17.143 at Sun Jun 10 14:11:19 -0700 2012
+  Processing by GigsController#index as HTML
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered gigs/index.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 11ms (Views: 9.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/gigs/new" for 190.235.17.143 at Sun Jun 10 14:11:22 -0700 2012
+  Processing by GigsController#new as HTML
+Rendered gigs/_form.html.erb (2.7ms)
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered shared/_social_links.html.erb (0.0ms)
+Rendered gigs/new.html.erb within layouts/application (52.9ms)
+Completed 200 OK in 54ms (Views: 53.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/gigs" for 190.235.17.143 at Sun Jun 10 14:11:35 -0700 2012
+  Processing by GigsController#create as HTML
+  Parameters: {"commit"=>"Create Gig", "authenticity_token"=>"RPd/50yqJYkV4hf4UhpZKsLlSa0PDDGuqX75sGpngo0=", "utf8"=>"✓", "gig"=>{"name"=>"Fiesta Proyecto X", "link"=>"", "place"=>"La Molina, Lima. "}}
+Redirected to http://djpaulsutcliffe.com/gigs/5
+Completed 302 Found in 6ms
+
+
+Started GET "/gigs/5" for 190.235.17.143 at Sun Jun 10 14:11:36 -0700 2012
+  Processing by GigsController#show as HTML
+  Parameters: {"id"=>"5"}
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered gigs/show.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 6ms (Views: 3.0ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/scwidgets" for 190.235.17.143 at Sun Jun 10 14:18:05 -0700 2012
+  Processing by ScwidgetsController#index as HTML
+Rendered shared/_social_links.html.erb (0.2ms)
+Rendered shared/_social_links.html.erb (0.0ms)
+Rendered scwidgets/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 13ms (Views: 11.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/scwidgets/new" for 190.235.17.143 at Sun Jun 10 14:18:11 -0700 2012
+  Processing by ScwidgetsController#new as HTML
+Rendered scwidgets/_form.html.erb (9.5ms)
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered scwidgets/new.html.erb within layouts/application (14.5ms)
+Completed 200 OK in 56ms (Views: 16.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/scwidgets" for 190.235.17.143 at Sun Jun 10 14:18:23 -0700 2012
+  Processing by ScwidgetsController#create as HTML
+  Parameters: {"scwidget"=>{"reference"=>"http://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F48984291&amp;auto_play=false&amp;show_artwork=true&amp;color=ff7700"}, "commit"=>"Create Scwidget", "authenticity_token"=>"RPd/50yqJYkV4hf4UhpZKsLlSa0PDDGuqX75sGpngo0=", "utf8"=>"✓"}
+Redirected to http://djpaulsutcliffe.com/scwidgets/1
+Completed 302 Found in 63ms
+
+
+Started GET "/scwidgets/1" for 190.235.17.143 at Sun Jun 10 14:18:23 -0700 2012
+  Processing by ScwidgetsController#show as HTML
+  Parameters: {"id"=>"1"}
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered shared/_social_links.html.erb (0.0ms)
+Rendered scwidgets/show.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 6ms (Views: 3.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/scwidgets" for 190.235.17.143 at Sun Jun 10 14:18:43 -0700 2012
+  Processing by ScwidgetsController#index as HTML
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered shared/_social_links.html.erb (0.0ms)
+Rendered scwidgets/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/scwidgets/new" for 190.235.17.143 at Sun Jun 10 14:18:46 -0700 2012
+  Processing by ScwidgetsController#new as HTML
+Rendered scwidgets/_form.html.erb (1.8ms)
+Rendered shared/_social_links.html.erb (0.0ms)
+Rendered shared/_social_links.html.erb (0.0ms)
+Rendered scwidgets/new.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/scwidgets" for 190.235.17.143 at Sun Jun 10 14:18:54 -0700 2012
+  Processing by ScwidgetsController#create as HTML
+  Parameters: {"scwidget"=>{"reference"=>"http://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F48984292&auto_play=false&show_artwork=true&color=ff7700"}, "commit"=>"Create Scwidget", "authenticity_token"=>"RPd/50yqJYkV4hf4UhpZKsLlSa0PDDGuqX75sGpngo0=", "utf8"=>"✓"}
+Redirected to http://djpaulsutcliffe.com/scwidgets/2
+Completed 302 Found in 12ms
+
+
+Started GET "/scwidgets/2" for 190.235.17.143 at Sun Jun 10 14:18:54 -0700 2012
+  Processing by ScwidgetsController#show as HTML
+  Parameters: {"id"=>"2"}
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered scwidgets/show.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 10ms (Views: 3.0ms | ActiveRecord: 5.7ms)
+
+
+Started GET "/scwidgets" for 190.235.17.143 at Sun Jun 10 14:19:16 -0700 2012
+  Processing by ScwidgetsController#index as HTML
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered scwidgets/index.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 17ms (Views: 15.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/scwidgets/new" for 190.235.17.143 at Sun Jun 10 14:19:20 -0700 2012
+  Processing by ScwidgetsController#new as HTML
+Rendered scwidgets/_form.html.erb (1.8ms)
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered shared/_social_links.html.erb (0.0ms)
+Rendered scwidgets/new.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/scwidgets" for 190.235.17.143 at Sun Jun 10 14:19:40 -0700 2012
+  Processing by ScwidgetsController#create as HTML
+  Parameters: {"scwidget"=>{"reference"=>"http://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F48984290&amp;auto_play=false&amp;show_artwork=true&amp;color=00ff55"}, "commit"=>"Create Scwidget", "authenticity_token"=>"RPd/50yqJYkV4hf4UhpZKsLlSa0PDDGuqX75sGpngo0=", "utf8"=>"✓"}
+Redirected to http://djpaulsutcliffe.com/scwidgets/3
+Completed 302 Found in 22ms
+
+
+Started GET "/scwidgets/3" for 190.235.17.143 at Sun Jun 10 14:19:41 -0700 2012
+  Processing by ScwidgetsController#show as HTML
+  Parameters: {"id"=>"3"}
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered shared/_social_links.html.erb (0.0ms)
+Rendered scwidgets/show.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 5ms (Views: 2.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/scwidgets" for 190.235.17.143 at Sun Jun 10 14:19:46 -0700 2012
+  Processing by ScwidgetsController#index as HTML
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered scwidgets/index.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 10ms (Views: 8.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/scwidgets/new" for 190.235.17.143 at Sun Jun 10 14:20:06 -0700 2012
+  Processing by ScwidgetsController#new as HTML
+Rendered scwidgets/_form.html.erb (2.4ms)
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered scwidgets/new.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/scwidgets" for 190.235.17.143 at Sun Jun 10 14:20:11 -0700 2012
+  Processing by ScwidgetsController#create as HTML
+  Parameters: {"scwidget"=>{"reference"=>"http://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F48986847&amp;auto_play=false&amp;show_artwork=true&amp;color=ff7700"}, "commit"=>"Create Scwidget", "authenticity_token"=>"RPd/50yqJYkV4hf4UhpZKsLlSa0PDDGuqX75sGpngo0=", "utf8"=>"✓"}
+Redirected to http://djpaulsutcliffe.com/scwidgets/4
+Completed 302 Found in 16ms
+
+
+Started GET "/scwidgets/4" for 190.235.17.143 at Sun Jun 10 14:20:11 -0700 2012
+  Processing by ScwidgetsController#show as HTML
+  Parameters: {"id"=>"4"}
+Rendered shared/_social_links.html.erb (0.0ms)
+Rendered shared/_social_links.html.erb (0.0ms)
+Rendered scwidgets/show.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 5ms (Views: 2.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 190.235.17.143 at Sun Jun 10 14:20:28 -0700 2012
+  Processing by HomeController#index as HTML
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered home/index.html.erb within layouts/application (22.3ms)
+Completed 200 OK in 33ms (Views: 27.0ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/royal-slider/img/cursors/grab.png" for 190.235.17.143 at Sun Jun 10 14:20:30 -0700 2012
+
+ActionController::RoutingError (No route matches "/royal-slider/img/cursors/grab.png"):
+  
+
+
+
+Started GET "/stylesheets/controls-sprite.png" for 190.235.17.143 at Sun Jun 10 14:20:30 -0700 2012
+
+ActionController::RoutingError (No route matches "/stylesheets/controls-sprite.png"):
+  
+
+
+
+Started GET "/" for 190.235.17.143 at Sun Jun 10 14:22:32 -0700 2012
+  Processing by HomeController#index as HTML
+Rendered shared/_social_links.html.erb (0.2ms)
+Rendered shared/_social_links.html.erb (0.0ms)
+Rendered home/index.html.erb within layouts/application (20.9ms)
+Completed 200 OK in 30ms (Views: 25.3ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/royal-slider/img/cursors/grab.png" for 190.235.17.143 at Sun Jun 10 14:22:35 -0700 2012
+
+ActionController::RoutingError (No route matches "/royal-slider/img/cursors/grab.png"):
+  
+
+
+
+Started GET "/stylesheets/controls-sprite.png" for 190.235.17.143 at Sun Jun 10 14:22:35 -0700 2012
+
+ActionController::RoutingError (No route matches "/stylesheets/controls-sprite.png"):
+  
+
+
+
+Started GET "/" for 190.235.17.143 at Sun Jun 10 15:02:17 -0700 2012
+  Processing by HomeController#index as HTML
+Rendered shared/_social_links.html.erb (0.2ms)
+Rendered shared/_social_links.html.erb (0.0ms)
+Rendered home/index.html.erb within layouts/application (19.3ms)
+Completed 200 OK in 29ms (Views: 23.8ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/royal-slider/img/cursors/grab.png" for 190.235.17.143 at Sun Jun 10 15:02:22 -0700 2012
+
+ActionController::RoutingError (No route matches "/royal-slider/img/cursors/grab.png"):
+  
+
+
+
+Started GET "/stylesheets/controls-sprite.png" for 190.235.17.143 at Sun Jun 10 15:02:22 -0700 2012
+
+ActionController::RoutingError (No route matches "/stylesheets/controls-sprite.png"):
+  
+
+
+
+Started GET "/" for 190.235.17.143 at Sun Jun 10 15:14:46 -0700 2012
+  Processing by HomeController#index as HTML
+Rendered shared/_social_links.html.erb (0.3ms)
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered home/index.html.erb within layouts/application (31.3ms)
+Completed 200 OK in 43ms (Views: 36.4ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/royal-slider/img/cursors/grab.png" for 190.235.17.143 at Sun Jun 10 15:14:48 -0700 2012
+
+ActionController::RoutingError (No route matches "/royal-slider/img/cursors/grab.png"):
+  
+
+
+
+Started GET "/stylesheets/controls-sprite.png" for 190.235.17.143 at Sun Jun 10 15:14:48 -0700 2012
+
+ActionController::RoutingError (No route matches "/stylesheets/controls-sprite.png"):
+  
+
+
+
+Started GET "/" for 190.235.17.143 at Sun Jun 10 15:16:18 -0700 2012
+  Processing by HomeController#index as HTML
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered shared/_social_links.html.erb (0.0ms)
+Rendered home/index.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 15ms (Views: 11.5ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/royal-slider/img/cursors/grab.png" for 190.235.17.143 at Sun Jun 10 15:16:20 -0700 2012
+
+ActionController::RoutingError (No route matches "/royal-slider/img/cursors/grab.png"):
+  
+
+
+
+Started GET "/stylesheets/controls-sprite.png" for 190.235.17.143 at Sun Jun 10 15:16:20 -0700 2012
+
+ActionController::RoutingError (No route matches "/stylesheets/controls-sprite.png"):
+  
+
+
+
+Started GET "/" for 190.235.17.143 at Sun Jun 10 15:17:41 -0700 2012
+  Processing by HomeController#index as HTML
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered home/index.html.erb within layouts/application (13.5ms)
+Completed 200 OK in 20ms (Views: 14.5ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/royal-slider/img/cursors/grab.png" for 190.235.17.143 at Sun Jun 10 15:17:43 -0700 2012
+
+ActionController::RoutingError (No route matches "/royal-slider/img/cursors/grab.png"):
+  
+
+
+
+Started GET "/stylesheets/controls-sprite.png" for 190.235.17.143 at Sun Jun 10 15:17:43 -0700 2012
+
+ActionController::RoutingError (No route matches "/stylesheets/controls-sprite.png"):
+  
+
+
+
+Started GET "/" for 190.235.17.143 at Sun Jun 10 15:17:56 -0700 2012
+  Processing by HomeController#index as HTML
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered home/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 24ms (Views: 4.7ms | ActiveRecord: 17.7ms)
+
+
+Started GET "/royal-slider/img/cursors/grab.png" for 190.235.17.143 at Sun Jun 10 15:17:58 -0700 2012
+
+ActionController::RoutingError (No route matches "/royal-slider/img/cursors/grab.png"):
+  
+
+
+
+Started GET "/stylesheets/controls-sprite.png" for 190.235.17.143 at Sun Jun 10 15:17:58 -0700 2012
+
+ActionController::RoutingError (No route matches "/stylesheets/controls-sprite.png"):
+  
+
+
+
+Started GET "/" for 190.235.17.143 at Sun Jun 10 15:18:26 -0700 2012
+  Processing by HomeController#index as HTML
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered shared/_social_links.html.erb (0.0ms)
+Rendered home/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 8ms (Views: 4.4ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/royal-slider/img/cursors/grab.png" for 190.235.17.143 at Sun Jun 10 15:18:27 -0700 2012
+
+ActionController::RoutingError (No route matches "/royal-slider/img/cursors/grab.png"):
+  
+
+
+
+Started GET "/stylesheets/controls-sprite.png" for 190.235.17.143 at Sun Jun 10 15:18:27 -0700 2012
+
+ActionController::RoutingError (No route matches "/stylesheets/controls-sprite.png"):
+  
+
+
+
+Started GET "/" for 67.205.54.97 at Sun Jun 10 15:21:31 -0700 2012
+  Processing by HomeController#index as HTML
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered home/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 67ms (Views: 7.7ms | ActiveRecord: 51.5ms)
+
+
+Started GET "/" for 67.205.54.97 at Sun Jun 10 15:25:59 -0700 2012
+  Processing by HomeController#index as HTML
+Rendered shared/_social_links.html.erb (0.2ms)
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered home/index.html.erb within layouts/application (43.2ms)
+Completed 200 OK in 68ms (Views: 47.7ms | ActiveRecord: 18.1ms)
+
+
+Started GET "/" for 190.235.17.143 at Sun Jun 10 15:26:07 -0700 2012
+  Processing by HomeController#index as HTML
+Rendered shared/_social_links.html.erb (0.0ms)
+Rendered shared/_social_links.html.erb (0.0ms)
+Rendered home/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 8ms (Views: 4.7ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/royal-slider/img/cursors/grab.png" for 190.235.17.143 at Sun Jun 10 15:26:09 -0700 2012
+
+ActionController::RoutingError (No route matches "/royal-slider/img/cursors/grab.png"):
+  
+
+
+
+Started GET "/stylesheets/controls-sprite.png" for 190.235.17.143 at Sun Jun 10 15:26:09 -0700 2012
+
+ActionController::RoutingError (No route matches "/stylesheets/controls-sprite.png"):
+  
+
+
+
+Started GET "/" for 190.235.17.143 at Sun Jun 10 15:27:00 -0700 2012
+  Processing by HomeController#index as HTML
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered home/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 15ms (Views: 9.8ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/royal-slider/img/cursors/grab.png" for 190.235.17.143 at Sun Jun 10 15:27:05 -0700 2012
+
+ActionController::RoutingError (No route matches "/royal-slider/img/cursors/grab.png"):
+  
+
+
+
+Started GET "/stylesheets/controls-sprite.png" for 190.235.17.143 at Sun Jun 10 15:27:05 -0700 2012
+
+ActionController::RoutingError (No route matches "/stylesheets/controls-sprite.png"):
+  
+
+
+
+Started GET "/" for 190.235.17.143 at Sun Jun 10 15:28:39 -0700 2012
+  Processing by HomeController#index as HTML
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered home/index.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 14ms (Views: 9.5ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/royal-slider/img/cursors/grab.png" for 190.235.17.143 at Sun Jun 10 15:28:42 -0700 2012
+
+ActionController::RoutingError (No route matches "/royal-slider/img/cursors/grab.png"):
+  
+
+
+
+Started GET "/stylesheets/controls-sprite.png" for 190.235.17.143 at Sun Jun 10 15:28:42 -0700 2012
+
+ActionController::RoutingError (No route matches "/stylesheets/controls-sprite.png"):
+  
+
+
+
+Started GET "/" for 190.235.17.143 at Sun Jun 10 15:48:26 -0700 2012
+  Processing by HomeController#index as HTML
+Rendered shared/_social_links.html.erb (0.2ms)
+Rendered shared/_social_links.html.erb (0.0ms)
+Rendered home/index.html.erb within layouts/application (40.2ms)
+Completed 200 OK in 57ms (Views: 45.4ms | ActiveRecord: 9.0ms)
+
+
+Started GET "/royal-slider/img/cursors/grab.png" for 190.235.17.143 at Sun Jun 10 15:48:28 -0700 2012
+
+ActionController::RoutingError (No route matches "/royal-slider/img/cursors/grab.png"):
+  
+
+
+
+Started GET "/stylesheets/controls-sprite.png" for 190.235.17.143 at Sun Jun 10 15:48:28 -0700 2012
+
+ActionController::RoutingError (No route matches "/stylesheets/controls-sprite.png"):
+  
+
+
+
+Started GET "/" for 190.235.17.143 at Sun Jun 10 15:49:32 -0700 2012
+  Processing by HomeController#index as HTML
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered home/index.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 11ms (Views: 8.1ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/royal-slider/img/cursors/grab.png" for 190.235.17.143 at Sun Jun 10 15:49:34 -0700 2012
+
+ActionController::RoutingError (No route matches "/royal-slider/img/cursors/grab.png"):
+  
+
+
+
+Started GET "/stylesheets/controls-sprite.png" for 190.235.17.143 at Sun Jun 10 15:49:34 -0700 2012
+
+ActionController::RoutingError (No route matches "/stylesheets/controls-sprite.png"):
+  
+
+
+
+Started GET "/" for 190.235.17.143 at Sun Jun 10 15:53:57 -0700 2012
+  Processing by HomeController#index as HTML
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered shared/_social_links.html.erb (0.0ms)
+Rendered home/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 16ms (Views: 4.4ms | ActiveRecord: 9.5ms)
+
+
+Started GET "/royal-slider/img/cursors/grab.png" for 190.235.17.143 at Sun Jun 10 15:54:00 -0700 2012
+
+ActionController::RoutingError (No route matches "/royal-slider/img/cursors/grab.png"):
+  
+
+
+
+Started GET "/stylesheets/controls-sprite.png" for 190.235.17.143 at Sun Jun 10 15:54:00 -0700 2012
+
+ActionController::RoutingError (No route matches "/stylesheets/controls-sprite.png"):
+  
+
+
+
+Started GET "/" for 190.235.17.143 at Sun Jun 10 15:57:52 -0700 2012
+  Processing by HomeController#index as HTML
+Rendered shared/_social_links.html.erb (0.2ms)
+Rendered shared/_social_links.html.erb (0.0ms)
+Rendered home/index.html.erb within layouts/application (22.1ms)
+Completed 200 OK in 31ms (Views: 26.7ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/royal-slider/img/cursors/grab.png" for 190.235.17.143 at Sun Jun 10 15:57:53 -0700 2012
+
+ActionController::RoutingError (No route matches "/royal-slider/img/cursors/grab.png"):
+  
+
+
+
+Started GET "/stylesheets/controls-sprite.png" for 190.235.17.143 at Sun Jun 10 15:57:53 -0700 2012
+
+ActionController::RoutingError (No route matches "/stylesheets/controls-sprite.png"):
+  
+
+
+
+Started GET "/" for 190.235.17.143 at Sun Jun 10 15:59:57 -0700 2012
+  Processing by HomeController#index as HTML
+Rendered shared/_social_links.html.erb (0.2ms)
+Rendered shared/_social_links.html.erb (0.0ms)
+Rendered home/index.html.erb within layouts/application (26.2ms)
+Completed 200 OK in 46ms (Views: 31.6ms | ActiveRecord: 11.6ms)
+
+
+Started GET "/royal-slider/img/cursors/grab.png" for 190.235.17.143 at Sun Jun 10 15:59:59 -0700 2012
+
+ActionController::RoutingError (No route matches "/royal-slider/img/cursors/grab.png"):
+  
+
+
+
+Started GET "/stylesheets/controls-sprite.png" for 190.235.17.143 at Sun Jun 10 15:59:59 -0700 2012
+
+ActionController::RoutingError (No route matches "/stylesheets/controls-sprite.png"):
+  
+
+
+
+Started GET "/" for 190.235.17.143 at Sun Jun 10 16:02:16 -0700 2012
+  Processing by HomeController#index as HTML
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered home/index.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 12ms (Views: 8.5ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/royal-slider/img/cursors/grab.png" for 190.235.17.143 at Sun Jun 10 16:02:18 -0700 2012
+
+ActionController::RoutingError (No route matches "/royal-slider/img/cursors/grab.png"):
+  
+
+
+
+Started GET "/stylesheets/controls-sprite.png" for 190.235.17.143 at Sun Jun 10 16:02:18 -0700 2012
+
+ActionController::RoutingError (No route matches "/stylesheets/controls-sprite.png"):
+  
+
+
+
+Started GET "/" for 190.235.17.143 at Sun Jun 10 16:04:47 -0700 2012
+  Processing by HomeController#index as HTML
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered home/index.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 12ms (Views: 7.6ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/royal-slider/img/cursors/grab.png" for 190.235.17.143 at Sun Jun 10 16:04:49 -0700 2012
+
+ActionController::RoutingError (No route matches "/royal-slider/img/cursors/grab.png"):
+  
+
+
+
+Started GET "/stylesheets/controls-sprite.png" for 190.235.17.143 at Sun Jun 10 16:04:49 -0700 2012
+
+ActionController::RoutingError (No route matches "/stylesheets/controls-sprite.png"):
+  
+
+
+
+Started GET "/" for 190.235.17.143 at Sun Jun 10 16:09:37 -0700 2012
+  Processing by HomeController#index as HTML
+Rendered shared/_social_links.html.erb (0.0ms)
+Rendered shared/_social_links.html.erb (0.0ms)
+Rendered home/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 10ms (Views: 6.6ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/royal-slider/img/cursors/grab.png" for 190.235.17.143 at Sun Jun 10 16:09:39 -0700 2012
+
+ActionController::RoutingError (No route matches "/royal-slider/img/cursors/grab.png"):
+  
+
+
+
+Started GET "/stylesheets/controls-sprite.png" for 190.235.17.143 at Sun Jun 10 16:09:39 -0700 2012
+
+ActionController::RoutingError (No route matches "/stylesheets/controls-sprite.png"):
+  
+
+
+
+Started GET "/" for 190.235.17.143 at Sun Jun 10 16:10:04 -0700 2012
+  Processing by HomeController#index as HTML
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered shared/_social_links.html.erb (0.0ms)
+Rendered home/index.html.erb within layouts/application (68.6ms)
+Completed 200 OK in 73ms (Views: 69.4ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/royal-slider/img/cursors/grab.png" for 190.235.17.143 at Sun Jun 10 16:10:09 -0700 2012
+
+ActionController::RoutingError (No route matches "/royal-slider/img/cursors/grab.png"):
+  
+
+
+
+Started GET "/stylesheets/controls-sprite.png" for 190.235.17.143 at Sun Jun 10 16:10:09 -0700 2012
+
+ActionController::RoutingError (No route matches "/stylesheets/controls-sprite.png"):
+  
+
+
+
+Started GET "/" for 190.235.17.143 at Sun Jun 10 16:11:36 -0700 2012
+  Processing by HomeController#index as HTML
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered home/index.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 11ms (Views: 6.8ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/royal-slider/img/cursors/grab.png" for 190.235.17.143 at Sun Jun 10 16:11:38 -0700 2012
+
+ActionController::RoutingError (No route matches "/royal-slider/img/cursors/grab.png"):
+  
+
+
+
+Started GET "/stylesheets/controls-sprite.png" for 190.235.17.143 at Sun Jun 10 16:11:38 -0700 2012
+
+ActionController::RoutingError (No route matches "/stylesheets/controls-sprite.png"):
+  
+
+
+
+Started GET "/" for 190.235.17.143 at Sun Jun 10 16:13:15 -0700 2012
+  Processing by HomeController#index as HTML
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered home/index.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 11ms (Views: 7.3ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/royal-slider/img/cursors/grab.png" for 190.235.17.143 at Sun Jun 10 16:13:16 -0700 2012
+
+ActionController::RoutingError (No route matches "/royal-slider/img/cursors/grab.png"):
+  
+
+
+
+Started GET "/stylesheets/controls-sprite.png" for 190.235.17.143 at Sun Jun 10 16:13:16 -0700 2012
+
+ActionController::RoutingError (No route matches "/stylesheets/controls-sprite.png"):
+  
+
+
+
+Started GET "/" for 190.235.17.143 at Sun Jun 10 16:15:12 -0700 2012
+  Processing by HomeController#index as HTML
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered shared/_social_links.html.erb (0.0ms)
+Rendered home/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 26ms (Views: 4.5ms | ActiveRecord: 19.9ms)
+
+
+Started GET "/stylesheets/controls-sprite.png" for 190.235.17.143 at Sun Jun 10 16:15:16 -0700 2012
+
+ActionController::RoutingError (No route matches "/stylesheets/controls-sprite.png"):
+  
+
+
+
+Started GET "/" for 67.205.54.97 at Sun Jun 10 16:15:41 -0700 2012
+  Processing by HomeController#index as HTML
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered shared/_social_links.html.erb (0.3ms)
+Rendered home/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 11ms (Views: 6.8ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/" for 189.28.239.49 at Sun Jun 10 17:03:23 -0700 2012
+  Processing by HomeController#index as HTML
+Rendered shared/_social_links.html.erb (0.2ms)
+Rendered shared/_social_links.html.erb (0.0ms)
+Rendered home/index.html.erb within layouts/application (28.5ms)
+Completed 200 OK in 65ms (Views: 60.7ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/royal-slider/img/cursors/grab.png" for 189.28.239.49 at Sun Jun 10 17:03:30 -0700 2012
+
+ActionController::RoutingError (No route matches "/royal-slider/img/cursors/grab.png"):
+  
+
+
+
+Started GET "/stylesheets/controls-sprite.png" for 189.28.239.49 at Sun Jun 10 17:03:31 -0700 2012
+
+ActionController::RoutingError (No route matches "/stylesheets/controls-sprite.png"):
+  
+
+
+
+Started GET "/gigs" for 189.28.239.49 at Sun Jun 10 17:05:14 -0700 2012
+  Processing by GigsController#index as HTML
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered shared/_social_links.html.erb (0.0ms)
+Rendered gigs/index.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 27ms (Views: 25.7ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/gigs/3" for 189.28.239.49 at Sun Jun 10 17:05:21 -0700 2012
+  Processing by GigsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"G9UMZSj0aubKu49nESGCFbX8C7mSDoNmQQr8dbtXov4=", "id"=>"3"}
+Redirected to http://djpaulsutcliffe.com/gigs
+Completed 302 Found in 174ms
+
+
+Started GET "/gigs" for 189.28.239.49 at Sun Jun 10 17:05:22 -0700 2012
+  Processing by GigsController#index as HTML
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered shared/_social_links.html.erb (0.0ms)
+Rendered gigs/index.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 9ms (Views: 7.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/gigs/new" for 189.28.239.49 at Sun Jun 10 17:05:26 -0700 2012
+  Processing by GigsController#new as HTML
+Rendered gigs/_form.html.erb (50.0ms)
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered shared/_social_links.html.erb (0.0ms)
+Rendered gigs/new.html.erb within layouts/application (62.7ms)
+Completed 200 OK in 74ms (Views: 73.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gigs" for 189.28.239.49 at Sun Jun 10 17:05:39 -0700 2012
+  Processing by GigsController#index as HTML
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered gigs/index.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 9ms (Views: 7.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 189.28.239.49 at Sun Jun 10 17:05:42 -0700 2012
+  Processing by HomeController#index as HTML
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered home/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 9ms (Views: 5.5ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/royal-slider/img/cursors/grab.png" for 189.28.239.49 at Sun Jun 10 17:05:42 -0700 2012
+
+ActionController::RoutingError (No route matches "/royal-slider/img/cursors/grab.png"):
+  
+
+
+
+Started GET "/stylesheets/controls-sprite.png" for 189.28.239.49 at Sun Jun 10 17:05:42 -0700 2012
+
+ActionController::RoutingError (No route matches "/stylesheets/controls-sprite.png"):
+  
+
+
+
+Started GET "/" for 190.232.247.163 at Sun Jun 10 19:34:08 -0700 2012
+  Processing by HomeController#index as HTML
+Rendered shared/_social_links.html.erb (0.2ms)
+Rendered shared/_social_links.html.erb (0.0ms)
+Rendered home/index.html.erb within layouts/application (205.2ms)
+Completed 200 OK in 262ms (Views: 257.1ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/royal-slider/img/cursors/grab.png" for 190.232.247.163 at Sun Jun 10 19:34:15 -0700 2012
+
+ActionController::RoutingError (No route matches "/royal-slider/img/cursors/grab.png"):
+  
+
+
+
+Started GET "/stylesheets/controls-sprite.png" for 190.232.247.163 at Sun Jun 10 19:34:15 -0700 2012
+
+ActionController::RoutingError (No route matches "/stylesheets/controls-sprite.png"):
+  
+
+
+
+Started GET "/" for 190.233.252.66 at Sun Jun 10 22:00:01 -0700 2012
+  Processing by HomeController#index as HTML
+Rendered shared/_social_links.html.erb (0.4ms)
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered home/index.html.erb within layouts/application (189.3ms)
+Completed 200 OK in 201ms (Views: 196.3ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/royal-slider/img/cursors/grab.png" for 190.233.252.66 at Sun Jun 10 22:00:04 -0700 2012
+
+ActionController::RoutingError (No route matches "/royal-slider/img/cursors/grab.png"):
+  
+
+
+
+Started GET "/stylesheets/controls-sprite.png" for 190.233.252.66 at Sun Jun 10 22:00:04 -0700 2012
+
+ActionController::RoutingError (No route matches "/stylesheets/controls-sprite.png"):
+  
+
+
+
+Started GET "/" for 190.233.252.66 at Sun Jun 10 22:00:23 -0700 2012
+  Processing by HomeController#index as HTML
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered home/index.html.erb within layouts/application (75.4ms)
+Completed 200 OK in 94ms (Views: 76.1ms | ActiveRecord: 16.2ms)
+
+
+Started GET "/royal-slider/img/cursors/grab.png" for 190.233.252.66 at Sun Jun 10 22:00:24 -0700 2012
+
+ActionController::RoutingError (No route matches "/royal-slider/img/cursors/grab.png"):
+  
+
+
+
+Started GET "/stylesheets/controls-sprite.png" for 190.233.252.66 at Sun Jun 10 22:00:24 -0700 2012
+
+ActionController::RoutingError (No route matches "/stylesheets/controls-sprite.png"):
+  
+
+
+
+Started GET "/" for 190.233.252.66 at Sun Jun 10 22:02:04 -0700 2012
+  Processing by HomeController#index as HTML
+Rendered shared/_social_links.html.erb (0.3ms)
+Rendered shared/_social_links.html.erb (0.0ms)
+Rendered home/index.html.erb within layouts/application (19.2ms)
+Completed 200 OK in 28ms (Views: 23.7ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/royal-slider/img/cursors/grab.png" for 190.233.252.66 at Sun Jun 10 22:02:06 -0700 2012
+
+ActionController::RoutingError (No route matches "/royal-slider/img/cursors/grab.png"):
+  
+
+
+
+Started GET "/stylesheets/controls-sprite.png" for 190.233.252.66 at Sun Jun 10 22:02:06 -0700 2012
+
+ActionController::RoutingError (No route matches "/stylesheets/controls-sprite.png"):
+  
+
+
+
+Started GET "/" for 190.233.252.66 at Sun Jun 10 22:02:23 -0700 2012
+  Processing by HomeController#index as HTML
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered shared/_social_links.html.erb (0.0ms)
+Rendered home/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 16ms (Views: 6.5ms | ActiveRecord: 8.8ms)
+
+
+Started GET "/stylesheets/controls-sprite.png" for 190.233.252.66 at Sun Jun 10 22:02:25 -0700 2012
+
+ActionController::RoutingError (No route matches "/stylesheets/controls-sprite.png"):
+  
+
+
+
+Started GET "/stylesheets/controls-sprite.png" for 190.233.252.66 at Sun Jun 10 22:02:40 -0700 2012
+
+ActionController::RoutingError (No route matches "/stylesheets/controls-sprite.png"):
+  
+
+
+
+Started GET "/" for 190.233.252.66 at Sun Jun 10 22:05:15 -0700 2012
+  Processing by HomeController#index as HTML
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered shared/_social_links.html.erb (0.0ms)
+Rendered home/index.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 10ms (Views: 7.0ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/" for 199.21.99.68 at Mon Jun 11 09:58:48 -0700 2012
+  Processing by HomeController#index as */*
+Rendered shared/_social_links.html.erb (0.2ms)
+Rendered shared/_social_links.html.erb (0.0ms)
+Rendered home/index.html.erb within layouts/application (73.2ms)
+Completed 200 OK in 497ms (Views: 323.4ms | ActiveRecord: 171.0ms)
+
+
+Started GET "/" for 77.222.128.221 at Mon Jun 11 14:48:51 -0700 2012
+  Processing by HomeController#index as HTML
+Rendered shared/_social_links.html.erb (0.4ms)
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered home/index.html.erb within layouts/application (129.5ms)
+Completed 200 OK in 185ms (Views: 178.1ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/" for 198.186.192.44 at Mon Jun 11 19:02:32 -0700 2012
+  Processing by HomeController#index as HTML
+Rendered shared/_social_links.html.erb (0.2ms)
+Rendered shared/_social_links.html.erb (0.0ms)
+Rendered home/index.html.erb within layouts/application (116.1ms)
+Completed 200 OK in 151ms (Views: 146.6ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/" for 201.92.186.233 at Mon Jun 11 20:55:40 -0700 2012
+  Processing by HomeController#index as HTML
+Rendered shared/_social_links.html.erb (0.2ms)
+Rendered shared/_social_links.html.erb (0.0ms)
+Rendered home/index.html.erb within layouts/application (127.4ms)
+Completed 200 OK in 139ms (Views: 133.9ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/" for 190.232.247.68 at Tue Jun 12 00:21:31 -0700 2012
+  Processing by HomeController#index as HTML
+Rendered shared/_social_links.html.erb (0.3ms)
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered home/index.html.erb within layouts/application (28.3ms)
+Completed 200 OK in 187ms (Views: 33.1ms | ActiveRecord: 150.8ms)
+
+
+Started GET "/" for 189.69.17.219 at Tue Jun 12 14:13:22 -0700 2012
+  Processing by HomeController#index as HTML
+Rendered shared/_social_links.html.erb (0.5ms)
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered home/index.html.erb within layouts/application (73.9ms)
+Completed 200 OK in 239ms (Views: 105.7ms | ActiveRecord: 130.5ms)
+
+
+Started GET "/" for 190.232.248.158 at Tue Jun 12 15:16:32 -0700 2012
+  Processing by HomeController#index as HTML
+Rendered shared/_social_links.html.erb (0.3ms)
+Rendered shared/_social_links.html.erb (0.0ms)
+Rendered home/index.html.erb within layouts/application (26.9ms)
+Completed 200 OK in 38ms (Views: 33.5ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/" for 199.21.99.68 at Tue Jun 12 15:47:31 -0700 2012
+  Processing by HomeController#index as */*
+Rendered shared/_social_links.html.erb (0.2ms)
+Rendered shared/_social_links.html.erb (0.0ms)
+Rendered home/index.html.erb within layouts/application (20.4ms)
+Completed 200 OK in 65ms (Views: 47.8ms | ActiveRecord: 15.2ms)
+
+
+Started GET "/" for 198.186.192.44 at Tue Jun 12 19:02:57 -0700 2012
+  Processing by HomeController#index as HTML
+Rendered shared/_social_links.html.erb (0.3ms)
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered home/index.html.erb within layouts/application (81.1ms)
+Completed 200 OK in 93ms (Views: 87.3ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/" for 199.21.99.68 at Wed Jun 13 06:49:38 -0700 2012
+  Processing by HomeController#index as */*
+Rendered shared/_social_links.html.erb (0.3ms)
+Rendered shared/_social_links.html.erb (0.0ms)
+Rendered home/index.html.erb within layouts/application (132.1ms)
+Completed 200 OK in 623ms (Views: 199.1ms | ActiveRecord: 420.9ms)
+
+
+Started GET "/" for 189.69.17.219 at Wed Jun 13 14:28:25 -0700 2012
+  Processing by HomeController#index as HTML
+Rendered shared/_social_links.html.erb (0.3ms)
+Rendered shared/_social_links.html.erb (0.0ms)
+Rendered home/index.html.erb within layouts/application (91.4ms)
+Completed 200 OK in 142ms (Views: 126.2ms | ActiveRecord: 13.3ms)
+
+
+Started GET "/gigs" for 189.69.17.219 at Wed Jun 13 14:37:27 -0700 2012
+  Processing by GigsController#index as HTML
+Rendered shared/_social_links.html.erb (0.3ms)
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered gigs/index.html.erb within layouts/application (22.8ms)
+Completed 200 OK in 50ms (Views: 48.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/gigs/1/edit" for 189.69.17.219 at Wed Jun 13 14:37:30 -0700 2012
+  Processing by GigsController#edit as HTML
+  Parameters: {"id"=>"1"}
+Rendered gigs/_form.html.erb (111.6ms)
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered shared/_social_links.html.erb (0.0ms)
+Rendered gigs/edit.html.erb within layouts/application (115.2ms)
+Completed 200 OK in 193ms (Views: 123.7ms | ActiveRecord: 63.5ms)
+
+
+Started GET "/gigs/1/edit" for 189.69.17.219 at Wed Jun 13 14:38:28 -0700 2012
+  Processing by GigsController#edit as HTML
+  Parameters: {"id"=>"1"}
+Rendered gigs/_form.html.erb (24.7ms)
+Rendered gigs/edit.html.erb within layouts/application (25.8ms)
+Completed   in 40ms
+
+ActionView::Template::Error (can't convert Symbol into String):
+    25:   </div>
+    26:   <div class="field">
+    27:     <%= f.label :date %><br />
+    28:     <%= f.date_select :date %>
+    29:   </div>
+    30:   <div class="actions">
+    31:     <%= f.submit %>
+  app/views/gigs/_form.html.erb:28:in `_app_views_gigs__form_html_erb__467373932_2007847494140_1085310'
+  app/views/gigs/_form.html.erb:1:in `_app_views_gigs__form_html_erb__467373932_2007847494140_1085310'
+  app/views/gigs/edit.html.erb:3:in `_app_views_gigs_edit_html_erb___174662263_2007847504760_0'
+
+
+
+Started GET "/" for 189.69.17.219 at Wed Jun 13 14:38:33 -0700 2012
+  Processing by HomeController#index as HTML
+Rendered shared/_social_links.html.erb (0.3ms)
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered home/index.html.erb within layouts/application (20.2ms)
+Completed 200 OK in 35ms (Views: 26.2ms | ActiveRecord: 6.1ms)
+
+
+Started GET "/edit" for 189.69.17.219 at Wed Jun 13 14:38:37 -0700 2012
+
+ActionController::RoutingError (No route matches "/edit"):
+  
+
+
+
+Started GET "/gigs" for 189.69.17.219 at Wed Jun 13 14:38:41 -0700 2012
+  Processing by GigsController#index as HTML
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered shared/_social_links.html.erb (0.0ms)
+Rendered gigs/index.html.erb within layouts/application (19.1ms)
+Completed 200 OK in 21ms (Views: 8.2ms | ActiveRecord: 11.9ms)
+
+
+Started GET "/gigs/1/edit" for 189.69.17.219 at Wed Jun 13 14:38:44 -0700 2012
+  Processing by GigsController#edit as HTML
+  Parameters: {"id"=>"1"}
+Rendered gigs/_form.html.erb (4.4ms)
+Rendered gigs/edit.html.erb within layouts/application (4.7ms)
+Completed   in 8ms
+
+ActionView::Template::Error (can't convert Symbol into String):
+    25:   </div>
+    26:   <div class="field">
+    27:     <%= f.label :date %><br />
+    28:     <%= f.date_select :date %>
+    29:   </div>
+    30:   <div class="actions">
+    31:     <%= f.submit %>
+  app/views/gigs/_form.html.erb:28:in `_app_views_gigs__form_html_erb__467373932_2007847494140_1085310'
+  app/views/gigs/_form.html.erb:1:in `_app_views_gigs__form_html_erb__467373932_2007847494140_1085310'
+  app/views/gigs/edit.html.erb:3:in `_app_views_gigs_edit_html_erb___174662263_2007847504760_0'
+
+
+
+Started GET "/gigs/1/edit" for 189.69.17.219 at Wed Jun 13 14:39:23 -0700 2012
+  Processing by GigsController#edit as HTML
+  Parameters: {"id"=>"1"}
+Rendered gigs/_form.html.erb (3.5ms)
+Rendered gigs/edit.html.erb within layouts/application (3.8ms)
+Completed   in 6ms
+
+ActionView::Template::Error (can't convert Symbol into String):
+    25:   </div>
+    26:   <div class="field">
+    27:     <%= f.label :date %><br />
+    28:     <%= f.date_select :date %>
+    29:   </div>
+    30:   <div class="actions">
+    31:     <%= f.submit %>
+  app/views/gigs/_form.html.erb:28:in `_app_views_gigs__form_html_erb__467373932_2007847494140_1085310'
+  app/views/gigs/_form.html.erb:1:in `_app_views_gigs__form_html_erb__467373932_2007847494140_1085310'
+  app/views/gigs/edit.html.erb:3:in `_app_views_gigs_edit_html_erb___174662263_2007847504760_0'
+
+
+
+Started GET "/gigs/1/edit" for 189.69.17.219 at Wed Jun 13 14:40:18 -0700 2012
+  Processing by GigsController#edit as HTML
+  Parameters: {"id"=>"1"}
+Rendered gigs/_form.html.erb (3.6ms)
+Rendered gigs/edit.html.erb within layouts/application (3.8ms)
+Completed   in 6ms
+
+ActionView::Template::Error (can't convert Symbol into String):
+    25:   </div>
+    26:   <div class="field">
+    27:     <%= f.label :date %><br />
+    28:     <%= f.date_select :date %>
+    29:   </div>
+    30:   <div class="actions">
+    31:     <%= f.submit %>
+  app/views/gigs/_form.html.erb:28:in `_app_views_gigs__form_html_erb__467373932_2007847494140_1085310'
+  app/views/gigs/_form.html.erb:1:in `_app_views_gigs__form_html_erb__467373932_2007847494140_1085310'
+  app/views/gigs/edit.html.erb:3:in `_app_views_gigs_edit_html_erb___174662263_2007847504760_0'
+
+
+
+Started GET "/gigs/1/edit" for 189.69.17.219 at Wed Jun 13 14:40:42 -0700 2012
+  Processing by GigsController#edit as HTML
+  Parameters: {"id"=>"1"}
+Rendered gigs/_form.html.erb (83.5ms)
+Rendered shared/_social_links.html.erb (0.4ms)
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered gigs/edit.html.erb within layouts/application (106.3ms)
+Completed 200 OK in 123ms (Views: 117.9ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/gigs/1" for 189.69.17.219 at Wed Jun 13 14:49:13 -0700 2012
+  Processing by GigsController#update as HTML
+  Parameters: {"commit"=>"Update Gig", "authenticity_token"=>"j6VUr/gBCruWNV3Xzfoic6qq7cVadqXD2WbOVCSqVOc=", "utf8"=>"✓", "gig"=>{"name"=>"Bizarro", "date(1i)"=>"2012", "date(2i)"=>"6", "date(3i)"=>"29", "link"=>"", "place"=>"Miraflores, Lima."}, "id"=>"1"}
+Redirected to http://djpaulsutcliffe.com/gigs/1
+Completed 302 Found in 136ms
+
+
+Started GET "/gigs/1" for 189.69.17.219 at Wed Jun 13 14:49:13 -0700 2012
+  Processing by GigsController#show as HTML
+  Parameters: {"id"=>"1"}
+Rendered shared/_social_links.html.erb (0.3ms)
+Rendered shared/_social_links.html.erb (0.0ms)
+Rendered gigs/show.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 23ms (Views: 21.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/gigs" for 189.69.17.219 at Wed Jun 13 14:49:15 -0700 2012
+  Processing by GigsController#index as HTML
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered shared/_social_links.html.erb (0.0ms)
+Rendered gigs/index.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 10ms (Views: 8.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/gigs/2/edit" for 189.69.17.219 at Wed Jun 13 14:49:20 -0700 2012
+  Processing by GigsController#edit as HTML
+  Parameters: {"id"=>"2"}
+Rendered gigs/_form.html.erb (11.2ms)
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered gigs/edit.html.erb within layouts/application (16.8ms)
+Completed 200 OK in 20ms (Views: 18.2ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/gigs/2" for 189.69.17.219 at Wed Jun 13 14:49:40 -0700 2012
+  Processing by GigsController#update as HTML
+  Parameters: {"commit"=>"Update Gig", "authenticity_token"=>"j6VUr/gBCruWNV3Xzfoic6qq7cVadqXD2WbOVCSqVOc=", "utf8"=>"✓", "gig"=>{"name"=>"Maze", "date(1i)"=>"2012", "date(2i)"=>"6", "date(3i)"=>"2", "link"=>"", "place"=>"Miraflores, Lima."}, "id"=>"2"}
+Redirected to http://djpaulsutcliffe.com/gigs/2
+Completed 302 Found in 16ms
+
+
+Started GET "/gigs/2" for 189.69.17.219 at Wed Jun 13 14:49:41 -0700 2012
+  Processing by GigsController#show as HTML
+  Parameters: {"id"=>"2"}
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered gigs/show.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 5ms (Views: 3.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/gigs" for 189.69.17.219 at Wed Jun 13 14:49:42 -0700 2012
+  Processing by GigsController#index as HTML
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered gigs/index.html.erb within layouts/application (12.3ms)
+Completed 200 OK in 14ms (Views: 12.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/gigs/4/edit" for 189.69.17.219 at Wed Jun 13 14:49:46 -0700 2012
+  Processing by GigsController#edit as HTML
+  Parameters: {"id"=>"4"}
+Rendered gigs/_form.html.erb (8.4ms)
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered gigs/edit.html.erb within layouts/application (12.6ms)
+Completed 200 OK in 16ms (Views: 13.5ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/gigs/4" for 189.69.17.219 at Wed Jun 13 14:49:57 -0700 2012
+  Processing by GigsController#update as HTML
+  Parameters: {"commit"=>"Update Gig", "authenticity_token"=>"j6VUr/gBCruWNV3Xzfoic6qq7cVadqXD2WbOVCSqVOc=", "utf8"=>"✓", "gig"=>{"name"=>"Aura", "date(1i)"=>"2012", "date(2i)"=>"6", "date(3i)"=>"22", "link"=>"", "place"=>"Miraflores, Lima. "}, "id"=>"4"}
+Redirected to http://djpaulsutcliffe.com/gigs/4
+Completed 302 Found in 25ms
+
+
+Started GET "/gigs/4" for 189.69.17.219 at Wed Jun 13 14:49:58 -0700 2012
+  Processing by GigsController#show as HTML
+  Parameters: {"id"=>"4"}
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered gigs/show.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 12ms (Views: 5.0ms | ActiveRecord: 5.8ms)
+
+
+Started GET "/gigs" for 189.69.17.219 at Wed Jun 13 14:50:00 -0700 2012
+  Processing by GigsController#index as HTML
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered gigs/index.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 13ms (Views: 11.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/gigs/5/edit" for 189.69.17.219 at Wed Jun 13 14:50:07 -0700 2012
+  Processing by GigsController#edit as HTML
+  Parameters: {"id"=>"5"}
+Rendered gigs/_form.html.erb (6.8ms)
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered gigs/edit.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 17ms (Views: 11.5ms | ActiveRecord: 3.8ms)
+
+
+Started POST "/gigs/5" for 189.69.17.219 at Wed Jun 13 14:50:13 -0700 2012
+  Processing by GigsController#update as HTML
+  Parameters: {"commit"=>"Update Gig", "authenticity_token"=>"j6VUr/gBCruWNV3Xzfoic6qq7cVadqXD2WbOVCSqVOc=", "utf8"=>"✓", "gig"=>{"name"=>"Fiesta Proyecto X", "date(1i)"=>"2012", "date(2i)"=>"6", "date(3i)"=>"23", "link"=>"", "place"=>"La Molina, Lima. "}, "id"=>"5"}
+Redirected to http://djpaulsutcliffe.com/gigs/5
+Completed 302 Found in 55ms
+
+
+Started GET "/gigs/5" for 189.69.17.219 at Wed Jun 13 14:50:13 -0700 2012
+  Processing by GigsController#show as HTML
+  Parameters: {"id"=>"5"}
+Rendered shared/_social_links.html.erb (0.0ms)
+Rendered shared/_social_links.html.erb (0.0ms)
+Rendered gigs/show.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 6ms (Views: 3.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/gigs" for 189.69.17.219 at Wed Jun 13 14:50:15 -0700 2012
+  Processing by GigsController#index as HTML
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered gigs/index.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 12ms (Views: 10.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 189.69.17.219 at Wed Jun 13 14:50:18 -0700 2012
+  Processing by HomeController#index as HTML
+Rendered shared/_social_links.html.erb (0.0ms)
+Rendered shared/_social_links.html.erb (0.0ms)
+Rendered home/index.html.erb within layouts/application (12.3ms)
+Completed 200 OK in 34ms (Views: 29.5ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/" for 189.69.17.219 at Wed Jun 13 15:08:06 -0700 2012
+  Processing by HomeController#index as HTML
+Rendered shared/_social_links.html.erb (0.2ms)
+Rendered shared/_social_links.html.erb (0.0ms)
+Rendered home/index.html.erb within layouts/application (45.1ms)
+Completed 200 OK in 66ms (Views: 50.2ms | ActiveRecord: 12.7ms)
+
+
+Started GET "/gigs" for 189.69.17.219 at Wed Jun 13 15:08:25 -0700 2012
+  Processing by GigsController#index as HTML
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered gigs/index.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 20ms (Views: 18.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 189.69.17.219 at Wed Jun 13 15:17:28 -0700 2012
+  Processing by HomeController#index as HTML
+Rendered shared/_social_links.html.erb (0.2ms)
+Rendered shared/_social_links.html.erb (0.0ms)
+Rendered home/index.html.erb within layouts/application (20.2ms)
+Completed 200 OK in 29ms (Views: 24.6ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/" for 189.69.17.219 at Wed Jun 13 15:24:28 -0700 2012
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (17.9ms)
+Completed   in 27ms
+
+ActionView::Template::Error (undefined method `tos' for Fri, 29 Jun 2012:Date):
+    75: 	    <% @gigs.each do |gig| %>
+    76: 	    <li>
+    77:           <div class="date">
+    78:             <%= gig.date.tos(:long) %>
+    79:             <span>
+    80:              <%= gig.date %>
+    81:             </span>
+  app/views/home/index.html.erb:78:in `_app_views_home_index_html_erb__17812556_1635053729100_0'
+  app/views/home/index.html.erb:75:in `each'
+  app/views/home/index.html.erb:75:in `_app_views_home_index_html_erb__17812556_1635053729100_0'
+
+
+
+Started GET "/" for 189.69.17.219 at Wed Jun 13 15:44:10 -0700 2012
+  Processing by HomeController#index as HTML
+Rendered shared/_social_links.html.erb (0.3ms)
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered home/index.html.erb within layouts/application (32.7ms)
+Completed 200 OK in 44ms (Views: 39.6ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for 189.69.17.219 at Wed Jun 13 15:52:28 -0700 2012
+  Processing by HomeController#index as HTML
+Rendered shared/_social_links.html.erb (0.3ms)
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered home/index.html.erb within layouts/application (25.1ms)
+Completed 200 OK in 37ms (Views: 31.1ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/" for 189.69.17.219 at Wed Jun 13 15:53:39 -0700 2012
+  Processing by HomeController#index as HTML
+Rendered shared/_social_links.html.erb (0.3ms)
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered home/index.html.erb within layouts/application (41.3ms)
+Completed 200 OK in 55ms (Views: 48.3ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/" for 189.69.17.219 at Wed Jun 13 15:56:12 -0700 2012
+  Processing by HomeController#index as HTML
+Rendered shared/_social_links.html.erb (0.0ms)
+Rendered shared/_social_links.html.erb (0.0ms)
+Rendered home/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 23ms (Views: 4.9ms | ActiveRecord: 17.4ms)
+
+
+Started GET "/" for 189.69.17.219 at Wed Jun 13 15:58:25 -0700 2012
+  Processing by HomeController#index as HTML
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered shared/_social_links.html.erb (0.0ms)
+Rendered home/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 9ms (Views: 5.0ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/" for 189.69.17.219 at Wed Jun 13 16:00:13 -0700 2012
+  Processing by HomeController#index as HTML
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered home/index.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 11ms (Views: 7.2ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/" for 189.69.17.219 at Wed Jun 13 16:00:46 -0700 2012
+  Processing by HomeController#index as HTML
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered shared/_social_links.html.erb (0.0ms)
+Rendered home/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 9ms (Views: 5.8ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for 189.69.17.219 at Wed Jun 13 16:01:04 -0700 2012
+  Processing by HomeController#index as HTML
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered shared/_social_links.html.erb (0.0ms)
+Rendered home/index.html.erb within layouts/application (914.0ms)
+Completed 200 OK in 919ms (Views: 914.8ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/" for 189.69.17.219 at Wed Jun 13 17:29:25 -0700 2012
+  Processing by HomeController#index as HTML
+Rendered shared/_social_links.html.erb (0.2ms)
+Rendered shared/_social_links.html.erb (0.0ms)
+Rendered home/index.html.erb within layouts/application (19.9ms)
+Completed 200 OK in 45ms (Views: 40.8ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/" for 189.69.17.219 at Wed Jun 13 17:46:02 -0700 2012
+  Processing by HomeController#index as HTML
+Rendered shared/_social_links.html.erb (0.3ms)
+Rendered shared/_social_links.html.erb (0.0ms)
+Rendered home/index.html.erb within layouts/application (129.5ms)
+Completed 200 OK in 139ms (Views: 122.6ms | ActiveRecord: 13.6ms)
+
+
+Started GET "/gigs" for 189.69.17.219 at Wed Jun 13 17:47:07 -0700 2012
+  Processing by GigsController#index as HTML
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered gigs/index.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 30ms (Views: 28.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/gigs/1/edit" for 189.69.17.219 at Wed Jun 13 17:47:12 -0700 2012
+  Processing by GigsController#edit as HTML
+  Parameters: {"id"=>"1"}
+Rendered gigs/_form.html.erb (12.6ms)
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered gigs/edit.html.erb within layouts/application (17.9ms)
+Completed 200 OK in 68ms (Views: 19.6ms | ActiveRecord: 41.9ms)
+
+
+Started POST "/gigs/1" for 189.69.17.219 at Wed Jun 13 17:47:20 -0700 2012
+  Processing by GigsController#update as HTML
+  Parameters: {"commit"=>"Update Gig", "authenticity_token"=>"pt8nYdHehwsTiwovR27FsHeD10UvIxIH7BX2F1HYXcI=", "utf8"=>"✓", "gig"=>{"name"=>"Bizarro", "date(1i)"=>"2012", "date(2i)"=>"6", "date(3i)"=>"30", "link"=>"", "place"=>"Miraflores, Lima."}, "id"=>"1"}
+Redirected to http://djpaulsutcliffe.com/gigs/1
+Completed 302 Found in 26ms
+
+
+Started GET "/gigs/1" for 189.69.17.219 at Wed Jun 13 17:47:20 -0700 2012
+  Processing by GigsController#show as HTML
+  Parameters: {"id"=>"1"}
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered shared/_social_links.html.erb (0.0ms)
+Rendered gigs/show.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 21ms (Views: 18.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/gigs" for 189.69.17.219 at Wed Jun 13 17:47:22 -0700 2012
+  Processing by GigsController#index as HTML
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered gigs/index.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 13ms (Views: 11.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/gigs/new" for 189.69.17.219 at Wed Jun 13 17:47:25 -0700 2012
+  Processing by GigsController#new as HTML
+Rendered gigs/_form.html.erb (5.4ms)
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered shared/_social_links.html.erb (0.0ms)
+Rendered gigs/new.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 26ms (Views: 25.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/gigs" for 189.69.17.219 at Wed Jun 13 17:51:17 -0700 2012
+  Processing by GigsController#create as HTML
+  Parameters: {"commit"=>"Create Gig", "authenticity_token"=>"pt8nYdHehwsTiwovR27FsHeD10UvIxIH7BX2F1HYXcI=", "utf8"=>"✓", "gig"=>{"name"=>"Evento", "date(1i)"=>"2012", "date(2i)"=>"6", "date(3i)"=>"29", "link"=>"", "place"=>"Rosa Negra, Arequipa."}}
+Redirected to http://djpaulsutcliffe.com/gigs/6
+Completed 302 Found in 37ms
+
+
+Started GET "/gigs/6" for 189.69.17.219 at Wed Jun 13 17:51:17 -0700 2012
+  Processing by GigsController#show as HTML
+  Parameters: {"id"=>"6"}
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered gigs/show.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 7ms (Views: 4.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/gigs" for 189.69.17.219 at Wed Jun 13 17:51:19 -0700 2012
+  Processing by GigsController#index as HTML
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered gigs/index.html.erb within layouts/application (13.8ms)
+Completed 200 OK in 15ms (Views: 13.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 189.69.17.219 at Wed Jun 13 17:51:22 -0700 2012
+  Processing by HomeController#index as HTML
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered shared/_social_links.html.erb (0.0ms)
+Rendered home/index.html.erb within layouts/application (56.0ms)
+Completed 200 OK in 62ms (Views: 47.0ms | ActiveRecord: 13.2ms)
+
+
+Started GET "/" for 198.186.192.44 at Wed Jun 13 19:01:48 -0700 2012
+  Processing by HomeController#index as HTML
+Rendered shared/_social_links.html.erb (0.2ms)
+Rendered shared/_social_links.html.erb (0.0ms)
+Rendered home/index.html.erb within layouts/application (70.2ms)
+Completed 200 OK in 79ms (Views: 73.3ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/" for 201.92.186.233 at Wed Jun 13 19:54:09 -0700 2012
+  Processing by HomeController#index as HTML
+Rendered shared/_social_links.html.erb (0.2ms)
+Rendered shared/_social_links.html.erb (0.0ms)
+Rendered home/index.html.erb within layouts/application (73.5ms)
+Completed 200 OK in 82ms (Views: 77.1ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/gigs" for 201.92.186.233 at Wed Jun 13 20:08:35 -0700 2012
+  Processing by GigsController#index as HTML
+Rendered shared/_social_links.html.erb (0.2ms)
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered gigs/index.html.erb within layouts/application (72.8ms)
+Completed 200 OK in 85ms (Views: 81.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/gigs/new" for 201.92.186.233 at Wed Jun 13 20:08:41 -0700 2012
+  Processing by GigsController#new as HTML
+Rendered gigs/_form.html.erb (8.2ms)
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered shared/_social_links.html.erb (0.0ms)
+Rendered gigs/new.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 14ms (Views: 13.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/gigs" for 201.92.186.233 at Wed Jun 13 20:08:52 -0700 2012
+  Processing by GigsController#create as HTML
+  Parameters: {"commit"=>"Create Gig", "authenticity_token"=>"dXylXJsIH2COoLhS5fd+qzI1pqMbTTjf+GXw96KHicw=", "utf8"=>"✓", "gig"=>{"name"=>"Bizarro", "date(1i)"=>"2012", "date(2i)"=>"6", "date(3i)"=>"30", "link"=>"", "place"=>"Miraflores, Lima."}}
+Redirected to http://djpaulsutcliffe.com/gigs/7
+Completed 302 Found in 67ms
+
+
+Started GET "/gigs/7" for 201.92.186.233 at Wed Jun 13 20:08:53 -0700 2012
+  Processing by GigsController#show as HTML
+  Parameters: {"id"=>"7"}
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered gigs/show.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 12ms (Views: 6.1ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/gigs" for 201.92.186.233 at Wed Jun 13 20:08:55 -0700 2012
+  Processing by GigsController#index as HTML
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered gigs/index.html.erb within layouts/application (14.9ms)
+Completed 200 OK in 16ms (Views: 14.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 201.92.186.233 at Wed Jun 13 20:08:56 -0700 2012
+  Processing by HomeController#index as HTML
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered home/index.html.erb within layouts/application (34.2ms)
+Completed 200 OK in 44ms (Views: 39.1ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/gigs" for 201.92.186.233 at Wed Jun 13 20:24:41 -0700 2012
+  Processing by GigsController#index as HTML
+Rendered shared/_social_links.html.erb (0.3ms)
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered gigs/index.html.erb within layouts/application (82.6ms)
+Completed 200 OK in 91ms (Views: 84.2ms | ActiveRecord: 6.1ms)
+
+
+Started POST "/gigs/1" for 201.92.186.233 at Wed Jun 13 20:24:57 -0700 2012
+  Processing by GigsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"dXylXJsIH2COoLhS5fd+qzI1pqMbTTjf+GXw96KHicw=", "id"=>"1"}
+Redirected to http://djpaulsutcliffe.com/gigs
+Completed 302 Found in 95ms
+
+
+Started GET "/gigs" for 201.92.186.233 at Wed Jun 13 20:24:57 -0700 2012
+  Processing by GigsController#index as HTML
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered gigs/index.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 12ms (Views: 10.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 201.92.186.233 at Wed Jun 13 20:26:25 -0700 2012
+  Processing by HomeController#index as HTML
+Rendered shared/_social_links.html.erb (0.1ms)
+Rendered shared/_social_links.html.erb (0.0ms)
+Rendered home/index.html.erb within layouts/application (14.9ms)
+Completed 200 OK in 22ms (Views: 17.4ms | ActiveRecord: 3.1ms)
