@@ -3,8 +3,11 @@ set :domain, "djpaulsutcliffe.com"
 set :project, "paulsutcliffe"
 set :application, "paulsutcliffe"
 set :applicationdir, "/home/paulsutcliffe/paulsutcliffe"
-set :repository,  "https://github.com/paulsutcliffe/paulsutcliffe.git"
+set :repository,  "git@github.com:paulsutcliffe/paulsutcliffe.git"
+default_run_options[:pty] = true
 
+ssh_options[:forward_agent] = true
+set :git_enable_submodules, 1
 set :scm, :git
 # Or: `accurev`, `bzr`, `cvs`, `darcs`, `git`, `mercurial`, `perforce`, `subversion` or `none`
 set :scm_passphrase, ""
