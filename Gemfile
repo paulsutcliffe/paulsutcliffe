@@ -24,6 +24,14 @@ gem "friendly_id", "~>4.0.0.beta14"
 # Deploy with Capistrano
 gem 'capistrano'
 
+group :test do
+  gem 'cucumber-rails'
+  gem 'database_cleaner'
+  gem 'simplecov'
+end
+
+gem 'rspec-rails', :group => [:development, :test]
+
 # To use debugger (ruby-debug for Ruby 1.8.7+, ruby-debug19 for Ruby 1.9.2+)
 # gem 'ruby-debug'
 # gem 'ruby-debug19'

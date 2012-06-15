@@ -75,9 +75,9 @@
 	    <% @gigs.each do |gig| %>
 	    <li>
           <div class="date">
-            <%= gig.date.strftime("%b") %>
+            <%= gig.date.try(:strftime, "%b") %>
             <span>
-             <%= gig.date.strftime("%d") %>
+             <%= gig.date.try(:strftime, "%d") %>
             </span>
           </div>
           <h3 class="location">

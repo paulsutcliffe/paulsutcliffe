@@ -17,6 +17,9 @@ $('header, #introduction').bind({
   }		
 })
 
+$('header .social li#rss a').text('');
+$('.social li#rss a').text('');
+
 
 }) // END DOCUMENT READY
 
