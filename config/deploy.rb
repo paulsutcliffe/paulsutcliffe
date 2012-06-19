@@ -39,5 +39,10 @@ role :db,  domain, :primary => true # This is where Rails migrations will run
 #set :chmod755, "app config db lib public vendor script script/*"
 #set :chmod775, "public/dispatch.fcgi"
 set :use_sudo, false
-run_locally "chmod 775 ~/paulsutcliffe/paulsutcliffe/current/public/dispatch.fcgi"
-run "bundle install --deployment"
+#run "chmod 775 ~/paulsutcliffe/paulsutcliffe/current/public/dispatch.fcgi"
+#run "bundle install --deployment"
+desc "Fix permissions after code update."
+task :after_update_code, :roles => [:app, :db, :web] do
+# set permissions
+  run "chmod 755 #{application_dir}/current/public/dispatch.*"
+end
