@@ -42,5 +42,6 @@ set :use_sudo, false
 desc "Fix permissions after code update."
 task :after_update_code, :roles => [:app, :db, :web] do
 # set permissions
-  run "chmod 775 #{application_dir}/current/public/dispatch.*"
+  run "chmod 775 #{application_dir}/current/public/dispatch.fcgi"
+  run "cd #{application_dir}/current/; bundle install --deployment"
 end
