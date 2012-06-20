@@ -6,8 +6,8 @@
 .royalSlider {	
 	position:relative;
 	/* set width and height of slider here, in px, % or em*/
-	width:600px;
-	height:300px;
+	width:1440px;
+	height:450px;
 	/* Used to prevent content "jumping" on page load. this property is removed when javascript is loaded and slider is instanciated */
 	overflow:hidden;
 }
@@ -15,7 +15,7 @@
 
 #banner-rotator {
 	width: 100%;
-	height: 400px;
+	height: 450px;
 
 	margin: 0 auto;
 }

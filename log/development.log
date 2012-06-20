@@ -2371,3 +2371,2090 @@ Rendered shared/_social_links.html.erb (0.6ms)
 Rendered shared/_social_links.html.erb (0.4ms)
 Rendered home/index.html.erb within layouts/application (32.9ms)
 Completed 200 OK in 57ms (Views: 42.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 20 11:12:29 -0500 2012
+
+Mysql::Error (Access denied for user 'root'@'localhost' (using password: YES)):
+  
+
+Rendered /Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.3ms)
+Rendered /Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.1ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 20 11:12:59 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[36mSlide Load (49.5ms)[0m  [1mSELECT `slides`.* FROM `slides`[0m
+  [1m[35mScwidget Load (31.2ms)[0m  SELECT `scwidgets`.* FROM `scwidgets`
+  [1m[36mGig Load (1.9ms)[0m  [1mSELECT `gigs`.* FROM `gigs` ORDER BY date LIMIT 6 OFFSET 0[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM `gigs`
+Rendered shared/_social_links.html.erb (1.0ms)
+Rendered shared/_social_links.html.erb (0.5ms)
+Rendered home/index.html.erb within layouts/application (39.9ms)
+Completed 200 OK in 143ms (Views: 46.7ms | ActiveRecord: 82.8ms)
+
+
+Started GET "/slides" for 127.0.0.1 at Wed Jun 20 11:13:13 -0500 2012
+  Processing by SlidesController#index as HTML
+  [1m[36mSlide Load (0.3ms)[0m  [1mSELECT `slides`.* FROM `slides`[0m
+Rendered shared/_social_links.html.erb (0.8ms)
+Rendered shared/_social_links.html.erb (0.5ms)
+Rendered slides/index.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 56ms (Views: 53.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/slides/new" for 127.0.0.1 at Wed Jun 20 11:13:16 -0500 2012
+  Processing by SlidesController#new as HTML
+Rendered slides/_form.html.erb (82.2ms)
+Rendered shared/_social_links.html.erb (0.6ms)
+Rendered shared/_social_links.html.erb (0.5ms)
+Rendered slides/new.html.erb within layouts/application (108.8ms)
+Completed 200 OK in 127ms (Views: 122.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/slides" for 127.0.0.1 at Wed Jun 20 11:13:54 -0500 2012
+  Processing by SlidesController#create as HTML
+  Parameters: {"commit"=>"Create Slide", "authenticity_token"=>"JzYZAVXOR5Uu3IkiutN/rZGvyK9VwgMhyHlj0lGwmPg=", "utf8"=>"✓", "slide"=>{"label"=>"Slide-1", "slide"=>#<ActionDispatch::Http::UploadedFile:0x103bcab20 @content_type="image/jpeg", @tempfile=#<File:/var/folders/rw/rwC3pedZHna4wkbt1aI7xk+++TI/-Tmp-/RackMultipart20120620-958-1unoht3-0>, @original_filename="slide-1.jpeg", @headers="Content-Disposition: form-data; name=\"slide[slide]\"; filename=\"slide-1.jpeg\"\r\nContent-Type: image/jpeg\r\n">}}
+[32mCommand[0m :: identify -format %wx%h '/var/folders/rw/rwC3pedZHna4wkbt1aI7xk+++TI/-Tmp-/stream20120620-958-bl0e9o-0.jpeg[0]'
+[32mCommand[0m :: convert '/var/folders/rw/rwC3pedZHna4wkbt1aI7xk+++TI/-Tmp-/stream20120620-958-bl0e9o-0.jpeg[0]' -resize "120x450>" '/var/folders/rw/rwC3pedZHna4wkbt1aI7xk+++TI/-Tmp-/stream20120620-958-bl0e9o-020120620-958-1u3brkb-0.jpg'
+[32mCommand[0m :: identify -format %wx%h '/var/folders/rw/rwC3pedZHna4wkbt1aI7xk+++TI/-Tmp-/stream20120620-958-bl0e9o-0.jpeg[0]'
+[32mCommand[0m :: convert '/var/folders/rw/rwC3pedZHna4wkbt1aI7xk+++TI/-Tmp-/stream20120620-958-bl0e9o-0.jpeg[0]' -resize "1200x450>" '/var/folders/rw/rwC3pedZHna4wkbt1aI7xk+++TI/-Tmp-/stream20120620-958-bl0e9o-020120620-958-1r9nedq-0.jpg'
+  [1m[35mSQL (0.2ms)[0m  BEGIN
+  [1m[36mSQL (44.6ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (2.1ms)[0m  describe `slides`
+  [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO `slides` (`position`, `slide_file_name`, `label`, `slide_updated_at`, `slide_content_type`, `slide_file_size`, `updated_at`, `created_at`) VALUES (NULL, 'slide-1.jpeg', 'Slide-1', '2012-06-20 16:13:54', 'image/jpeg', 332951, '2012-06-20 16:13:56', '2012-06-20 16:13:56')[0m
+[paperclip] Saving attachments.
+[paperclip] saving /users/paulsutcliffe/rails-apps/paulsutcliffe/public/images/assets/slides/1/original/slide-1.jpeg
+[paperclip] saving /users/paulsutcliffe/rails-apps/paulsutcliffe/public/images/assets/slides/1/min/slide-1.jpg
+[paperclip] saving /users/paulsutcliffe/rails-apps/paulsutcliffe/public/images/assets/slides/1/max/slide-1.jpg
+  [1m[35mSQL (2.3ms)[0m  COMMIT
+Redirected to http://localhost:3000/slides/1
+Completed 302 Found in 1988ms
+
+
+Started GET "/slides/1" for 127.0.0.1 at Wed Jun 20 11:13:56 -0500 2012
+  Processing by SlidesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSlide Load (0.4ms)[0m  [1mSELECT `slides`.* FROM `slides` WHERE (`slides`.`id` = 1) LIMIT 1[0m
+Rendered shared/_social_links.html.erb (0.6ms)
+Rendered shared/_social_links.html.erb (0.5ms)
+Rendered slides/show.html.erb within layouts/application (16.7ms)
+Completed 200 OK in 68ms (Views: 62.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/slides" for 127.0.0.1 at Wed Jun 20 11:13:58 -0500 2012
+  Processing by SlidesController#index as HTML
+  [1m[35mSlide Load (0.3ms)[0m  SELECT `slides`.* FROM `slides`
+Rendered shared/_social_links.html.erb (0.7ms)
+Rendered shared/_social_links.html.erb (0.5ms)
+Rendered slides/index.html.erb within layouts/application (16.9ms)
+Completed 200 OK in 31ms (Views: 30.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/slides/new" for 127.0.0.1 at Wed Jun 20 11:13:59 -0500 2012
+  Processing by SlidesController#new as HTML
+Rendered slides/_form.html.erb (6.0ms)
+Rendered shared/_social_links.html.erb (0.6ms)
+Rendered shared/_social_links.html.erb (0.5ms)
+Rendered slides/new.html.erb within layouts/application (15.2ms)
+Completed 200 OK in 33ms (Views: 28.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/slides" for 127.0.0.1 at Wed Jun 20 11:14:06 -0500 2012
+  Processing by SlidesController#create as HTML
+  Parameters: {"commit"=>"Create Slide", "authenticity_token"=>"JzYZAVXOR5Uu3IkiutN/rZGvyK9VwgMhyHlj0lGwmPg=", "utf8"=>"✓", "slide"=>{"label"=>"Slide-2", "slide"=>#<ActionDispatch::Http::UploadedFile:0x103b1e078 @content_type="image/jpeg", @tempfile=#<File:/var/folders/rw/rwC3pedZHna4wkbt1aI7xk+++TI/-Tmp-/RackMultipart20120620-958-1dyubsh-0>, @original_filename="slide-2.jpeg", @headers="Content-Disposition: form-data; name=\"slide[slide]\"; filename=\"slide-2.jpeg\"\r\nContent-Type: image/jpeg\r\n">}}
+[32mCommand[0m :: identify -format %wx%h '/var/folders/rw/rwC3pedZHna4wkbt1aI7xk+++TI/-Tmp-/stream20120620-958-10e8tm8-0.jpeg[0]'
+[32mCommand[0m :: convert '/var/folders/rw/rwC3pedZHna4wkbt1aI7xk+++TI/-Tmp-/stream20120620-958-10e8tm8-0.jpeg[0]' -resize "120x450>" '/var/folders/rw/rwC3pedZHna4wkbt1aI7xk+++TI/-Tmp-/stream20120620-958-10e8tm8-020120620-958-qiyid9-0.jpg'
+[32mCommand[0m :: identify -format %wx%h '/var/folders/rw/rwC3pedZHna4wkbt1aI7xk+++TI/-Tmp-/stream20120620-958-10e8tm8-0.jpeg[0]'
+[32mCommand[0m :: convert '/var/folders/rw/rwC3pedZHna4wkbt1aI7xk+++TI/-Tmp-/stream20120620-958-10e8tm8-0.jpeg[0]' -resize "1200x450>" '/var/folders/rw/rwC3pedZHna4wkbt1aI7xk+++TI/-Tmp-/stream20120620-958-10e8tm8-020120620-958-ejr5w7-0.jpg'
+  [1m[36mSQL (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.8ms)[0m  describe `slides`
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO `slides` (`slide_updated_at`, `created_at`, `position`, `label`, `slide_file_size`, `slide_content_type`, `updated_at`, `slide_file_name`) VALUES ('2012-06-20 16:14:06', '2012-06-20 16:14:06', NULL, 'Slide-2', 176053, 'image/jpeg', '2012-06-20 16:14:06', 'slide-2.jpeg')[0m
+[paperclip] Saving attachments.
+[paperclip] saving /users/paulsutcliffe/rails-apps/paulsutcliffe/public/images/assets/slides/2/original/slide-2.jpeg
+[paperclip] saving /users/paulsutcliffe/rails-apps/paulsutcliffe/public/images/assets/slides/2/min/slide-2.jpg
+[paperclip] saving /users/paulsutcliffe/rails-apps/paulsutcliffe/public/images/assets/slides/2/max/slide-2.jpg
+  [1m[35mSQL (1.0ms)[0m  COMMIT
+Redirected to http://localhost:3000/slides/2
+Completed 302 Found in 237ms
+
+
+Started GET "/slides/2" for 127.0.0.1 at Wed Jun 20 11:14:06 -0500 2012
+  Processing by SlidesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mSlide Load (0.2ms)[0m  [1mSELECT `slides`.* FROM `slides` WHERE (`slides`.`id` = 2) LIMIT 1[0m
+Rendered shared/_social_links.html.erb (0.6ms)
+Rendered shared/_social_links.html.erb (0.5ms)
+Rendered slides/show.html.erb within layouts/application (14.9ms)
+Completed 200 OK in 32ms (Views: 27.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/slides" for 127.0.0.1 at Wed Jun 20 11:14:11 -0500 2012
+  Processing by SlidesController#index as HTML
+  [1m[35mSlide Load (0.3ms)[0m  SELECT `slides`.* FROM `slides`
+Rendered shared/_social_links.html.erb (0.6ms)
+Rendered shared/_social_links.html.erb (0.5ms)
+Rendered slides/index.html.erb within layouts/application (17.7ms)
+Completed 200 OK in 32ms (Views: 31.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 20 11:14:18 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[36mSlide Load (0.3ms)[0m  [1mSELECT `slides`.* FROM `slides`[0m
+  [1m[35mScwidget Load (0.2ms)[0m  SELECT `scwidgets`.* FROM `scwidgets`
+  [1m[36mGig Load (0.4ms)[0m  [1mSELECT `gigs`.* FROM `gigs` ORDER BY date LIMIT 6 OFFSET 0[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM `gigs`
+Rendered shared/_social_links.html.erb (0.6ms)
+Rendered shared/_social_links.html.erb (0.5ms)
+Rendered home/index.html.erb within layouts/application (27.1ms)
+Completed 200 OK in 118ms (Views: 34.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/feed" for 127.0.0.1 at Wed Jun 20 12:19:21 -0500 2012
+
+ActionController::RoutingError (No route matches "/feed"):
+  
+
+Rendered /Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 20 12:23:58 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[36mSlide Load (0.3ms)[0m  [1mSELECT `slides`.* FROM `slides`[0m
+  [1m[35mScwidget Load (0.3ms)[0m  SELECT `scwidgets`.* FROM `scwidgets`
+  [1m[36mGig Load (0.4ms)[0m  [1mSELECT `gigs`.* FROM `gigs` ORDER BY date LIMIT 6 OFFSET 0[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM `gigs`
+Rendered shared/_social_links.html.erb (0.6ms)
+Rendered shared/_social_links.html.erb (0.6ms)
+Rendered home/index.html.erb within layouts/application (58.9ms)
+Completed 200 OK in 83ms (Views: 68.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 20 12:25:20 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[36mSlide Load (0.3ms)[0m  [1mSELECT `slides`.* FROM `slides`[0m
+  [1m[35mScwidget Load (0.3ms)[0m  SELECT `scwidgets`.* FROM `scwidgets`
+  [1m[36mGig Load (0.8ms)[0m  [1mSELECT `gigs`.* FROM `gigs` ORDER BY date LIMIT 6 OFFSET 0[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM `gigs`
+Rendered shared/_social_links.html.erb (0.6ms)
+Rendered shared/_social_links.html.erb (0.5ms)
+Rendered home/index.html.erb within layouts/application (62.0ms)
+Completed 200 OK in 84ms (Views: 69.2ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 20 12:25:40 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[36mSlide Load (0.3ms)[0m  [1mSELECT `slides`.* FROM `slides`[0m
+  [1m[35mScwidget Load (0.2ms)[0m  SELECT `scwidgets`.* FROM `scwidgets`
+  [1m[36mGig Load (0.5ms)[0m  [1mSELECT `gigs`.* FROM `gigs` ORDER BY date LIMIT 6 OFFSET 0[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM `gigs`
+Rendered shared/_social_links.html.erb (0.6ms)
+Rendered shared/_social_links.html.erb (0.5ms)
+Rendered home/index.html.erb within layouts/application (81.5ms)
+Completed 200 OK in 104ms (Views: 89.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 20 12:25:53 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[36mSlide Load (0.3ms)[0m  [1mSELECT `slides`.* FROM `slides`[0m
+  [1m[35mScwidget Load (0.2ms)[0m  SELECT `scwidgets`.* FROM `scwidgets`
+  [1m[36mGig Load (0.4ms)[0m  [1mSELECT `gigs`.* FROM `gigs` ORDER BY date LIMIT 6 OFFSET 0[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM `gigs`
+Rendered shared/_social_links.html.erb (0.6ms)
+Rendered shared/_social_links.html.erb (0.5ms)
+Rendered home/index.html.erb within layouts/application (203.2ms)
+Completed 200 OK in 227ms (Views: 211.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 20 12:25:55 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[36mSlide Load (3.1ms)[0m  [1mSELECT `slides`.* FROM `slides`[0m
+  [1m[35mScwidget Load (0.6ms)[0m  SELECT `scwidgets`.* FROM `scwidgets`
+  [1m[36mGig Load (0.3ms)[0m  [1mSELECT `gigs`.* FROM `gigs` ORDER BY date LIMIT 6 OFFSET 0[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM `gigs`
+Rendered shared/_social_links.html.erb (0.8ms)
+Rendered shared/_social_links.html.erb (0.5ms)
+Rendered home/index.html.erb within layouts/application (110.2ms)
+Completed 200 OK in 137ms (Views: 118.3ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 20 12:26:45 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[36mSlide Load (0.3ms)[0m  [1mSELECT `slides`.* FROM `slides`[0m
+  [1m[35mScwidget Load (0.3ms)[0m  SELECT `scwidgets`.* FROM `scwidgets`
+  [1m[36mGig Load (0.3ms)[0m  [1mSELECT `gigs`.* FROM `gigs` ORDER BY date LIMIT 6 OFFSET 0[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM `gigs`
+Rendered shared/_social_links.html.erb (0.6ms)
+Rendered shared/_social_links.html.erb (0.5ms)
+Rendered home/index.html.erb within layouts/application (31.1ms)
+Completed 200 OK in 59ms (Views: 41.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 20 12:27:39 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[36mSlide Load (0.3ms)[0m  [1mSELECT `slides`.* FROM `slides`[0m
+  [1m[35mScwidget Load (0.3ms)[0m  SELECT `scwidgets`.* FROM `scwidgets`
+  [1m[36mGig Load (1.2ms)[0m  [1mSELECT `gigs`.* FROM `gigs` ORDER BY date LIMIT 6 OFFSET 0[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT COUNT(*) FROM `gigs`
+Rendered shared/_social_links.html.erb (1.0ms)
+Rendered shared/_social_links.html.erb (0.6ms)
+Rendered home/index.html.erb within layouts/application (34.8ms)
+Completed 200 OK in 148ms (Views: 41.4ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 20 12:28:26 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[36mSlide Load (0.3ms)[0m  [1mSELECT `slides`.* FROM `slides`[0m
+  [1m[35mScwidget Load (0.2ms)[0m  SELECT `scwidgets`.* FROM `scwidgets`
+  [1m[36mGig Load (0.3ms)[0m  [1mSELECT `gigs`.* FROM `gigs` ORDER BY date LIMIT 6 OFFSET 0[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM `gigs`
+Rendered shared/_social_links.html.erb (0.6ms)
+Rendered shared/_social_links.html.erb (0.4ms)
+Rendered home/index.html.erb within layouts/application (24.7ms)
+Completed 200 OK in 46ms (Views: 32.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 20 12:28:41 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[36mSlide Load (0.3ms)[0m  [1mSELECT `slides`.* FROM `slides`[0m
+  [1m[35mScwidget Load (0.5ms)[0m  SELECT `scwidgets`.* FROM `scwidgets`
+  [1m[36mGig Load (0.4ms)[0m  [1mSELECT `gigs`.* FROM `gigs` ORDER BY date LIMIT 6 OFFSET 0[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT COUNT(*) FROM `gigs`
+Rendered shared/_social_links.html.erb (0.6ms)
+Rendered shared/_social_links.html.erb (0.5ms)
+Rendered home/index.html.erb within layouts/application (96.7ms)
+Completed 200 OK in 119ms (Views: 104.4ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 20 12:28:43 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[36mSlide Load (0.3ms)[0m  [1mSELECT `slides`.* FROM `slides`[0m
+  [1m[35mScwidget Load (0.7ms)[0m  SELECT `scwidgets`.* FROM `scwidgets`
+  [1m[36mGig Load (0.3ms)[0m  [1mSELECT `gigs`.* FROM `gigs` ORDER BY date LIMIT 6 OFFSET 0[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT COUNT(*) FROM `gigs`
+Rendered shared/_social_links.html.erb (0.6ms)
+Rendered shared/_social_links.html.erb (0.5ms)
+Rendered home/index.html.erb within layouts/application (24.9ms)
+Completed 200 OK in 47ms (Views: 32.2ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/%C3%A7" for 127.0.0.1 at Wed Jun 20 12:28:45 -0500 2012
+
+ActionController::RoutingError (No route matches "/%C3%A7"):
+  
+
+Rendered /Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 20 12:28:47 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[36mSlide Load (0.3ms)[0m  [1mSELECT `slides`.* FROM `slides`[0m
+  [1m[35mScwidget Load (0.3ms)[0m  SELECT `scwidgets`.* FROM `scwidgets`
+  [1m[36mGig Load (0.3ms)[0m  [1mSELECT `gigs`.* FROM `gigs` ORDER BY date LIMIT 6 OFFSET 0[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM `gigs`
+Rendered shared/_social_links.html.erb (79.5ms)
+Rendered shared/_social_links.html.erb (0.6ms)
+Rendered home/index.html.erb within layouts/application (105.1ms)
+Completed 200 OK in 126ms (Views: 112.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 20 12:29:50 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[36mSlide Load (0.3ms)[0m  [1mSELECT `slides`.* FROM `slides`[0m
+  [1m[35mScwidget Load (0.2ms)[0m  SELECT `scwidgets`.* FROM `scwidgets`
+  [1m[36mGig Load (0.3ms)[0m  [1mSELECT `gigs`.* FROM `gigs` ORDER BY date LIMIT 6 OFFSET 0[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT COUNT(*) FROM `gigs`
+Rendered shared/_social_links.html.erb (0.5ms)
+Rendered shared/_social_links.html.erb (0.5ms)
+Rendered home/index.html.erb within layouts/application (25.0ms)
+Completed 200 OK in 46ms (Views: 32.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 20 12:29:51 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[36mSlide Load (0.3ms)[0m  [1mSELECT `slides`.* FROM `slides`[0m
+  [1m[35mScwidget Load (0.2ms)[0m  SELECT `scwidgets`.* FROM `scwidgets`
+  [1m[36mGig Load (0.4ms)[0m  [1mSELECT `gigs`.* FROM `gigs` ORDER BY date LIMIT 6 OFFSET 0[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM `gigs`
+Rendered shared/_social_links.html.erb (0.6ms)
+Rendered shared/_social_links.html.erb (0.5ms)
+Rendered home/index.html.erb within layouts/application (26.7ms)
+Completed 200 OK in 48ms (Views: 34.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 20 12:30:28 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[36mSlide Load (0.3ms)[0m  [1mSELECT `slides`.* FROM `slides`[0m
+  [1m[35mScwidget Load (0.2ms)[0m  SELECT `scwidgets`.* FROM `scwidgets`
+  [1m[36mGig Load (0.3ms)[0m  [1mSELECT `gigs`.* FROM `gigs` ORDER BY date LIMIT 6 OFFSET 0[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM `gigs`
+Rendered shared/_social_links.html.erb (0.6ms)
+Rendered shared/_social_links.html.erb (0.5ms)
+Rendered home/index.html.erb within layouts/application (28.5ms)
+Completed 200 OK in 53ms (Views: 37.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 20 12:31:24 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[36mSlide Load (0.3ms)[0m  [1mSELECT `slides`.* FROM `slides`[0m
+  [1m[35mScwidget Load (0.5ms)[0m  SELECT `scwidgets`.* FROM `scwidgets`
+  [1m[36mGig Load (0.5ms)[0m  [1mSELECT `gigs`.* FROM `gigs` ORDER BY date LIMIT 6 OFFSET 0[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT COUNT(*) FROM `gigs`
+Rendered shared/_social_links.html.erb (0.6ms)
+Rendered shared/_social_links.html.erb (0.6ms)
+Rendered home/index.html.erb within layouts/application (96.2ms)
+Completed 200 OK in 123ms (Views: 104.7ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 20 12:32:59 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[36mSlide Load (0.4ms)[0m  [1mSELECT `slides`.* FROM `slides`[0m
+  [1m[35mScwidget Load (0.2ms)[0m  SELECT `scwidgets`.* FROM `scwidgets`
+  [1m[36mGig Load (0.3ms)[0m  [1mSELECT `gigs`.* FROM `gigs` ORDER BY date LIMIT 6 OFFSET 0[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT COUNT(*) FROM `gigs`
+Rendered shared/_social_links.html.erb (0.6ms)
+Rendered shared/_social_links.html.erb (0.5ms)
+Rendered home/index.html.erb within layouts/application (27.1ms)
+Completed 200 OK in 49ms (Views: 35.3ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 20 12:33:32 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[36mSlide Load (0.3ms)[0m  [1mSELECT `slides`.* FROM `slides`[0m
+  [1m[35mScwidget Load (0.3ms)[0m  SELECT `scwidgets`.* FROM `scwidgets`
+  [1m[36mGig Load (0.3ms)[0m  [1mSELECT `gigs`.* FROM `gigs` ORDER BY date LIMIT 6 OFFSET 0[0m
+  [1m[35mSQL (0.6ms)[0m  SELECT COUNT(*) FROM `gigs`
+Rendered shared/_social_links.html.erb (0.7ms)
+Rendered shared/_social_links.html.erb (0.5ms)
+Rendered home/index.html.erb within layouts/application (26.3ms)
+Completed 200 OK in 48ms (Views: 33.6ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 20 12:34:17 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[36mSlide Load (0.3ms)[0m  [1mSELECT `slides`.* FROM `slides`[0m
+  [1m[35mScwidget Load (0.2ms)[0m  SELECT `scwidgets`.* FROM `scwidgets`
+  [1m[36mGig Load (0.3ms)[0m  [1mSELECT `gigs`.* FROM `gigs` ORDER BY date LIMIT 6 OFFSET 0[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT COUNT(*) FROM `gigs`
+Rendered shared/_social_links.html.erb (0.6ms)
+Rendered shared/_social_links.html.erb (0.5ms)
+Rendered home/index.html.erb within layouts/application (26.1ms)
+Completed 200 OK in 47ms (Views: 33.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/chefs" for 127.0.0.1 at Wed Jun 20 12:39:54 -0500 2012
+
+ActionController::RoutingError (No route matches "/chefs"):
+  
+
+Rendered /Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 20 12:45:03 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[36mSlide Load (0.3ms)[0m  [1mSELECT `slides`.* FROM `slides`[0m
+  [1m[35mScwidget Load (0.2ms)[0m  SELECT `scwidgets`.* FROM `scwidgets`
+  [1m[36mGig Load (0.3ms)[0m  [1mSELECT `gigs`.* FROM `gigs` ORDER BY date LIMIT 6 OFFSET 0[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT COUNT(*) FROM `gigs`
+Rendered shared/_social_links.html.erb (0.5ms)
+Rendered shared/_social_links.html.erb (0.5ms)
+Rendered home/index.html.erb within layouts/application (23.6ms)
+Completed 200 OK in 47ms (Views: 31.4ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 20 12:45:11 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[36mSlide Load (0.3ms)[0m  [1mSELECT `slides`.* FROM `slides`[0m
+  [1m[35mScwidget Load (0.3ms)[0m  SELECT `scwidgets`.* FROM `scwidgets`
+  [1m[36mGig Load (0.3ms)[0m  [1mSELECT `gigs`.* FROM `gigs` ORDER BY date LIMIT 6 OFFSET 0[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM `gigs`
+Rendered shared/_social_links.html.erb (0.5ms)
+Rendered shared/_social_links.html.erb (0.5ms)
+Rendered home/index.html.erb within layouts/application (25.2ms)
+Completed 200 OK in 48ms (Views: 33.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 20 12:45:55 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[36mSlide Load (0.4ms)[0m  [1mSELECT `slides`.* FROM `slides`[0m
+  [1m[35mScwidget Load (0.3ms)[0m  SELECT `scwidgets`.* FROM `scwidgets`
+  [1m[36mGig Load (0.3ms)[0m  [1mSELECT `gigs`.* FROM `gigs` ORDER BY date LIMIT 6 OFFSET 0[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT COUNT(*) FROM `gigs`
+Rendered shared/_social_links.html.erb (0.6ms)
+Rendered shared/_social_links.html.erb (0.5ms)
+Rendered home/index.html.erb within layouts/application (27.9ms)
+Completed 200 OK in 50ms (Views: 35.8ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 20 12:46:29 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[36mSlide Load (0.4ms)[0m  [1mSELECT `slides`.* FROM `slides`[0m
+  [1m[35mScwidget Load (0.3ms)[0m  SELECT `scwidgets`.* FROM `scwidgets`
+  [1m[36mGig Load (0.4ms)[0m  [1mSELECT `gigs`.* FROM `gigs` ORDER BY date LIMIT 6 OFFSET 0[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT COUNT(*) FROM `gigs`
+Rendered shared/_social_links.html.erb (0.6ms)
+Rendered shared/_social_links.html.erb (0.5ms)
+Rendered home/index.html.erb within layouts/application (98.1ms)
+Completed 200 OK in 123ms (Views: 106.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 20 12:46:43 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[36mSlide Load (0.3ms)[0m  [1mSELECT `slides`.* FROM `slides`[0m
+  [1m[35mScwidget Load (0.3ms)[0m  SELECT `scwidgets`.* FROM `scwidgets`
+  [1m[36mGig Load (0.3ms)[0m  [1mSELECT `gigs`.* FROM `gigs` ORDER BY date LIMIT 6 OFFSET 0[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM `gigs`
+Rendered shared/_social_links.html.erb (0.7ms)
+Rendered shared/_social_links.html.erb (0.8ms)
+Rendered home/index.html.erb within layouts/application (27.5ms)
+Completed 200 OK in 49ms (Views: 35.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 20 12:47:11 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[36mSlide Load (2.1ms)[0m  [1mSELECT `slides`.* FROM `slides`[0m
+  [1m[35mScwidget Load (2.1ms)[0m  SELECT `scwidgets`.* FROM `scwidgets`
+  [1m[36mGig Load (0.3ms)[0m  [1mSELECT `gigs`.* FROM `gigs` ORDER BY date LIMIT 6 OFFSET 0[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM `gigs`
+Rendered shared/_social_links.html.erb (0.6ms)
+Rendered shared/_social_links.html.erb (0.5ms)
+Rendered home/index.html.erb within layouts/application (27.7ms)
+Completed 200 OK in 56ms (Views: 37.2ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/feed" for 127.0.0.1 at Wed Jun 20 12:49:22 -0500 2012
+
+ActionController::RoutingError (No route matches "/feed"):
+  
+
+Rendered /Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 20 12:52:34 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[36mSlide Load (0.3ms)[0m  [1mSELECT `slides`.* FROM `slides`[0m
+  [1m[35mScwidget Load (0.2ms)[0m  SELECT `scwidgets`.* FROM `scwidgets`
+  [1m[36mGig Load (0.3ms)[0m  [1mSELECT `gigs`.* FROM `gigs` ORDER BY date LIMIT 6 OFFSET 0[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT COUNT(*) FROM `gigs`
+Rendered shared/_social_links.html.erb (0.5ms)
+Rendered shared/_social_links.html.erb (0.5ms)
+Rendered home/index.html.erb within layouts/application (25.3ms)
+Completed 200 OK in 47ms (Views: 33.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 20 12:53:18 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[36mSlide Load (0.3ms)[0m  [1mSELECT `slides`.* FROM `slides`[0m
+  [1m[35mScwidget Load (0.2ms)[0m  SELECT `scwidgets`.* FROM `scwidgets`
+  [1m[36mGig Load (0.3ms)[0m  [1mSELECT `gigs`.* FROM `gigs` ORDER BY date LIMIT 6 OFFSET 0[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT COUNT(*) FROM `gigs`
+Rendered shared/_social_links.html.erb (0.7ms)
+Rendered shared/_social_links.html.erb (0.6ms)
+Rendered home/index.html.erb within layouts/application (94.5ms)
+Completed 200 OK in 117ms (Views: 102.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 20 12:53:28 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[36mSlide Load (0.4ms)[0m  [1mSELECT `slides`.* FROM `slides`[0m
+  [1m[35mScwidget Load (0.2ms)[0m  SELECT `scwidgets`.* FROM `scwidgets`
+  [1m[36mGig Load (0.3ms)[0m  [1mSELECT `gigs`.* FROM `gigs` ORDER BY date LIMIT 6 OFFSET 0[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM `gigs`
+Rendered shared/_social_links.html.erb (0.7ms)
+Rendered shared/_social_links.html.erb (1.0ms)
+Rendered home/index.html.erb within layouts/application (26.5ms)
+Completed 200 OK in 49ms (Views: 34.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 20 12:53:32 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[36mSlide Load (0.3ms)[0m  [1mSELECT `slides`.* FROM `slides`[0m
+  [1m[35mScwidget Load (0.8ms)[0m  SELECT `scwidgets`.* FROM `scwidgets`
+  [1m[36mGig Load (0.3ms)[0m  [1mSELECT `gigs`.* FROM `gigs` ORDER BY date LIMIT 6 OFFSET 0[0m
+  [1m[35mSQL (0.6ms)[0m  SELECT COUNT(*) FROM `gigs`
+Rendered shared/_social_links.html.erb (1.0ms)
+Rendered shared/_social_links.html.erb (0.5ms)
+Rendered home/index.html.erb within layouts/application (25.6ms)
+Completed 200 OK in 49ms (Views: 33.3ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 20 12:54:41 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[36mSlide Load (0.3ms)[0m  [1mSELECT `slides`.* FROM `slides`[0m
+  [1m[35mScwidget Load (0.2ms)[0m  SELECT `scwidgets`.* FROM `scwidgets`
+  [1m[36mGig Load (0.3ms)[0m  [1mSELECT `gigs`.* FROM `gigs` ORDER BY date LIMIT 6 OFFSET 0[0m
+  [1m[35mSQL (0.8ms)[0m  SELECT COUNT(*) FROM `gigs`
+Rendered shared/_social_links.html.erb (0.6ms)
+Rendered shared/_social_links.html.erb (0.5ms)
+Rendered home/index.html.erb within layouts/application (28.1ms)
+Completed 200 OK in 49ms (Views: 35.2ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 20 12:54:49 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[36mSlide Load (0.3ms)[0m  [1mSELECT `slides`.* FROM `slides`[0m
+  [1m[35mScwidget Load (0.2ms)[0m  SELECT `scwidgets`.* FROM `scwidgets`
+  [1m[36mGig Load (0.3ms)[0m  [1mSELECT `gigs`.* FROM `gigs` ORDER BY date LIMIT 6 OFFSET 0[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT COUNT(*) FROM `gigs`
+Rendered shared/_social_links.html.erb (0.6ms)
+Rendered shared/_social_links.html.erb (0.5ms)
+Rendered home/index.html.erb within layouts/application (24.7ms)
+Completed 200 OK in 112ms (Views: 31.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 20 12:56:45 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[36mSlide Load (0.3ms)[0m  [1mSELECT `slides`.* FROM `slides`[0m
+  [1m[35mScwidget Load (0.2ms)[0m  SELECT `scwidgets`.* FROM `scwidgets`
+  [1m[36mGig Load (0.3ms)[0m  [1mSELECT `gigs`.* FROM `gigs` ORDER BY date LIMIT 6 OFFSET 0[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM `gigs`
+Rendered shared/_social_links.html.erb (0.6ms)
+Rendered shared/_social_links.html.erb (0.4ms)
+Rendered home/index.html.erb within layouts/application (24.5ms)
+Completed 200 OK in 46ms (Views: 32.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 20 12:57:51 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[36mSlide Load (0.3ms)[0m  [1mSELECT `slides`.* FROM `slides`[0m
+  [1m[35mScwidget Load (0.2ms)[0m  SELECT `scwidgets`.* FROM `scwidgets`
+  [1m[36mGig Load (0.3ms)[0m  [1mSELECT `gigs`.* FROM `gigs` ORDER BY date LIMIT 6 OFFSET 0[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM `gigs`
+Rendered shared/_social_links.html.erb (0.6ms)
+Rendered shared/_social_links.html.erb (0.6ms)
+Rendered home/index.html.erb within layouts/application (95.9ms)
+Completed 200 OK in 116ms (Views: 103.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 20 12:58:12 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[36mSlide Load (0.5ms)[0m  [1mSELECT `slides`.* FROM `slides`[0m
+  [1m[35mScwidget Load (0.2ms)[0m  SELECT `scwidgets`.* FROM `scwidgets`
+  [1m[36mGig Load (0.5ms)[0m  [1mSELECT `gigs`.* FROM `gigs` ORDER BY date LIMIT 6 OFFSET 0[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM `gigs`
+Rendered shared/_social_links.html.erb (0.6ms)
+Rendered shared/_social_links.html.erb (0.8ms)
+Rendered home/index.html.erb within layouts/application (25.7ms)
+Completed 200 OK in 48ms (Views: 33.5ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 20 13:00:25 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[36mSlide Load (0.3ms)[0m  [1mSELECT `slides`.* FROM `slides`[0m
+  [1m[35mScwidget Load (0.2ms)[0m  SELECT `scwidgets`.* FROM `scwidgets`
+  [1m[36mGig Load (0.3ms)[0m  [1mSELECT `gigs`.* FROM `gigs` ORDER BY date LIMIT 6 OFFSET 0[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT COUNT(*) FROM `gigs`
+Rendered shared/_social_links.html.erb (0.6ms)
+Rendered shared/_social_links.html.erb (0.5ms)
+Rendered home/index.html.erb within layouts/application (24.4ms)
+Completed 200 OK in 45ms (Views: 31.6ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 20 13:02:59 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[36mSlide Load (0.3ms)[0m  [1mSELECT `slides`.* FROM `slides`[0m
+  [1m[35mScwidget Load (0.2ms)[0m  SELECT `scwidgets`.* FROM `scwidgets`
+  [1m[36mGig Load (0.4ms)[0m  [1mSELECT `gigs`.* FROM `gigs` ORDER BY date LIMIT 6 OFFSET 0[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM `gigs`
+Rendered shared/_social_links.html.erb (0.7ms)
+Rendered shared/_social_links.html.erb (0.5ms)
+Rendered home/index.html.erb within layouts/application (26.0ms)
+Completed 200 OK in 47ms (Views: 33.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 20 13:03:05 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[36mSlide Load (0.3ms)[0m  [1mSELECT `slides`.* FROM `slides`[0m
+  [1m[35mScwidget Load (0.2ms)[0m  SELECT `scwidgets`.* FROM `scwidgets`
+  [1m[36mGig Load (0.3ms)[0m  [1mSELECT `gigs`.* FROM `gigs` ORDER BY date LIMIT 6 OFFSET 0[0m
+  [1m[35mSQL (0.6ms)[0m  SELECT COUNT(*) FROM `gigs`
+Rendered shared/_social_links.html.erb (0.7ms)
+Rendered shared/_social_links.html.erb (0.5ms)
+Rendered home/index.html.erb within layouts/application (24.4ms)
+Completed 200 OK in 46ms (Views: 31.4ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 20 13:03:22 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[36mSlide Load (0.3ms)[0m  [1mSELECT `slides`.* FROM `slides`[0m
+  [1m[35mScwidget Load (0.2ms)[0m  SELECT `scwidgets`.* FROM `scwidgets`
+  [1m[36mGig Load (0.4ms)[0m  [1mSELECT `gigs`.* FROM `gigs` ORDER BY date LIMIT 6 OFFSET 0[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM `gigs`
+Rendered shared/_social_links.html.erb (0.6ms)
+Rendered shared/_social_links.html.erb (0.5ms)
+Rendered home/index.html.erb within layouts/application (25.5ms)
+Completed 200 OK in 47ms (Views: 33.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 20 13:03:23 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[36mSlide Load (0.3ms)[0m  [1mSELECT `slides`.* FROM `slides`[0m
+  [1m[35mScwidget Load (0.2ms)[0m  SELECT `scwidgets`.* FROM `scwidgets`
+  [1m[36mGig Load (0.3ms)[0m  [1mSELECT `gigs`.* FROM `gigs` ORDER BY date LIMIT 6 OFFSET 0[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT COUNT(*) FROM `gigs`
+Rendered shared/_social_links.html.erb (0.7ms)
+Rendered shared/_social_links.html.erb (0.5ms)
+Rendered home/index.html.erb within layouts/application (23.4ms)
+Completed 200 OK in 44ms (Views: 30.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 20 13:08:22 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[36mSlide Load (0.4ms)[0m  [1mSELECT `slides`.* FROM `slides`[0m
+  [1m[35mScwidget Load (0.2ms)[0m  SELECT `scwidgets`.* FROM `scwidgets`
+  [1m[36mGig Load (0.4ms)[0m  [1mSELECT `gigs`.* FROM `gigs` ORDER BY date LIMIT 6 OFFSET 0[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM `gigs`
+Rendered shared/_social_links.html.erb (0.6ms)
+Rendered shared/_social_links.html.erb (0.5ms)
+Rendered home/index.html.erb within layouts/application (27.1ms)
+Completed 200 OK in 117ms (Views: 34.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 20 13:08:49 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[36mSlide Load (0.3ms)[0m  [1mSELECT `slides`.* FROM `slides`[0m
+  [1m[35mScwidget Load (0.3ms)[0m  SELECT `scwidgets`.* FROM `scwidgets`
+  [1m[36mGig Load (1.1ms)[0m  [1mSELECT `gigs`.* FROM `gigs` ORDER BY date LIMIT 6 OFFSET 0[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM `gigs`
+Rendered shared/_social_links.html.erb (0.8ms)
+Rendered shared/_social_links.html.erb (0.6ms)
+Rendered home/index.html.erb within layouts/application (92.1ms)
+Completed 200 OK in 113ms (Views: 99.1ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 20 13:08:56 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[36mSlide Load (0.3ms)[0m  [1mSELECT `slides`.* FROM `slides`[0m
+  [1m[35mScwidget Load (0.2ms)[0m  SELECT `scwidgets`.* FROM `scwidgets`
+  [1m[36mGig Load (0.3ms)[0m  [1mSELECT `gigs`.* FROM `gigs` ORDER BY date LIMIT 6 OFFSET 0[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT COUNT(*) FROM `gigs`
+Rendered shared/_social_links.html.erb (0.6ms)
+Rendered shared/_social_links.html.erb (0.5ms)
+Rendered home/index.html.erb within layouts/application (24.6ms)
+Completed 200 OK in 46ms (Views: 32.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 20 13:09:20 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[36mSlide Load (0.9ms)[0m  [1mSELECT `slides`.* FROM `slides`[0m
+  [1m[35mScwidget Load (0.2ms)[0m  SELECT `scwidgets`.* FROM `scwidgets`
+  [1m[36mGig Load (0.3ms)[0m  [1mSELECT `gigs`.* FROM `gigs` ORDER BY date LIMIT 6 OFFSET 0[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT COUNT(*) FROM `gigs`
+Rendered shared/_social_links.html.erb (0.7ms)
+Rendered shared/_social_links.html.erb (0.5ms)
+Rendered home/index.html.erb within layouts/application (25.4ms)
+Completed 200 OK in 46ms (Views: 32.9ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/slides" for 127.0.0.1 at Wed Jun 20 13:09:47 -0500 2012
+  Processing by SlidesController#index as HTML
+  [1m[36mSlide Load (0.3ms)[0m  [1mSELECT `slides`.* FROM `slides`[0m
+Rendered shared/_social_links.html.erb (1.0ms)
+Rendered shared/_social_links.html.erb (0.6ms)
+Rendered slides/index.html.erb within layouts/application (20.5ms)
+Completed 200 OK in 42ms (Views: 37.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/slides/1/edit" for 127.0.0.1 at Wed Jun 20 13:09:50 -0500 2012
+  Processing by SlidesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSQL (0.4ms)[0m  SHOW TABLES
+  [1m[36mSlide Load (0.5ms)[0m  [1mSELECT `slides`.* FROM `slides` WHERE (`slides`.`id` = 1) LIMIT 1[0m
+Rendered slides/_form.html.erb (11.5ms)
+Rendered shared/_social_links.html.erb (0.6ms)
+Rendered shared/_social_links.html.erb (0.6ms)
+Rendered slides/edit.html.erb within layouts/application (21.7ms)
+Completed 200 OK in 41ms (Views: 35.6ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/slides/1" for 127.0.0.1 at Wed Jun 20 13:10:12 -0500 2012
+  Processing by SlidesController#update as HTML
+  Parameters: {"commit"=>"Update Slide", "authenticity_token"=>"JzYZAVXOR5Uu3IkiutN/rZGvyK9VwgMhyHlj0lGwmPg=", "utf8"=>"✓", "id"=>"1", "slide"=>{"label"=>"Slide-1", "slide"=>#<ActionDispatch::Http::UploadedFile:0x103f37f10 @content_type="image/jpeg", @tempfile=#<File:/var/folders/rw/rwC3pedZHna4wkbt1aI7xk+++TI/-Tmp-/RackMultipart20120620-3201-wcwtgg-0>, @original_filename="IMG_4537.jpg", @headers="Content-Disposition: form-data; name=\"slide[slide]\"; filename=\"IMG_4537.jpg\"\r\nContent-Type: image/jpeg\r\n">}}
+  [1m[35mSlide Load (0.2ms)[0m  SELECT `slides`.* FROM `slides` WHERE (`slides`.`id` = 1) LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+[32mCommand[0m :: identify -format %wx%h '/var/folders/rw/rwC3pedZHna4wkbt1aI7xk+++TI/-Tmp-/stream20120620-3201-5yxyo1-0.jpg[0]'
+[32mCommand[0m :: convert '/var/folders/rw/rwC3pedZHna4wkbt1aI7xk+++TI/-Tmp-/stream20120620-3201-5yxyo1-0.jpg[0]' -resize "120x450>" '/var/folders/rw/rwC3pedZHna4wkbt1aI7xk+++TI/-Tmp-/stream20120620-3201-5yxyo1-020120620-3201-1l0rhep-0.jpg'
+[32mCommand[0m :: identify -format %wx%h '/var/folders/rw/rwC3pedZHna4wkbt1aI7xk+++TI/-Tmp-/stream20120620-3201-5yxyo1-0.jpg[0]'
+[32mCommand[0m :: convert '/var/folders/rw/rwC3pedZHna4wkbt1aI7xk+++TI/-Tmp-/stream20120620-3201-5yxyo1-0.jpg[0]' -resize "1200x450>" '/var/folders/rw/rwC3pedZHna4wkbt1aI7xk+++TI/-Tmp-/stream20120620-3201-5yxyo1-020120620-3201-11506to-0.jpg'
+  [1m[35mAREL (0.4ms)[0m  UPDATE `slides` SET `slide_updated_at` = '2012-06-20 18:10:12', `updated_at` = '2012-06-20 18:10:16', `slide_file_size` = 8541991, `slide_file_name` = 'IMG_4537.jpg' WHERE (`slides`.`id` = 1)
+[paperclip] Saving attachments.
+[paperclip] deleting /users/paulsutcliffe/rails-apps/paulsutcliffe/public/images/assets/slides/1/original/slide-1.jpeg
+[paperclip] deleting /users/paulsutcliffe/rails-apps/paulsutcliffe/public/images/assets/slides/1/min/slide-1.jpg
+[paperclip] deleting /users/paulsutcliffe/rails-apps/paulsutcliffe/public/images/assets/slides/1/max/slide-1.jpg
+[paperclip] saving /users/paulsutcliffe/rails-apps/paulsutcliffe/public/images/assets/slides/1/original/IMG_4537.jpg
+[paperclip] saving /users/paulsutcliffe/rails-apps/paulsutcliffe/public/images/assets/slides/1/min/IMG_4537.jpg
+[paperclip] saving /users/paulsutcliffe/rails-apps/paulsutcliffe/public/images/assets/slides/1/max/IMG_4537.jpg
+  [1m[36mSQL (0.3ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/slides/1
+Completed 302 Found in 3983ms
+
+
+Started GET "/slides/1" for 127.0.0.1 at Wed Jun 20 13:10:16 -0500 2012
+  Processing by SlidesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSlide Load (0.2ms)[0m  SELECT `slides`.* FROM `slides` WHERE (`slides`.`id` = 1) LIMIT 1
+Rendered shared/_social_links.html.erb (0.7ms)
+Rendered shared/_social_links.html.erb (0.6ms)
+Rendered slides/show.html.erb within layouts/application (15.3ms)
+Completed 200 OK in 33ms (Views: 29.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/slides" for 127.0.0.1 at Wed Jun 20 13:10:19 -0500 2012
+  Processing by SlidesController#index as HTML
+  [1m[36mSlide Load (0.3ms)[0m  [1mSELECT `slides`.* FROM `slides`[0m
+Rendered shared/_social_links.html.erb (0.6ms)
+Rendered shared/_social_links.html.erb (0.6ms)
+Rendered slides/index.html.erb within layouts/application (17.1ms)
+Completed 200 OK in 32ms (Views: 30.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/slides/2/edit" for 127.0.0.1 at Wed Jun 20 13:10:20 -0500 2012
+  Processing by SlidesController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mSlide Load (0.2ms)[0m  SELECT `slides`.* FROM `slides` WHERE (`slides`.`id` = 2) LIMIT 1
+Rendered slides/_form.html.erb (10.0ms)
+Rendered shared/_social_links.html.erb (0.6ms)
+Rendered shared/_social_links.html.erb (1.3ms)
+Rendered slides/edit.html.erb within layouts/application (20.8ms)
+Completed 200 OK in 125ms (Views: 119.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/slides/2" for 127.0.0.1 at Wed Jun 20 13:10:29 -0500 2012
+  Processing by SlidesController#update as HTML
+  Parameters: {"commit"=>"Update Slide", "authenticity_token"=>"JzYZAVXOR5Uu3IkiutN/rZGvyK9VwgMhyHlj0lGwmPg=", "utf8"=>"✓", "id"=>"2", "slide"=>{"label"=>"Slide-2", "slide"=>#<ActionDispatch::Http::UploadedFile:0x103f82790 @content_type="image/jpeg", @tempfile=#<File:/var/folders/rw/rwC3pedZHna4wkbt1aI7xk+++TI/-Tmp-/RackMultipart20120620-3201-1o56352-0>, @original_filename="IMG_4522.jpg", @headers="Content-Disposition: form-data; name=\"slide[slide]\"; filename=\"IMG_4522.jpg\"\r\nContent-Type: image/jpeg\r\n">}}
+  [1m[36mSlide Load (0.2ms)[0m  [1mSELECT `slides`.* FROM `slides` WHERE (`slides`.`id` = 2) LIMIT 1[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+[32mCommand[0m :: identify -format %wx%h '/var/folders/rw/rwC3pedZHna4wkbt1aI7xk+++TI/-Tmp-/stream20120620-3201-851wy0-0.jpg[0]'
+[32mCommand[0m :: convert '/var/folders/rw/rwC3pedZHna4wkbt1aI7xk+++TI/-Tmp-/stream20120620-3201-851wy0-0.jpg[0]' -resize "120x450>" '/var/folders/rw/rwC3pedZHna4wkbt1aI7xk+++TI/-Tmp-/stream20120620-3201-851wy0-020120620-3201-1hsf9cr-0.jpg'
+[32mCommand[0m :: identify -format %wx%h '/var/folders/rw/rwC3pedZHna4wkbt1aI7xk+++TI/-Tmp-/stream20120620-3201-851wy0-0.jpg[0]'
+[32mCommand[0m :: convert '/var/folders/rw/rwC3pedZHna4wkbt1aI7xk+++TI/-Tmp-/stream20120620-3201-851wy0-0.jpg[0]' -resize "1200x450>" '/var/folders/rw/rwC3pedZHna4wkbt1aI7xk+++TI/-Tmp-/stream20120620-3201-851wy0-020120620-3201-xkq897-0.jpg'
+  [1m[36mAREL (0.3ms)[0m  [1mUPDATE `slides` SET `updated_at` = '2012-06-20 18:10:32', `slide_file_size` = 7358349, `slide_file_name` = 'IMG_4522.jpg', `slide_updated_at` = '2012-06-20 18:10:29' WHERE (`slides`.`id` = 2)[0m
+[paperclip] Saving attachments.
+[paperclip] deleting /users/paulsutcliffe/rails-apps/paulsutcliffe/public/images/assets/slides/2/original/slide-2.jpeg
+[paperclip] deleting /users/paulsutcliffe/rails-apps/paulsutcliffe/public/images/assets/slides/2/min/slide-2.jpg
+[paperclip] deleting /users/paulsutcliffe/rails-apps/paulsutcliffe/public/images/assets/slides/2/max/slide-2.jpg
+[paperclip] saving /users/paulsutcliffe/rails-apps/paulsutcliffe/public/images/assets/slides/2/original/IMG_4522.jpg
+[paperclip] saving /users/paulsutcliffe/rails-apps/paulsutcliffe/public/images/assets/slides/2/min/IMG_4522.jpg
+[paperclip] saving /users/paulsutcliffe/rails-apps/paulsutcliffe/public/images/assets/slides/2/max/IMG_4522.jpg
+  [1m[35mSQL (0.3ms)[0m  COMMIT
+Redirected to http://localhost:3000/slides/2
+Completed 302 Found in 3070ms
+
+
+Started GET "/slides/2" for 127.0.0.1 at Wed Jun 20 13:10:32 -0500 2012
+  Processing by SlidesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mSlide Load (0.3ms)[0m  [1mSELECT `slides`.* FROM `slides` WHERE (`slides`.`id` = 2) LIMIT 1[0m
+Rendered shared/_social_links.html.erb (0.6ms)
+Rendered shared/_social_links.html.erb (0.5ms)
+Rendered slides/show.html.erb within layouts/application (16.6ms)
+Completed 200 OK in 36ms (Views: 30.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/slides" for 127.0.0.1 at Wed Jun 20 13:10:34 -0500 2012
+  Processing by SlidesController#index as HTML
+  [1m[35mSlide Load (0.3ms)[0m  SELECT `slides`.* FROM `slides`
+Rendered shared/_social_links.html.erb (0.6ms)
+Rendered shared/_social_links.html.erb (0.5ms)
+Rendered slides/index.html.erb within layouts/application (18.6ms)
+Completed 200 OK in 33ms (Views: 31.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 20 13:10:37 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[36mSlide Load (0.3ms)[0m  [1mSELECT `slides`.* FROM `slides`[0m
+  [1m[35mScwidget Load (0.2ms)[0m  SELECT `scwidgets`.* FROM `scwidgets`
+  [1m[36mGig Load (0.4ms)[0m  [1mSELECT `gigs`.* FROM `gigs` ORDER BY date LIMIT 6 OFFSET 0[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM `gigs`
+Rendered shared/_social_links.html.erb (0.6ms)
+Rendered shared/_social_links.html.erb (0.5ms)
+Rendered home/index.html.erb within layouts/application (25.5ms)
+Completed 200 OK in 55ms (Views: 32.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/slides" for 127.0.0.1 at Wed Jun 20 13:11:35 -0500 2012
+  Processing by SlidesController#index as HTML
+  [1m[36mSlide Load (0.3ms)[0m  [1mSELECT `slides`.* FROM `slides`[0m
+Rendered shared/_social_links.html.erb (0.6ms)
+Rendered shared/_social_links.html.erb (0.5ms)
+Rendered slides/index.html.erb within layouts/application (19.9ms)
+Completed 200 OK in 34ms (Views: 32.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/slides/1/edit" for 127.0.0.1 at Wed Jun 20 13:11:38 -0500 2012
+  Processing by SlidesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSlide Load (0.2ms)[0m  SELECT `slides`.* FROM `slides` WHERE (`slides`.`id` = 1) LIMIT 1
+Rendered slides/_form.html.erb (8.6ms)
+Rendered shared/_social_links.html.erb (0.7ms)
+Rendered shared/_social_links.html.erb (0.6ms)
+Rendered slides/edit.html.erb within layouts/application (18.6ms)
+Completed 200 OK in 37ms (Views: 32.9ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/slides/1" for 127.0.0.1 at Wed Jun 20 13:11:43 -0500 2012
+  Processing by SlidesController#update as HTML
+  Parameters: {"commit"=>"Update Slide", "authenticity_token"=>"JzYZAVXOR5Uu3IkiutN/rZGvyK9VwgMhyHlj0lGwmPg=", "utf8"=>"✓", "id"=>"1", "slide"=>{"label"=>"Slide-1", "slide"=>#<ActionDispatch::Http::UploadedFile:0x103ea4be8 @content_type="image/jpeg", @tempfile=#<File:/var/folders/rw/rwC3pedZHna4wkbt1aI7xk+++TI/-Tmp-/RackMultipart20120620-3201-1sy9n04-0>, @original_filename="IMG_4522.jpg", @headers="Content-Disposition: form-data; name=\"slide[slide]\"; filename=\"IMG_4522.jpg\"\r\nContent-Type: image/jpeg\r\n">}}
+  [1m[36mSlide Load (0.2ms)[0m  [1mSELECT `slides`.* FROM `slides` WHERE (`slides`.`id` = 1) LIMIT 1[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+[32mCommand[0m :: identify -format %wx%h '/var/folders/rw/rwC3pedZHna4wkbt1aI7xk+++TI/-Tmp-/stream20120620-3201-18y23cs-0.jpg[0]'
+[32mCommand[0m :: convert '/var/folders/rw/rwC3pedZHna4wkbt1aI7xk+++TI/-Tmp-/stream20120620-3201-18y23cs-0.jpg[0]' -resize "120x450>" '/var/folders/rw/rwC3pedZHna4wkbt1aI7xk+++TI/-Tmp-/stream20120620-3201-18y23cs-020120620-3201-1brvkak-0.jpg'
+[32mCommand[0m :: identify -format %wx%h '/var/folders/rw/rwC3pedZHna4wkbt1aI7xk+++TI/-Tmp-/stream20120620-3201-18y23cs-0.jpg[0]'
+[32mCommand[0m :: convert '/var/folders/rw/rwC3pedZHna4wkbt1aI7xk+++TI/-Tmp-/stream20120620-3201-18y23cs-0.jpg[0]' -resize "1440>" '/var/folders/rw/rwC3pedZHna4wkbt1aI7xk+++TI/-Tmp-/stream20120620-3201-18y23cs-020120620-3201-1gx68vz-0.jpg'
+  [1m[36mAREL (0.3ms)[0m  [1mUPDATE `slides` SET `slide_file_size` = 7358349, `slide_updated_at` = '2012-06-20 18:11:43', `slide_file_name` = 'IMG_4522.jpg', `updated_at` = '2012-06-20 18:11:47' WHERE (`slides`.`id` = 1)[0m
+[paperclip] Saving attachments.
+[paperclip] deleting /users/paulsutcliffe/rails-apps/paulsutcliffe/public/images/assets/slides/1/original/IMG_4537.jpg
+[paperclip] deleting /users/paulsutcliffe/rails-apps/paulsutcliffe/public/images/assets/slides/1/min/IMG_4537.jpg
+[paperclip] deleting /users/paulsutcliffe/rails-apps/paulsutcliffe/public/images/assets/slides/1/max/IMG_4537.jpg
+[paperclip] saving /users/paulsutcliffe/rails-apps/paulsutcliffe/public/images/assets/slides/1/original/IMG_4522.jpg
+[paperclip] saving /users/paulsutcliffe/rails-apps/paulsutcliffe/public/images/assets/slides/1/min/IMG_4522.jpg
+[paperclip] saving /users/paulsutcliffe/rails-apps/paulsutcliffe/public/images/assets/slides/1/max/IMG_4522.jpg
+  [1m[35mSQL (18.2ms)[0m  COMMIT
+Redirected to http://localhost:3000/slides/1
+Completed 302 Found in 3952ms
+
+
+Started GET "/slides/1" for 127.0.0.1 at Wed Jun 20 13:11:47 -0500 2012
+  Processing by SlidesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSlide Load (0.2ms)[0m  [1mSELECT `slides`.* FROM `slides` WHERE (`slides`.`id` = 1) LIMIT 1[0m
+Rendered shared/_social_links.html.erb (0.6ms)
+Rendered shared/_social_links.html.erb (0.6ms)
+Rendered slides/show.html.erb within layouts/application (13.9ms)
+Completed 200 OK in 32ms (Views: 27.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/slides" for 127.0.0.1 at Wed Jun 20 13:11:49 -0500 2012
+  Processing by SlidesController#index as HTML
+  [1m[35mSlide Load (0.3ms)[0m  SELECT `slides`.* FROM `slides`
+Rendered shared/_social_links.html.erb (1.2ms)
+Rendered shared/_social_links.html.erb (0.6ms)
+Rendered slides/index.html.erb within layouts/application (94.8ms)
+Completed 200 OK in 109ms (Views: 107.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 20 13:11:52 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[36mSlide Load (2.0ms)[0m  [1mSELECT `slides`.* FROM `slides`[0m
+  [1m[35mScwidget Load (0.6ms)[0m  SELECT `scwidgets`.* FROM `scwidgets`
+  [1m[36mGig Load (0.3ms)[0m  [1mSELECT `gigs`.* FROM `gigs` ORDER BY date LIMIT 6 OFFSET 0[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM `gigs`
+Rendered shared/_social_links.html.erb (0.7ms)
+Rendered shared/_social_links.html.erb (0.5ms)
+Rendered home/index.html.erb within layouts/application (24.4ms)
+Completed 200 OK in 57ms (Views: 33.2ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/slides" for 127.0.0.1 at Wed Jun 20 13:12:28 -0500 2012
+  Processing by SlidesController#index as HTML
+  [1m[36mSlide Load (0.3ms)[0m  [1mSELECT `slides`.* FROM `slides`[0m
+Rendered shared/_social_links.html.erb (0.6ms)
+Rendered shared/_social_links.html.erb (1.1ms)
+Rendered slides/index.html.erb within layouts/application (21.0ms)
+Completed 200 OK in 41ms (Views: 39.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/slides/1/edit" for 127.0.0.1 at Wed Jun 20 13:12:36 -0500 2012
+  Processing by SlidesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSlide Load (0.2ms)[0m  SELECT `slides`.* FROM `slides` WHERE (`slides`.`id` = 1) LIMIT 1
+Rendered slides/_form.html.erb (8.8ms)
+Rendered shared/_social_links.html.erb (0.6ms)
+Rendered shared/_social_links.html.erb (0.5ms)
+Rendered slides/edit.html.erb within layouts/application (17.9ms)
+Completed 200 OK in 36ms (Views: 31.4ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/slides/1" for 127.0.0.1 at Wed Jun 20 13:12:43 -0500 2012
+  Processing by SlidesController#update as HTML
+  Parameters: {"commit"=>"Update Slide", "authenticity_token"=>"JzYZAVXOR5Uu3IkiutN/rZGvyK9VwgMhyHlj0lGwmPg=", "utf8"=>"✓", "id"=>"1", "slide"=>{"label"=>"Slide-1", "slide"=>#<ActionDispatch::Http::UploadedFile:0x103f38348 @content_type="image/jpeg", @tempfile=#<File:/var/folders/rw/rwC3pedZHna4wkbt1aI7xk+++TI/-Tmp-/RackMultipart20120620-3201-12yd3f2-0>, @original_filename="IMG_4537.jpg", @headers="Content-Disposition: form-data; name=\"slide[slide]\"; filename=\"IMG_4537.jpg\"\r\nContent-Type: image/jpeg\r\n">}}
+  [1m[36mSlide Load (0.4ms)[0m  [1mSELECT `slides`.* FROM `slides` WHERE (`slides`.`id` = 1) LIMIT 1[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+[32mCommand[0m :: identify -format %wx%h '/var/folders/rw/rwC3pedZHna4wkbt1aI7xk+++TI/-Tmp-/stream20120620-3201-nqx4ww-0.jpg[0]'
+[32mCommand[0m :: convert '/var/folders/rw/rwC3pedZHna4wkbt1aI7xk+++TI/-Tmp-/stream20120620-3201-nqx4ww-0.jpg[0]' -resize "120x450>" '/var/folders/rw/rwC3pedZHna4wkbt1aI7xk+++TI/-Tmp-/stream20120620-3201-nqx4ww-020120620-3201-guwim3-0.jpg'
+[32mCommand[0m :: identify -format %wx%h '/var/folders/rw/rwC3pedZHna4wkbt1aI7xk+++TI/-Tmp-/stream20120620-3201-nqx4ww-0.jpg[0]'
+[32mCommand[0m :: convert '/var/folders/rw/rwC3pedZHna4wkbt1aI7xk+++TI/-Tmp-/stream20120620-3201-nqx4ww-0.jpg[0]' -resize "1440x" -crop "1440x450+0+855" +repage '/var/folders/rw/rwC3pedZHna4wkbt1aI7xk+++TI/-Tmp-/stream20120620-3201-nqx4ww-020120620-3201-1e7ymy-0.jpg'
+  [1m[36mAREL (0.4ms)[0m  [1mUPDATE `slides` SET `slide_file_name` = 'IMG_4537.jpg', `slide_updated_at` = '2012-06-20 18:12:43', `slide_file_size` = 8541991, `updated_at` = '2012-06-20 18:12:47' WHERE (`slides`.`id` = 1)[0m
+[paperclip] Saving attachments.
+[paperclip] deleting /users/paulsutcliffe/rails-apps/paulsutcliffe/public/images/assets/slides/1/original/IMG_4522.jpg
+[paperclip] deleting /users/paulsutcliffe/rails-apps/paulsutcliffe/public/images/assets/slides/1/min/IMG_4522.jpg
+[paperclip] deleting /users/paulsutcliffe/rails-apps/paulsutcliffe/public/images/assets/slides/1/max/IMG_4522.jpg
+[paperclip] saving /users/paulsutcliffe/rails-apps/paulsutcliffe/public/images/assets/slides/1/original/IMG_4537.jpg
+[paperclip] saving /users/paulsutcliffe/rails-apps/paulsutcliffe/public/images/assets/slides/1/min/IMG_4537.jpg
+[paperclip] saving /users/paulsutcliffe/rails-apps/paulsutcliffe/public/images/assets/slides/1/max/IMG_4537.jpg
+  [1m[35mSQL (24.3ms)[0m  COMMIT
+Redirected to http://localhost:3000/slides/1
+Completed 302 Found in 4142ms
+
+
+Started GET "/slides/1" for 127.0.0.1 at Wed Jun 20 13:12:47 -0500 2012
+  Processing by SlidesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSlide Load (0.2ms)[0m  [1mSELECT `slides`.* FROM `slides` WHERE (`slides`.`id` = 1) LIMIT 1[0m
+Rendered shared/_social_links.html.erb (1.6ms)
+Rendered shared/_social_links.html.erb (0.6ms)
+Rendered slides/show.html.erb within layouts/application (17.6ms)
+Completed 200 OK in 35ms (Views: 31.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/slides" for 127.0.0.1 at Wed Jun 20 13:12:49 -0500 2012
+  Processing by SlidesController#index as HTML
+  [1m[35mSlide Load (0.3ms)[0m  SELECT `slides`.* FROM `slides`
+Rendered shared/_social_links.html.erb (0.7ms)
+Rendered shared/_social_links.html.erb (0.5ms)
+Rendered slides/index.html.erb within layouts/application (17.7ms)
+Completed 200 OK in 32ms (Views: 30.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/slides/2/edit" for 127.0.0.1 at Wed Jun 20 13:12:50 -0500 2012
+  Processing by SlidesController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mSlide Load (0.2ms)[0m  [1mSELECT `slides`.* FROM `slides` WHERE (`slides`.`id` = 2) LIMIT 1[0m
+Rendered slides/_form.html.erb (9.3ms)
+Rendered shared/_social_links.html.erb (0.6ms)
+Rendered shared/_social_links.html.erb (0.5ms)
+Rendered slides/edit.html.erb within layouts/application (18.7ms)
+Completed 200 OK in 37ms (Views: 32.1ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/slides/2" for 127.0.0.1 at Wed Jun 20 13:12:55 -0500 2012
+  Processing by SlidesController#update as HTML
+  Parameters: {"commit"=>"Update Slide", "authenticity_token"=>"JzYZAVXOR5Uu3IkiutN/rZGvyK9VwgMhyHlj0lGwmPg=", "utf8"=>"✓", "id"=>"2", "slide"=>{"label"=>"Slide-2", "slide"=>#<ActionDispatch::Http::UploadedFile:0x103f68778 @content_type="image/jpeg", @tempfile=#<File:/var/folders/rw/rwC3pedZHna4wkbt1aI7xk+++TI/-Tmp-/RackMultipart20120620-3201-1e9h6j5-0>, @original_filename="IMG_4732.jpg", @headers="Content-Disposition: form-data; name=\"slide[slide]\"; filename=\"IMG_4732.jpg\"\r\nContent-Type: image/jpeg\r\n">}}
+  [1m[35mSlide Load (0.2ms)[0m  SELECT `slides`.* FROM `slides` WHERE (`slides`.`id` = 2) LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+[32mCommand[0m :: identify -format %wx%h '/var/folders/rw/rwC3pedZHna4wkbt1aI7xk+++TI/-Tmp-/stream20120620-3201-iyhg58-0.jpg[0]'
+[32mCommand[0m :: convert '/var/folders/rw/rwC3pedZHna4wkbt1aI7xk+++TI/-Tmp-/stream20120620-3201-iyhg58-0.jpg[0]' -resize "120x450>" '/var/folders/rw/rwC3pedZHna4wkbt1aI7xk+++TI/-Tmp-/stream20120620-3201-iyhg58-020120620-3201-bufaj9-0.jpg'
+[32mCommand[0m :: identify -format %wx%h '/var/folders/rw/rwC3pedZHna4wkbt1aI7xk+++TI/-Tmp-/stream20120620-3201-iyhg58-0.jpg[0]'
+[32mCommand[0m :: convert '/var/folders/rw/rwC3pedZHna4wkbt1aI7xk+++TI/-Tmp-/stream20120620-3201-iyhg58-0.jpg[0]' -resize "1440x" -crop "1440x450+0+845" +repage '/var/folders/rw/rwC3pedZHna4wkbt1aI7xk+++TI/-Tmp-/stream20120620-3201-iyhg58-020120620-3201-80bh8w-0.jpg'
+  [1m[35mAREL (0.3ms)[0m  UPDATE `slides` SET `updated_at` = '2012-06-20 18:12:58', `slide_file_size` = 7360224, `slide_file_name` = 'IMG_4732.jpg', `slide_updated_at` = '2012-06-20 18:12:55' WHERE (`slides`.`id` = 2)
+[paperclip] Saving attachments.
+[paperclip] deleting /users/paulsutcliffe/rails-apps/paulsutcliffe/public/images/assets/slides/2/original/IMG_4522.jpg
+[paperclip] deleting /users/paulsutcliffe/rails-apps/paulsutcliffe/public/images/assets/slides/2/min/IMG_4522.jpg
+[paperclip] deleting /users/paulsutcliffe/rails-apps/paulsutcliffe/public/images/assets/slides/2/max/IMG_4522.jpg
+[paperclip] saving /users/paulsutcliffe/rails-apps/paulsutcliffe/public/images/assets/slides/2/original/IMG_4732.jpg
+[paperclip] saving /users/paulsutcliffe/rails-apps/paulsutcliffe/public/images/assets/slides/2/min/IMG_4732.jpg
+[paperclip] saving /users/paulsutcliffe/rails-apps/paulsutcliffe/public/images/assets/slides/2/max/IMG_4732.jpg
+  [1m[36mSQL (2.3ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/slides/2
+Completed 302 Found in 3794ms
+
+
+Started GET "/slides/2" for 127.0.0.1 at Wed Jun 20 13:12:59 -0500 2012
+  Processing by SlidesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mSlide Load (0.2ms)[0m  SELECT `slides`.* FROM `slides` WHERE (`slides`.`id` = 2) LIMIT 1
+Rendered shared/_social_links.html.erb (0.7ms)
+Rendered shared/_social_links.html.erb (0.6ms)
+Rendered slides/show.html.erb within layouts/application (15.4ms)
+Completed 200 OK in 35ms (Views: 29.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/slides" for 127.0.0.1 at Wed Jun 20 13:13:00 -0500 2012
+  Processing by SlidesController#index as HTML
+  [1m[36mSlide Load (0.3ms)[0m  [1mSELECT `slides`.* FROM `slides`[0m
+Rendered shared/_social_links.html.erb (0.7ms)
+Rendered shared/_social_links.html.erb (0.6ms)
+Rendered slides/index.html.erb within layouts/application (116.1ms)
+Completed 200 OK in 131ms (Views: 129.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/slides/new" for 127.0.0.1 at Wed Jun 20 13:13:02 -0500 2012
+  Processing by SlidesController#new as HTML
+Rendered slides/_form.html.erb (6.0ms)
+Rendered shared/_social_links.html.erb (0.7ms)
+Rendered shared/_social_links.html.erb (0.5ms)
+Rendered slides/new.html.erb within layouts/application (14.6ms)
+Completed 200 OK in 33ms (Views: 28.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/slides" for 127.0.0.1 at Wed Jun 20 13:13:13 -0500 2012
+  Processing by SlidesController#create as HTML
+  Parameters: {"commit"=>"Create Slide", "authenticity_token"=>"JzYZAVXOR5Uu3IkiutN/rZGvyK9VwgMhyHlj0lGwmPg=", "utf8"=>"✓", "slide"=>{"label"=>"slide-3", "slide"=>#<ActionDispatch::Http::UploadedFile:0x103f70a68 @content_type="image/jpeg", @tempfile=#<File:/var/folders/rw/rwC3pedZHna4wkbt1aI7xk+++TI/-Tmp-/RackMultipart20120620-3201-623nc4-0>, @original_filename="IMG_4753.jpg", @headers="Content-Disposition: form-data; name=\"slide[slide]\"; filename=\"IMG_4753.jpg\"\r\nContent-Type: image/jpeg\r\n">}}
+[32mCommand[0m :: identify -format %wx%h '/var/folders/rw/rwC3pedZHna4wkbt1aI7xk+++TI/-Tmp-/stream20120620-3201-3tmnes-0.jpg[0]'
+[32mCommand[0m :: convert '/var/folders/rw/rwC3pedZHna4wkbt1aI7xk+++TI/-Tmp-/stream20120620-3201-3tmnes-0.jpg[0]' -resize "120x450>" '/var/folders/rw/rwC3pedZHna4wkbt1aI7xk+++TI/-Tmp-/stream20120620-3201-3tmnes-020120620-3201-r8uacm-0.jpg'
+[32mCommand[0m :: identify -format %wx%h '/var/folders/rw/rwC3pedZHna4wkbt1aI7xk+++TI/-Tmp-/stream20120620-3201-3tmnes-0.jpg[0]'
+[32mCommand[0m :: convert '/var/folders/rw/rwC3pedZHna4wkbt1aI7xk+++TI/-Tmp-/stream20120620-3201-3tmnes-0.jpg[0]' -resize "1440x" -crop "1440x450+0+854" +repage '/var/folders/rw/rwC3pedZHna4wkbt1aI7xk+++TI/-Tmp-/stream20120620-3201-3tmnes-020120620-3201-10f1rim-0.jpg'
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (1.7ms)[0m  [1mdescribe `slides`[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO `slides` (`slide_file_name`, `slide_file_size`, `slide_updated_at`, `slide_content_type`, `position`, `label`, `updated_at`, `created_at`) VALUES ('IMG_4753.jpg', 7457539, '2012-06-20 18:13:14', 'image/jpeg', NULL, 'slide-3', '2012-06-20 18:13:17', '2012-06-20 18:13:17')
+[paperclip] Saving attachments.
+[paperclip] saving /users/paulsutcliffe/rails-apps/paulsutcliffe/public/images/assets/slides/3/original/IMG_4753.jpg
+[paperclip] saving /users/paulsutcliffe/rails-apps/paulsutcliffe/public/images/assets/slides/3/min/IMG_4753.jpg
+[paperclip] saving /users/paulsutcliffe/rails-apps/paulsutcliffe/public/images/assets/slides/3/max/IMG_4753.jpg
+  [1m[36mSQL (2.4ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/slides/3
+Completed 302 Found in 3840ms
+
+
+Started GET "/slides/3" for 127.0.0.1 at Wed Jun 20 13:13:17 -0500 2012
+  Processing by SlidesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mSlide Load (0.3ms)[0m  SELECT `slides`.* FROM `slides` WHERE (`slides`.`id` = 3) LIMIT 1
+Rendered shared/_social_links.html.erb (0.7ms)
+Rendered shared/_social_links.html.erb (0.6ms)
+Rendered slides/show.html.erb within layouts/application (15.3ms)
+Completed 200 OK in 34ms (Views: 29.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/slides" for 127.0.0.1 at Wed Jun 20 13:13:20 -0500 2012
+  Processing by SlidesController#index as HTML
+  [1m[36mSlide Load (0.3ms)[0m  [1mSELECT `slides`.* FROM `slides`[0m
+Rendered shared/_social_links.html.erb (1.2ms)
+Rendered shared/_social_links.html.erb (0.6ms)
+Rendered slides/index.html.erb within layouts/application (22.9ms)
+Completed 200 OK in 38ms (Views: 36.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 20 13:13:22 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[35mSlide Load (0.3ms)[0m  SELECT `slides`.* FROM `slides`
+  [1m[36mScwidget Load (0.2ms)[0m  [1mSELECT `scwidgets`.* FROM `scwidgets`[0m
+  [1m[35mGig Load (0.4ms)[0m  SELECT `gigs`.* FROM `gigs` ORDER BY date LIMIT 6 OFFSET 0
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM `gigs`[0m
+Rendered shared/_social_links.html.erb (0.8ms)
+Rendered shared/_social_links.html.erb (0.6ms)
+Rendered home/index.html.erb within layouts/application (128.7ms)
+Completed 200 OK in 151ms (Views: 136.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 20 13:14:06 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[35mSlide Load (0.3ms)[0m  SELECT `slides`.* FROM `slides`
+  [1m[36mScwidget Load (0.3ms)[0m  [1mSELECT `scwidgets`.* FROM `scwidgets`[0m
+  [1m[35mGig Load (0.3ms)[0m  SELECT `gigs`.* FROM `gigs` ORDER BY date LIMIT 6 OFFSET 0
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM `gigs`[0m
+Rendered shared/_social_links.html.erb (0.7ms)
+Rendered shared/_social_links.html.erb (0.5ms)
+Rendered home/index.html.erb within layouts/application (26.5ms)
+Completed 200 OK in 49ms (Views: 34.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 20 13:14:16 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[35mSlide Load (0.3ms)[0m  SELECT `slides`.* FROM `slides`
+  [1m[36mScwidget Load (0.3ms)[0m  [1mSELECT `scwidgets`.* FROM `scwidgets`[0m
+  [1m[35mGig Load (0.4ms)[0m  SELECT `gigs`.* FROM `gigs` ORDER BY date LIMIT 6 OFFSET 0
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT COUNT(*) FROM `gigs`[0m
+Rendered shared/_social_links.html.erb (0.6ms)
+Rendered shared/_social_links.html.erb (0.5ms)
+Rendered home/index.html.erb within layouts/application (25.4ms)
+Completed 200 OK in 47ms (Views: 33.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 20 13:14:28 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[35mSlide Load (0.3ms)[0m  SELECT `slides`.* FROM `slides`
+  [1m[36mScwidget Load (0.3ms)[0m  [1mSELECT `scwidgets`.* FROM `scwidgets`[0m
+  [1m[35mGig Load (0.3ms)[0m  SELECT `gigs`.* FROM `gigs` ORDER BY date LIMIT 6 OFFSET 0
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT COUNT(*) FROM `gigs`[0m
+Rendered shared/_social_links.html.erb (0.6ms)
+Rendered shared/_social_links.html.erb (0.5ms)
+Rendered home/index.html.erb within layouts/application (25.6ms)
+Completed 200 OK in 48ms (Views: 33.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 20 13:15:04 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[35mSlide Load (0.9ms)[0m  SELECT `slides`.* FROM `slides`
+  [1m[36mScwidget Load (0.2ms)[0m  [1mSELECT `scwidgets`.* FROM `scwidgets`[0m
+  [1m[35mGig Load (0.4ms)[0m  SELECT `gigs`.* FROM `gigs` ORDER BY date LIMIT 6 OFFSET 0
+  [1m[36mSQL (1.0ms)[0m  [1mSELECT COUNT(*) FROM `gigs`[0m
+Rendered shared/_social_links.html.erb (0.5ms)
+Rendered shared/_social_links.html.erb (0.4ms)
+Rendered home/index.html.erb within layouts/application (25.1ms)
+Completed 200 OK in 48ms (Views: 32.2ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 20 13:15:26 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[35mSlide Load (0.3ms)[0m  SELECT `slides`.* FROM `slides`
+  [1m[36mScwidget Load (0.2ms)[0m  [1mSELECT `scwidgets`.* FROM `scwidgets`[0m
+  [1m[35mGig Load (0.3ms)[0m  SELECT `gigs`.* FROM `gigs` ORDER BY date LIMIT 6 OFFSET 0
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT COUNT(*) FROM `gigs`[0m
+Rendered shared/_social_links.html.erb (0.6ms)
+Rendered shared/_social_links.html.erb (0.5ms)
+Rendered home/index.html.erb within layouts/application (25.2ms)
+Completed 200 OK in 49ms (Views: 33.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 20 13:15:35 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[35mSlide Load (0.3ms)[0m  SELECT `slides`.* FROM `slides`
+  [1m[36mScwidget Load (0.2ms)[0m  [1mSELECT `scwidgets`.* FROM `scwidgets`[0m
+  [1m[35mGig Load (0.5ms)[0m  SELECT `gigs`.* FROM `gigs` ORDER BY date LIMIT 6 OFFSET 0
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT COUNT(*) FROM `gigs`[0m
+Rendered shared/_social_links.html.erb (0.6ms)
+Rendered shared/_social_links.html.erb (0.6ms)
+Rendered home/index.html.erb within layouts/application (26.2ms)
+Completed 200 OK in 49ms (Views: 33.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 20 13:17:15 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[35mSlide Load (0.3ms)[0m  SELECT `slides`.* FROM `slides`
+  [1m[36mScwidget Load (0.9ms)[0m  [1mSELECT `scwidgets`.* FROM `scwidgets`[0m
+  [1m[35mGig Load (0.3ms)[0m  SELECT `gigs`.* FROM `gigs` ORDER BY date LIMIT 6 OFFSET 0
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT COUNT(*) FROM `gigs`[0m
+Rendered shared/_social_links.html.erb (0.7ms)
+Rendered shared/_social_links.html.erb (0.5ms)
+Rendered home/index.html.erb within layouts/application (25.2ms)
+Completed 200 OK in 48ms (Views: 33.0ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 20 13:17:29 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[35mSlide Load (0.3ms)[0m  SELECT `slides`.* FROM `slides`
+  [1m[36mScwidget Load (0.2ms)[0m  [1mSELECT `scwidgets`.* FROM `scwidgets`[0m
+  [1m[35mGig Load (0.3ms)[0m  SELECT `gigs`.* FROM `gigs` ORDER BY date LIMIT 6 OFFSET 0
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM `gigs`[0m
+Rendered shared/_social_links.html.erb (0.6ms)
+Rendered shared/_social_links.html.erb (0.5ms)
+Rendered home/index.html.erb within layouts/application (25.2ms)
+Completed 200 OK in 48ms (Views: 32.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 20 13:17:35 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[35mSlide Load (0.3ms)[0m  SELECT `slides`.* FROM `slides`
+  [1m[36mScwidget Load (0.3ms)[0m  [1mSELECT `scwidgets`.* FROM `scwidgets`[0m
+  [1m[35mGig Load (0.3ms)[0m  SELECT `gigs`.* FROM `gigs` ORDER BY date LIMIT 6 OFFSET 0
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM `gigs`[0m
+Rendered shared/_social_links.html.erb (0.6ms)
+Rendered shared/_social_links.html.erb (0.5ms)
+Rendered home/index.html.erb within layouts/application (25.3ms)
+Completed 200 OK in 48ms (Views: 33.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 20 13:17:40 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[35mSlide Load (0.3ms)[0m  SELECT `slides`.* FROM `slides`
+  [1m[36mScwidget Load (0.2ms)[0m  [1mSELECT `scwidgets`.* FROM `scwidgets`[0m
+  [1m[35mGig Load (0.5ms)[0m  SELECT `gigs`.* FROM `gigs` ORDER BY date LIMIT 6 OFFSET 0
+  [1m[36mSQL (3.2ms)[0m  [1mSELECT COUNT(*) FROM `gigs`[0m
+Rendered shared/_social_links.html.erb (0.6ms)
+Rendered shared/_social_links.html.erb (0.5ms)
+Rendered home/index.html.erb within layouts/application (124.5ms)
+Completed 200 OK in 149ms (Views: 129.1ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 20 13:17:48 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[35mSlide Load (0.3ms)[0m  SELECT `slides`.* FROM `slides`
+  [1m[36mScwidget Load (0.2ms)[0m  [1mSELECT `scwidgets`.* FROM `scwidgets`[0m
+  [1m[35mGig Load (0.3ms)[0m  SELECT `gigs`.* FROM `gigs` ORDER BY date LIMIT 6 OFFSET 0
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM `gigs`[0m
+Rendered shared/_social_links.html.erb (0.6ms)
+Rendered shared/_social_links.html.erb (0.5ms)
+Rendered home/index.html.erb within layouts/application (25.0ms)
+Completed 200 OK in 47ms (Views: 32.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/feed" for 127.0.0.1 at Wed Jun 20 13:19:24 -0500 2012
+
+ActionController::RoutingError (No route matches "/feed"):
+  
+
+Rendered /Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 20 13:20:37 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[35mSlide Load (0.3ms)[0m  SELECT `slides`.* FROM `slides`
+  [1m[36mScwidget Load (0.2ms)[0m  [1mSELECT `scwidgets`.* FROM `scwidgets`[0m
+  [1m[35mGig Load (0.3ms)[0m  SELECT `gigs`.* FROM `gigs` ORDER BY date LIMIT 6 OFFSET 0
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM `gigs`[0m
+Rendered shared/_social_links.html.erb (0.6ms)
+Rendered shared/_social_links.html.erb (0.5ms)
+Rendered home/index.html.erb within layouts/application (25.0ms)
+Completed 200 OK in 46ms (Views: 32.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 20 13:20:40 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[35mSlide Load (0.3ms)[0m  SELECT `slides`.* FROM `slides`
+  [1m[36mScwidget Load (0.2ms)[0m  [1mSELECT `scwidgets`.* FROM `scwidgets`[0m
+  [1m[35mGig Load (0.4ms)[0m  SELECT `gigs`.* FROM `gigs` ORDER BY date LIMIT 6 OFFSET 0
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM `gigs`[0m
+Rendered shared/_social_links.html.erb (0.6ms)
+Rendered shared/_social_links.html.erb (0.5ms)
+Rendered home/index.html.erb within layouts/application (24.4ms)
+Completed 200 OK in 45ms (Views: 32.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 20 13:20:58 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[35mSlide Load (0.3ms)[0m  SELECT `slides`.* FROM `slides`
+  [1m[36mScwidget Load (0.2ms)[0m  [1mSELECT `scwidgets`.* FROM `scwidgets`[0m
+  [1m[35mGig Load (0.4ms)[0m  SELECT `gigs`.* FROM `gigs` ORDER BY date LIMIT 6 OFFSET 0
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT COUNT(*) FROM `gigs`[0m
+Rendered shared/_social_links.html.erb (0.6ms)
+Rendered shared/_social_links.html.erb (0.5ms)
+Rendered home/index.html.erb within layouts/application (27.2ms)
+Completed 200 OK in 140ms (Views: 34.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 20 13:21:48 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[35mSlide Load (0.3ms)[0m  SELECT `slides`.* FROM `slides`
+  [1m[36mScwidget Load (0.2ms)[0m  [1mSELECT `scwidgets`.* FROM `scwidgets`[0m
+  [1m[35mGig Load (0.4ms)[0m  SELECT `gigs`.* FROM `gigs` ORDER BY date LIMIT 6 OFFSET 0
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT COUNT(*) FROM `gigs`[0m
+Rendered shared/_social_links.html.erb (0.5ms)
+Rendered shared/_social_links.html.erb (0.5ms)
+Rendered home/index.html.erb within layouts/application (25.8ms)
+Completed 200 OK in 46ms (Views: 33.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 20 13:21:50 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[35mSlide Load (0.6ms)[0m  SELECT `slides`.* FROM `slides`
+  [1m[36mScwidget Load (0.2ms)[0m  [1mSELECT `scwidgets`.* FROM `scwidgets`[0m
+  [1m[35mGig Load (0.5ms)[0m  SELECT `gigs`.* FROM `gigs` ORDER BY date LIMIT 6 OFFSET 0
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT COUNT(*) FROM `gigs`[0m
+Rendered shared/_social_links.html.erb (0.5ms)
+Rendered shared/_social_links.html.erb (0.6ms)
+Rendered home/index.html.erb within layouts/application (33.1ms)
+Completed 200 OK in 55ms (Views: 40.3ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 20 13:22:33 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[35mSlide Load (0.3ms)[0m  SELECT `slides`.* FROM `slides`
+  [1m[36mScwidget Load (0.5ms)[0m  [1mSELECT `scwidgets`.* FROM `scwidgets`[0m
+  [1m[35mGig Load (0.3ms)[0m  SELECT `gigs`.* FROM `gigs` ORDER BY date LIMIT 6 OFFSET 0
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM `gigs`[0m
+Rendered shared/_social_links.html.erb (0.6ms)
+Rendered shared/_social_links.html.erb (0.4ms)
+Rendered home/index.html.erb within layouts/application (24.5ms)
+Completed 200 OK in 46ms (Views: 32.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 20 13:23:40 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[35mSlide Load (0.3ms)[0m  SELECT `slides`.* FROM `slides`
+  [1m[36mScwidget Load (0.7ms)[0m  [1mSELECT `scwidgets`.* FROM `scwidgets`[0m
+  [1m[35mGig Load (0.3ms)[0m  SELECT `gigs`.* FROM `gigs` ORDER BY date LIMIT 6 OFFSET 0
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM `gigs`[0m
+Rendered shared/_social_links.html.erb (0.6ms)
+Rendered shared/_social_links.html.erb (0.5ms)
+Rendered home/index.html.erb within layouts/application (25.8ms)
+Completed 200 OK in 48ms (Views: 33.9ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 20 13:23:55 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[35mSlide Load (0.3ms)[0m  SELECT `slides`.* FROM `slides`
+  [1m[36mScwidget Load (0.2ms)[0m  [1mSELECT `scwidgets`.* FROM `scwidgets`[0m
+  [1m[35mGig Load (0.4ms)[0m  SELECT `gigs`.* FROM `gigs` ORDER BY date LIMIT 6 OFFSET 0
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM `gigs`[0m
+Rendered shared/_social_links.html.erb (0.6ms)
+Rendered shared/_social_links.html.erb (0.5ms)
+Rendered home/index.html.erb within layouts/application (24.9ms)
+Completed 200 OK in 46ms (Views: 32.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 20 13:24:02 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[35mSlide Load (0.3ms)[0m  SELECT `slides`.* FROM `slides`
+  [1m[36mScwidget Load (0.3ms)[0m  [1mSELECT `scwidgets`.* FROM `scwidgets`[0m
+  [1m[35mGig Load (0.3ms)[0m  SELECT `gigs`.* FROM `gigs` ORDER BY date LIMIT 6 OFFSET 0
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM `gigs`[0m
+Rendered shared/_social_links.html.erb (0.6ms)
+Rendered shared/_social_links.html.erb (0.5ms)
+Rendered home/index.html.erb within layouts/application (26.1ms)
+Completed 200 OK in 48ms (Views: 33.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 20 13:24:10 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[35mSlide Load (0.3ms)[0m  SELECT `slides`.* FROM `slides`
+  [1m[36mScwidget Load (0.2ms)[0m  [1mSELECT `scwidgets`.* FROM `scwidgets`[0m
+  [1m[35mGig Load (0.4ms)[0m  SELECT `gigs`.* FROM `gigs` ORDER BY date LIMIT 6 OFFSET 0
+  [1m[36mSQL (0.9ms)[0m  [1mSELECT COUNT(*) FROM `gigs`[0m
+Rendered shared/_social_links.html.erb (0.6ms)
+Rendered shared/_social_links.html.erb (0.5ms)
+Rendered home/index.html.erb within layouts/application (26.8ms)
+Completed 200 OK in 47ms (Views: 33.6ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 20 13:24:24 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[35mSlide Load (0.3ms)[0m  SELECT `slides`.* FROM `slides`
+  [1m[36mScwidget Load (0.6ms)[0m  [1mSELECT `scwidgets`.* FROM `scwidgets`[0m
+  [1m[35mGig Load (0.3ms)[0m  SELECT `gigs`.* FROM `gigs` ORDER BY date LIMIT 6 OFFSET 0
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM `gigs`[0m
+Rendered shared/_social_links.html.erb (0.7ms)
+Rendered shared/_social_links.html.erb (0.5ms)
+Rendered home/index.html.erb within layouts/application (25.2ms)
+Completed 200 OK in 47ms (Views: 33.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 20 13:25:32 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[35mSlide Load (0.3ms)[0m  SELECT `slides`.* FROM `slides`
+  [1m[36mScwidget Load (0.2ms)[0m  [1mSELECT `scwidgets`.* FROM `scwidgets`[0m
+  [1m[35mGig Load (0.3ms)[0m  SELECT `gigs`.* FROM `gigs` ORDER BY date LIMIT 6 OFFSET 0
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT COUNT(*) FROM `gigs`[0m
+Rendered shared/_social_links.html.erb (0.9ms)
+Rendered shared/_social_links.html.erb (0.6ms)
+Rendered home/index.html.erb within layouts/application (25.3ms)
+Completed 200 OK in 48ms (Views: 33.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 20 13:26:20 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[35mSlide Load (0.3ms)[0m  SELECT `slides`.* FROM `slides`
+  [1m[36mScwidget Load (0.3ms)[0m  [1mSELECT `scwidgets`.* FROM `scwidgets`[0m
+  [1m[35mGig Load (0.3ms)[0m  SELECT `gigs`.* FROM `gigs` ORDER BY date LIMIT 6 OFFSET 0
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM `gigs`[0m
+Rendered shared/_social_links.html.erb (0.6ms)
+Rendered shared/_social_links.html.erb (1.0ms)
+Rendered home/index.html.erb within layouts/application (25.8ms)
+Completed 200 OK in 48ms (Views: 33.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 20 13:27:40 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[35mSlide Load (0.4ms)[0m  SELECT `slides`.* FROM `slides`
+  [1m[36mScwidget Load (0.2ms)[0m  [1mSELECT `scwidgets`.* FROM `scwidgets`[0m
+  [1m[35mGig Load (0.5ms)[0m  SELECT `gigs`.* FROM `gigs` ORDER BY date LIMIT 6 OFFSET 0
+  [1m[36mSQL (0.6ms)[0m  [1mSELECT COUNT(*) FROM `gigs`[0m
+Rendered shared/_social_links.html.erb (1.5ms)
+Rendered shared/_social_links.html.erb (0.6ms)
+Rendered home/index.html.erb within layouts/application (29.8ms)
+Completed 200 OK in 54ms (Views: 37.8ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 20 13:27:51 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[35mSlide Load (0.3ms)[0m  SELECT `slides`.* FROM `slides`
+  [1m[36mScwidget Load (0.2ms)[0m  [1mSELECT `scwidgets`.* FROM `scwidgets`[0m
+  [1m[35mGig Load (0.3ms)[0m  SELECT `gigs`.* FROM `gigs` ORDER BY date LIMIT 6 OFFSET 0
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT COUNT(*) FROM `gigs`[0m
+Rendered shared/_social_links.html.erb (0.5ms)
+Rendered shared/_social_links.html.erb (0.5ms)
+Rendered home/index.html.erb within layouts/application (24.7ms)
+Completed 200 OK in 49ms (Views: 33.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 20 13:28:57 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[35mSlide Load (0.3ms)[0m  SELECT `slides`.* FROM `slides`
+  [1m[36mScwidget Load (0.2ms)[0m  [1mSELECT `scwidgets`.* FROM `scwidgets`[0m
+  [1m[35mGig Load (0.3ms)[0m  SELECT `gigs`.* FROM `gigs` ORDER BY date LIMIT 6 OFFSET 0
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT COUNT(*) FROM `gigs`[0m
+Rendered shared/_social_links.html.erb (0.6ms)
+Rendered shared/_social_links.html.erb (0.5ms)
+Rendered home/index.html.erb within layouts/application (24.1ms)
+Completed 200 OK in 45ms (Views: 31.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 20 13:29:04 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[35mSlide Load (0.3ms)[0m  SELECT `slides`.* FROM `slides`
+  [1m[36mScwidget Load (0.2ms)[0m  [1mSELECT `scwidgets`.* FROM `scwidgets`[0m
+  [1m[35mGig Load (0.3ms)[0m  SELECT `gigs`.* FROM `gigs` ORDER BY date LIMIT 6 OFFSET 0
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM `gigs`[0m
+Rendered shared/_social_links.html.erb (0.6ms)
+Rendered shared/_social_links.html.erb (0.5ms)
+Rendered home/index.html.erb within layouts/application (25.8ms)
+Completed 200 OK in 47ms (Views: 33.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 20 13:29:07 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[35mSlide Load (0.3ms)[0m  SELECT `slides`.* FROM `slides`
+  [1m[36mScwidget Load (0.2ms)[0m  [1mSELECT `scwidgets`.* FROM `scwidgets`[0m
+  [1m[35mGig Load (0.4ms)[0m  SELECT `gigs`.* FROM `gigs` ORDER BY date LIMIT 6 OFFSET 0
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT COUNT(*) FROM `gigs`[0m
+Rendered shared/_social_links.html.erb (1.1ms)
+Rendered shared/_social_links.html.erb (0.5ms)
+Rendered home/index.html.erb within layouts/application (34.8ms)
+Completed 200 OK in 59ms (Views: 42.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 20 13:29:49 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[35mSlide Load (0.3ms)[0m  SELECT `slides`.* FROM `slides`
+  [1m[36mScwidget Load (0.3ms)[0m  [1mSELECT `scwidgets`.* FROM `scwidgets`[0m
+  [1m[35mGig Load (0.3ms)[0m  SELECT `gigs`.* FROM `gigs` ORDER BY date LIMIT 6 OFFSET 0
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT COUNT(*) FROM `gigs`[0m
+Rendered shared/_social_links.html.erb (0.6ms)
+Rendered shared/_social_links.html.erb (0.5ms)
+Rendered home/index.html.erb within layouts/application (24.4ms)
+Completed 200 OK in 45ms (Views: 31.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 20 13:31:13 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[35mSlide Load (0.9ms)[0m  SELECT `slides`.* FROM `slides`
+  [1m[36mScwidget Load (0.2ms)[0m  [1mSELECT `scwidgets`.* FROM `scwidgets`[0m
+  [1m[35mGig Load (0.3ms)[0m  SELECT `gigs`.* FROM `gigs` ORDER BY date LIMIT 6 OFFSET 0
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM `gigs`[0m
+Rendered shared/_social_links.html.erb (0.6ms)
+Rendered shared/_social_links.html.erb (0.5ms)
+Rendered home/index.html.erb within layouts/application (72.2ms)
+Completed 200 OK in 95ms (Views: 79.8ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 20 13:31:36 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[35mSlide Load (0.3ms)[0m  SELECT `slides`.* FROM `slides`
+  [1m[36mScwidget Load (0.3ms)[0m  [1mSELECT `scwidgets`.* FROM `scwidgets`[0m
+  [1m[35mGig Load (0.3ms)[0m  SELECT `gigs`.* FROM `gigs` ORDER BY date LIMIT 6 OFFSET 0
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT COUNT(*) FROM `gigs`[0m
+Rendered shared/_social_links.html.erb (0.7ms)
+Rendered shared/_social_links.html.erb (0.5ms)
+Rendered home/index.html.erb within layouts/application (25.5ms)
+Completed 200 OK in 138ms (Views: 32.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 20 13:31:51 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[35mSlide Load (0.3ms)[0m  SELECT `slides`.* FROM `slides`
+  [1m[36mScwidget Load (0.6ms)[0m  [1mSELECT `scwidgets`.* FROM `scwidgets`[0m
+  [1m[35mGig Load (0.3ms)[0m  SELECT `gigs`.* FROM `gigs` ORDER BY date LIMIT 6 OFFSET 0
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT COUNT(*) FROM `gigs`[0m
+Rendered shared/_social_links.html.erb (0.6ms)
+Rendered shared/_social_links.html.erb (0.5ms)
+Rendered home/index.html.erb within layouts/application (26.0ms)
+Completed 200 OK in 47ms (Views: 33.6ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 20 13:32:04 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[35mSlide Load (0.3ms)[0m  SELECT `slides`.* FROM `slides`
+  [1m[36mScwidget Load (0.3ms)[0m  [1mSELECT `scwidgets`.* FROM `scwidgets`[0m
+  [1m[35mGig Load (0.3ms)[0m  SELECT `gigs`.* FROM `gigs` ORDER BY date LIMIT 6 OFFSET 0
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM `gigs`[0m
+Rendered shared/_social_links.html.erb (0.6ms)
+Rendered shared/_social_links.html.erb (0.5ms)
+Rendered home/index.html.erb within layouts/application (26.4ms)
+Completed 200 OK in 50ms (Views: 34.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 20 13:32:15 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[35mSlide Load (0.3ms)[0m  SELECT `slides`.* FROM `slides`
+  [1m[36mScwidget Load (0.3ms)[0m  [1mSELECT `scwidgets`.* FROM `scwidgets`[0m
+  [1m[35mGig Load (0.3ms)[0m  SELECT `gigs`.* FROM `gigs` ORDER BY date LIMIT 6 OFFSET 0
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT COUNT(*) FROM `gigs`[0m
+Rendered shared/_social_links.html.erb (0.7ms)
+Rendered shared/_social_links.html.erb (0.6ms)
+Rendered home/index.html.erb within layouts/application (25.8ms)
+Completed 200 OK in 47ms (Views: 34.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 20 13:32:32 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[35mSlide Load (0.3ms)[0m  SELECT `slides`.* FROM `slides`
+  [1m[36mScwidget Load (3.2ms)[0m  [1mSELECT `scwidgets`.* FROM `scwidgets`[0m
+  [1m[35mGig Load (0.5ms)[0m  SELECT `gigs`.* FROM `gigs` ORDER BY date LIMIT 6 OFFSET 0
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT COUNT(*) FROM `gigs`[0m
+Rendered shared/_social_links.html.erb (0.6ms)
+Rendered shared/_social_links.html.erb (0.4ms)
+Rendered home/index.html.erb within layouts/application (29.4ms)
+Completed 200 OK in 56ms (Views: 37.1ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 20 13:32:46 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[35mSlide Load (0.3ms)[0m  SELECT `slides`.* FROM `slides`
+  [1m[36mScwidget Load (0.7ms)[0m  [1mSELECT `scwidgets`.* FROM `scwidgets`[0m
+  [1m[35mGig Load (0.3ms)[0m  SELECT `gigs`.* FROM `gigs` ORDER BY date LIMIT 6 OFFSET 0
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM `gigs`[0m
+Rendered shared/_social_links.html.erb (0.7ms)
+Rendered shared/_social_links.html.erb (0.5ms)
+Rendered home/index.html.erb within layouts/application (125.2ms)
+Completed 200 OK in 147ms (Views: 133.0ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 20 13:35:05 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[35mSlide Load (0.3ms)[0m  SELECT `slides`.* FROM `slides`
+  [1m[36mScwidget Load (0.2ms)[0m  [1mSELECT `scwidgets`.* FROM `scwidgets`[0m
+  [1m[35mGig Load (0.3ms)[0m  SELECT `gigs`.* FROM `gigs` ORDER BY date LIMIT 6 OFFSET 0
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM `gigs`[0m
+Rendered shared/_social_links.html.erb (0.7ms)
+Rendered shared/_social_links.html.erb (0.6ms)
+Rendered home/index.html.erb within layouts/application (25.7ms)
+Completed 200 OK in 47ms (Views: 33.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 20 13:35:28 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[35mSlide Load (0.3ms)[0m  SELECT `slides`.* FROM `slides`
+  [1m[36mScwidget Load (0.3ms)[0m  [1mSELECT `scwidgets`.* FROM `scwidgets`[0m
+  [1m[35mGig Load (0.3ms)[0m  SELECT `gigs`.* FROM `gigs` ORDER BY date LIMIT 6 OFFSET 0
+  [1m[36mSQL (0.6ms)[0m  [1mSELECT COUNT(*) FROM `gigs`[0m
+Rendered shared/_social_links.html.erb (0.6ms)
+Rendered shared/_social_links.html.erb (1.2ms)
+Rendered home/index.html.erb within layouts/application (25.5ms)
+Completed 200 OK in 47ms (Views: 32.9ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 20 13:35:43 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[35mSlide Load (0.3ms)[0m  SELECT `slides`.* FROM `slides`
+  [1m[36mScwidget Load (0.2ms)[0m  [1mSELECT `scwidgets`.* FROM `scwidgets`[0m
+  [1m[35mGig Load (0.3ms)[0m  SELECT `gigs`.* FROM `gigs` ORDER BY date LIMIT 6 OFFSET 0
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT COUNT(*) FROM `gigs`[0m
+Rendered shared/_social_links.html.erb (0.6ms)
+Rendered shared/_social_links.html.erb (0.4ms)
+Rendered home/index.html.erb within layouts/application (24.6ms)
+Completed 200 OK in 45ms (Views: 32.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 20 13:36:03 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[35mSlide Load (0.3ms)[0m  SELECT `slides`.* FROM `slides`
+  [1m[36mScwidget Load (0.3ms)[0m  [1mSELECT `scwidgets`.* FROM `scwidgets`[0m
+  [1m[35mGig Load (0.5ms)[0m  SELECT `gigs`.* FROM `gigs` ORDER BY date LIMIT 6 OFFSET 0
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM `gigs`[0m
+Rendered shared/_social_links.html.erb (0.6ms)
+Rendered shared/_social_links.html.erb (0.6ms)
+Rendered home/index.html.erb within layouts/application (26.4ms)
+Completed 200 OK in 48ms (Views: 34.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 20 13:36:16 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[35mSlide Load (0.3ms)[0m  SELECT `slides`.* FROM `slides`
+  [1m[36mScwidget Load (2.0ms)[0m  [1mSELECT `scwidgets`.* FROM `scwidgets`[0m
+  [1m[35mGig Load (0.4ms)[0m  SELECT `gigs`.* FROM `gigs` ORDER BY date LIMIT 6 OFFSET 0
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM `gigs`[0m
+Rendered shared/_social_links.html.erb (99.7ms)
+Rendered shared/_social_links.html.erb (0.7ms)
+Rendered home/index.html.erb within layouts/application (124.9ms)
+Completed 200 OK in 148ms (Views: 132.7ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 20 13:40:04 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[35mSlide Load (0.3ms)[0m  SELECT `slides`.* FROM `slides`
+  [1m[36mScwidget Load (0.2ms)[0m  [1mSELECT `scwidgets`.* FROM `scwidgets`[0m
+  [1m[35mGig Load (0.3ms)[0m  SELECT `gigs`.* FROM `gigs` ORDER BY date LIMIT 6 OFFSET 0
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT COUNT(*) FROM `gigs`[0m
+Rendered shared/_social_links.html.erb (0.6ms)
+Rendered shared/_social_links.html.erb (0.5ms)
+Rendered home/index.html.erb within layouts/application (25.5ms)
+Completed 200 OK in 47ms (Views: 33.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/feed" for 127.0.0.1 at Wed Jun 20 13:49:25 -0500 2012
+
+ActionController::RoutingError (No route matches "/feed"):
+  
+
+Rendered /Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 20 13:52:50 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[35mSlide Load (0.3ms)[0m  SELECT `slides`.* FROM `slides`
+  [1m[36mScwidget Load (0.2ms)[0m  [1mSELECT `scwidgets`.* FROM `scwidgets`[0m
+  [1m[35mGig Load (0.3ms)[0m  SELECT `gigs`.* FROM `gigs` ORDER BY date LIMIT 6 OFFSET 0
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT COUNT(*) FROM `gigs`[0m
+Rendered shared/_social_links.html.erb (0.6ms)
+Rendered shared/_social_links.html.erb (0.5ms)
+Rendered home/index.html.erb within layouts/application (39.3ms)
+Completed 200 OK in 110ms (Views: 97.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/slides" for 127.0.0.1 at Wed Jun 20 13:52:54 -0500 2012
+  Processing by SlidesController#index as HTML
+  [1m[35mSlide Load (0.3ms)[0m  SELECT `slides`.* FROM `slides`
+Rendered shared/_social_links.html.erb (0.6ms)
+Rendered shared/_social_links.html.erb (0.4ms)
+Rendered slides/index.html.erb within layouts/application (17.0ms)
+Completed 200 OK in 31ms (Views: 29.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/slides/1/edit" for 127.0.0.1 at Wed Jun 20 13:52:58 -0500 2012
+  Processing by SlidesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSlide Load (0.2ms)[0m  [1mSELECT `slides`.* FROM `slides` WHERE (`slides`.`id` = 1) LIMIT 1[0m
+Rendered slides/_form.html.erb (9.1ms)
+Rendered shared/_social_links.html.erb (0.6ms)
+Rendered shared/_social_links.html.erb (0.5ms)
+Rendered slides/edit.html.erb within layouts/application (19.6ms)
+Completed 200 OK in 129ms (Views: 124.6ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/slides/1" for 127.0.0.1 at Wed Jun 20 13:53:03 -0500 2012
+  Processing by SlidesController#update as HTML
+  Parameters: {"commit"=>"Update Slide", "authenticity_token"=>"JzYZAVXOR5Uu3IkiutN/rZGvyK9VwgMhyHlj0lGwmPg=", "utf8"=>"✓", "id"=>"1", "slide"=>{"label"=>"Slide-1", "slide"=>#<ActionDispatch::Http::UploadedFile:0x103d83890 @content_type="image/jpeg", @tempfile=#<File:/var/folders/rw/rwC3pedZHna4wkbt1aI7xk+++TI/-Tmp-/RackMultipart20120620-3201-6i9h98-0>, @original_filename="IMG_4678.jpg", @headers="Content-Disposition: form-data; name=\"slide[slide]\"; filename=\"IMG_4678.jpg\"\r\nContent-Type: image/jpeg\r\n">}}
+  [1m[35mSlide Load (0.2ms)[0m  SELECT `slides`.* FROM `slides` WHERE (`slides`.`id` = 1) LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+[32mCommand[0m :: identify -format %wx%h '/var/folders/rw/rwC3pedZHna4wkbt1aI7xk+++TI/-Tmp-/stream20120620-3201-qaybzd-0.jpg[0]'
+[32mCommand[0m :: convert '/var/folders/rw/rwC3pedZHna4wkbt1aI7xk+++TI/-Tmp-/stream20120620-3201-qaybzd-0.jpg[0]' -resize "120x450>" '/var/folders/rw/rwC3pedZHna4wkbt1aI7xk+++TI/-Tmp-/stream20120620-3201-qaybzd-020120620-3201-168vex-0.jpg'
+[32mCommand[0m :: identify -format %wx%h '/var/folders/rw/rwC3pedZHna4wkbt1aI7xk+++TI/-Tmp-/stream20120620-3201-qaybzd-0.jpg[0]'
+[32mCommand[0m :: convert '/var/folders/rw/rwC3pedZHna4wkbt1aI7xk+++TI/-Tmp-/stream20120620-3201-qaybzd-0.jpg[0]' -resize "1440x" -crop "1440x500+0+830" +repage '/var/folders/rw/rwC3pedZHna4wkbt1aI7xk+++TI/-Tmp-/stream20120620-3201-qaybzd-020120620-3201-1qy1haf-0.jpg'
+  [1m[35mAREL (0.3ms)[0m  UPDATE `slides` SET `slide_updated_at` = '2012-06-20 18:53:03', `slide_file_name` = 'IMG_4678.jpg', `slide_file_size` = 8270295, `updated_at` = '2012-06-20 18:53:08' WHERE (`slides`.`id` = 1)
+[paperclip] Saving attachments.
+[paperclip] deleting /users/paulsutcliffe/rails-apps/paulsutcliffe/public/images/assets/slides/1/original/IMG_4537.jpg
+[paperclip] deleting /users/paulsutcliffe/rails-apps/paulsutcliffe/public/images/assets/slides/1/min/IMG_4537.jpg
+[paperclip] deleting /users/paulsutcliffe/rails-apps/paulsutcliffe/public/images/assets/slides/1/max/IMG_4537.jpg
+[paperclip] saving /users/paulsutcliffe/rails-apps/paulsutcliffe/public/images/assets/slides/1/original/IMG_4678.jpg
+[paperclip] saving /users/paulsutcliffe/rails-apps/paulsutcliffe/public/images/assets/slides/1/min/IMG_4678.jpg
+[paperclip] saving /users/paulsutcliffe/rails-apps/paulsutcliffe/public/images/assets/slides/1/max/IMG_4678.jpg
+  [1m[36mSQL (3.5ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/slides/1
+Completed 302 Found in 5262ms
+
+
+Started GET "/slides/1" for 127.0.0.1 at Wed Jun 20 13:53:08 -0500 2012
+  Processing by SlidesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSlide Load (0.2ms)[0m  SELECT `slides`.* FROM `slides` WHERE (`slides`.`id` = 1) LIMIT 1
+Rendered shared/_social_links.html.erb (0.6ms)
+Rendered shared/_social_links.html.erb (0.5ms)
+Rendered slides/show.html.erb within layouts/application (14.6ms)
+Completed 200 OK in 35ms (Views: 29.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/slides" for 127.0.0.1 at Wed Jun 20 13:53:14 -0500 2012
+  Processing by SlidesController#index as HTML
+  [1m[36mSlide Load (0.3ms)[0m  [1mSELECT `slides`.* FROM `slides`[0m
+Rendered shared/_social_links.html.erb (0.6ms)
+Rendered shared/_social_links.html.erb (0.5ms)
+Rendered slides/index.html.erb within layouts/application (17.7ms)
+Completed 200 OK in 32ms (Views: 30.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/slides/2/edit" for 127.0.0.1 at Wed Jun 20 13:53:16 -0500 2012
+  Processing by SlidesController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mSlide Load (0.5ms)[0m  SELECT `slides`.* FROM `slides` WHERE (`slides`.`id` = 2) LIMIT 1
+Rendered slides/_form.html.erb (9.6ms)
+Rendered shared/_social_links.html.erb (0.6ms)
+Rendered shared/_social_links.html.erb (0.6ms)
+Rendered slides/edit.html.erb within layouts/application (20.3ms)
+Completed 200 OK in 39ms (Views: 33.5ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/slides/2" for 127.0.0.1 at Wed Jun 20 13:53:20 -0500 2012
+  Processing by SlidesController#update as HTML
+  Parameters: {"commit"=>"Update Slide", "authenticity_token"=>"JzYZAVXOR5Uu3IkiutN/rZGvyK9VwgMhyHlj0lGwmPg=", "utf8"=>"✓", "id"=>"2", "slide"=>{"label"=>"Slide-2", "slide"=>#<ActionDispatch::Http::UploadedFile:0x103f71c88 @content_type="image/jpeg", @tempfile=#<File:/var/folders/rw/rwC3pedZHna4wkbt1aI7xk+++TI/-Tmp-/RackMultipart20120620-3201-172yeet-0>, @original_filename="IMG_4753.jpg", @headers="Content-Disposition: form-data; name=\"slide[slide]\"; filename=\"IMG_4753.jpg\"\r\nContent-Type: image/jpeg\r\n">}}
+  [1m[36mSlide Load (0.2ms)[0m  [1mSELECT `slides`.* FROM `slides` WHERE (`slides`.`id` = 2) LIMIT 1[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+[32mCommand[0m :: identify -format %wx%h '/var/folders/rw/rwC3pedZHna4wkbt1aI7xk+++TI/-Tmp-/stream20120620-3201-gto8mk-0.jpg[0]'
+[32mCommand[0m :: convert '/var/folders/rw/rwC3pedZHna4wkbt1aI7xk+++TI/-Tmp-/stream20120620-3201-gto8mk-0.jpg[0]' -resize "120x450>" '/var/folders/rw/rwC3pedZHna4wkbt1aI7xk+++TI/-Tmp-/stream20120620-3201-gto8mk-020120620-3201-16tztvf-0.jpg'
+[32mCommand[0m :: identify -format %wx%h '/var/folders/rw/rwC3pedZHna4wkbt1aI7xk+++TI/-Tmp-/stream20120620-3201-gto8mk-0.jpg[0]'
+[32mCommand[0m :: convert '/var/folders/rw/rwC3pedZHna4wkbt1aI7xk+++TI/-Tmp-/stream20120620-3201-gto8mk-0.jpg[0]' -resize "1440x" -crop "1440x500+0+829" +repage '/var/folders/rw/rwC3pedZHna4wkbt1aI7xk+++TI/-Tmp-/stream20120620-3201-gto8mk-020120620-3201-2h4ohw-0.jpg'
+  [1m[36mAREL (0.4ms)[0m  [1mUPDATE `slides` SET `slide_updated_at` = '2012-06-20 18:53:20', `slide_file_size` = 7457539, `updated_at` = '2012-06-20 18:53:24', `slide_file_name` = 'IMG_4753.jpg' WHERE (`slides`.`id` = 2)[0m
+[paperclip] Saving attachments.
+[paperclip] deleting /users/paulsutcliffe/rails-apps/paulsutcliffe/public/images/assets/slides/2/original/IMG_4732.jpg
+[paperclip] deleting /users/paulsutcliffe/rails-apps/paulsutcliffe/public/images/assets/slides/2/min/IMG_4732.jpg
+[paperclip] deleting /users/paulsutcliffe/rails-apps/paulsutcliffe/public/images/assets/slides/2/max/IMG_4732.jpg
+[paperclip] saving /users/paulsutcliffe/rails-apps/paulsutcliffe/public/images/assets/slides/2/original/IMG_4753.jpg
+[paperclip] saving /users/paulsutcliffe/rails-apps/paulsutcliffe/public/images/assets/slides/2/min/IMG_4753.jpg
+[paperclip] saving /users/paulsutcliffe/rails-apps/paulsutcliffe/public/images/assets/slides/2/max/IMG_4753.jpg
+  [1m[35mSQL (16.9ms)[0m  COMMIT
+Redirected to http://localhost:3000/slides/2
+Completed 302 Found in 3993ms
+
+
+Started GET "/slides/2" for 127.0.0.1 at Wed Jun 20 13:53:24 -0500 2012
+  Processing by SlidesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mSlide Load (0.3ms)[0m  [1mSELECT `slides`.* FROM `slides` WHERE (`slides`.`id` = 2) LIMIT 1[0m
+Rendered shared/_social_links.html.erb (0.7ms)
+Rendered shared/_social_links.html.erb (0.8ms)
+Rendered slides/show.html.erb within layouts/application (15.7ms)
+Completed 200 OK in 36ms (Views: 29.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/slides" for 127.0.0.1 at Wed Jun 20 13:53:31 -0500 2012
+  Processing by SlidesController#index as HTML
+  [1m[35mSlide Load (0.3ms)[0m  SELECT `slides`.* FROM `slides`
+Rendered shared/_social_links.html.erb (0.7ms)
+Rendered shared/_social_links.html.erb (0.6ms)
+Rendered slides/index.html.erb within layouts/application (22.8ms)
+Completed 200 OK in 38ms (Views: 36.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/slides/3/edit" for 127.0.0.1 at Wed Jun 20 13:53:32 -0500 2012
+  Processing by SlidesController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mSlide Load (0.3ms)[0m  [1mSELECT `slides`.* FROM `slides` WHERE (`slides`.`id` = 3) LIMIT 1[0m
+Rendered slides/_form.html.erb (8.8ms)
+Rendered shared/_social_links.html.erb (0.7ms)
+Rendered shared/_social_links.html.erb (0.5ms)
+Rendered slides/edit.html.erb within layouts/application (20.3ms)
+Completed 200 OK in 42ms (Views: 34.3ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/slides/3" for 127.0.0.1 at Wed Jun 20 13:53:38 -0500 2012
+  Processing by SlidesController#update as HTML
+  Parameters: {"commit"=>"Update Slide", "authenticity_token"=>"JzYZAVXOR5Uu3IkiutN/rZGvyK9VwgMhyHlj0lGwmPg=", "utf8"=>"✓", "id"=>"3", "slide"=>{"label"=>"slide-3", "slide"=>#<ActionDispatch::Http::UploadedFile:0x103e7f550 @content_type="image/jpeg", @tempfile=#<File:/var/folders/rw/rwC3pedZHna4wkbt1aI7xk+++TI/-Tmp-/RackMultipart20120620-3201-1lvd1g3-0>, @original_filename="IMG_4806.jpg", @headers="Content-Disposition: form-data; name=\"slide[slide]\"; filename=\"IMG_4806.jpg\"\r\nContent-Type: image/jpeg\r\n">}}
+  [1m[35mSlide Load (0.2ms)[0m  SELECT `slides`.* FROM `slides` WHERE (`slides`.`id` = 3) LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+[32mCommand[0m :: identify -format %wx%h '/var/folders/rw/rwC3pedZHna4wkbt1aI7xk+++TI/-Tmp-/stream20120620-3201-1egg9s5-0.jpg[0]'
+[32mCommand[0m :: convert '/var/folders/rw/rwC3pedZHna4wkbt1aI7xk+++TI/-Tmp-/stream20120620-3201-1egg9s5-0.jpg[0]' -resize "120x450>" '/var/folders/rw/rwC3pedZHna4wkbt1aI7xk+++TI/-Tmp-/stream20120620-3201-1egg9s5-020120620-3201-1xdflj4-0.jpg'
+[32mCommand[0m :: identify -format %wx%h '/var/folders/rw/rwC3pedZHna4wkbt1aI7xk+++TI/-Tmp-/stream20120620-3201-1egg9s5-0.jpg[0]'
+[32mCommand[0m :: convert '/var/folders/rw/rwC3pedZHna4wkbt1aI7xk+++TI/-Tmp-/stream20120620-3201-1egg9s5-0.jpg[0]' -resize "1440x" -crop "1440x500+0+230" +repage '/var/folders/rw/rwC3pedZHna4wkbt1aI7xk+++TI/-Tmp-/stream20120620-3201-1egg9s5-020120620-3201-1okn0by-0.jpg'
+  [1m[35mAREL (0.4ms)[0m  UPDATE `slides` SET `updated_at` = '2012-06-20 18:53:41', `slide_file_name` = 'IMG_4806.jpg', `slide_file_size` = 7629017, `slide_updated_at` = '2012-06-20 18:53:38' WHERE (`slides`.`id` = 3)
+[paperclip] Saving attachments.
+[paperclip] deleting /users/paulsutcliffe/rails-apps/paulsutcliffe/public/images/assets/slides/3/original/IMG_4753.jpg
+[paperclip] deleting /users/paulsutcliffe/rails-apps/paulsutcliffe/public/images/assets/slides/3/min/IMG_4753.jpg
+[paperclip] deleting /users/paulsutcliffe/rails-apps/paulsutcliffe/public/images/assets/slides/3/max/IMG_4753.jpg
+[paperclip] saving /users/paulsutcliffe/rails-apps/paulsutcliffe/public/images/assets/slides/3/original/IMG_4806.jpg
+[paperclip] saving /users/paulsutcliffe/rails-apps/paulsutcliffe/public/images/assets/slides/3/min/IMG_4806.jpg
+[paperclip] saving /users/paulsutcliffe/rails-apps/paulsutcliffe/public/images/assets/slides/3/max/IMG_4806.jpg
+  [1m[36mSQL (25.3ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/slides/3
+Completed 302 Found in 3446ms
+
+
+Started GET "/slides/3" for 127.0.0.1 at Wed Jun 20 13:53:41 -0500 2012
+  Processing by SlidesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mSlide Load (0.3ms)[0m  SELECT `slides`.* FROM `slides` WHERE (`slides`.`id` = 3) LIMIT 1
+Rendered shared/_social_links.html.erb (0.7ms)
+Rendered shared/_social_links.html.erb (140.4ms)
+Rendered slides/show.html.erb within layouts/application (162.5ms)
+Completed 200 OK in 189ms (Views: 180.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/slides" for 127.0.0.1 at Wed Jun 20 13:53:44 -0500 2012
+  Processing by SlidesController#index as HTML
+  [1m[36mSlide Load (0.3ms)[0m  [1mSELECT `slides`.* FROM `slides`[0m
+Rendered shared/_social_links.html.erb (0.5ms)
+Rendered shared/_social_links.html.erb (0.5ms)
+Rendered slides/index.html.erb within layouts/application (18.6ms)
+Completed 200 OK in 33ms (Views: 31.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 20 13:53:48 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[35mSlide Load (0.4ms)[0m  SELECT `slides`.* FROM `slides`
+  [1m[36mScwidget Load (1.2ms)[0m  [1mSELECT `scwidgets`.* FROM `scwidgets`[0m
+  [1m[35mGig Load (0.3ms)[0m  SELECT `gigs`.* FROM `gigs` ORDER BY date LIMIT 6 OFFSET 0
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM `gigs`[0m
+Rendered shared/_social_links.html.erb (1.0ms)
+Rendered shared/_social_links.html.erb (0.7ms)
+Rendered home/index.html.erb within layouts/application (30.3ms)
+Completed 200 OK in 59ms (Views: 39.2ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 20 13:54:01 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[35mSlide Load (0.3ms)[0m  SELECT `slides`.* FROM `slides`
+  [1m[36mScwidget Load (0.2ms)[0m  [1mSELECT `scwidgets`.* FROM `scwidgets`[0m
+  [1m[35mGig Load (0.3ms)[0m  SELECT `gigs`.* FROM `gigs` ORDER BY date LIMIT 6 OFFSET 0
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM `gigs`[0m
+Rendered shared/_social_links.html.erb (0.7ms)
+Rendered shared/_social_links.html.erb (0.6ms)
+Rendered home/index.html.erb within layouts/application (26.9ms)
+Completed 200 OK in 49ms (Views: 34.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 20 13:54:10 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[35mSlide Load (0.3ms)[0m  SELECT `slides`.* FROM `slides`
+  [1m[36mScwidget Load (0.3ms)[0m  [1mSELECT `scwidgets`.* FROM `scwidgets`[0m
+  [1m[35mGig Load (0.3ms)[0m  SELECT `gigs`.* FROM `gigs` ORDER BY date LIMIT 6 OFFSET 0
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM `gigs`[0m
+Rendered shared/_social_links.html.erb (0.7ms)
+Rendered shared/_social_links.html.erb (0.5ms)
+Rendered home/index.html.erb within layouts/application (26.5ms)
+Completed 200 OK in 50ms (Views: 34.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 20 13:54:24 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[35mSlide Load (0.5ms)[0m  SELECT `slides`.* FROM `slides`
+  [1m[36mScwidget Load (0.2ms)[0m  [1mSELECT `scwidgets`.* FROM `scwidgets`[0m
+  [1m[35mGig Load (0.3ms)[0m  SELECT `gigs`.* FROM `gigs` ORDER BY date LIMIT 6 OFFSET 0
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM `gigs`[0m
+Rendered shared/_social_links.html.erb (0.6ms)
+Rendered shared/_social_links.html.erb (0.5ms)
+Rendered home/index.html.erb within layouts/application (25.8ms)
+Completed 200 OK in 48ms (Views: 33.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 20 13:55:12 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[35mSlide Load (0.4ms)[0m  SELECT `slides`.* FROM `slides`
+  [1m[36mScwidget Load (0.6ms)[0m  [1mSELECT `scwidgets`.* FROM `scwidgets`[0m
+  [1m[35mGig Load (0.4ms)[0m  SELECT `gigs`.* FROM `gigs` ORDER BY date LIMIT 6 OFFSET 0
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT COUNT(*) FROM `gigs`[0m
+Rendered shared/_social_links.html.erb (0.6ms)
+Rendered shared/_social_links.html.erb (0.6ms)
+Rendered home/index.html.erb within layouts/application (50.4ms)
+Completed 200 OK in 104ms (Views: 67.0ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 20 13:55:18 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[35mSlide Load (0.4ms)[0m  SELECT `slides`.* FROM `slides`
+  [1m[36mScwidget Load (0.2ms)[0m  [1mSELECT `scwidgets`.* FROM `scwidgets`[0m
+  [1m[35mGig Load (0.4ms)[0m  SELECT `gigs`.* FROM `gigs` ORDER BY date LIMIT 6 OFFSET 0
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT COUNT(*) FROM `gigs`[0m
+Rendered shared/_social_links.html.erb (0.6ms)
+Rendered shared/_social_links.html.erb (0.5ms)
+Rendered home/index.html.erb within layouts/application (25.6ms)
+Completed 200 OK in 47ms (Views: 33.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 20 13:55:43 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[35mSlide Load (0.3ms)[0m  SELECT `slides`.* FROM `slides`
+  [1m[36mScwidget Load (0.2ms)[0m  [1mSELECT `scwidgets`.* FROM `scwidgets`[0m
+  [1m[35mGig Load (0.3ms)[0m  SELECT `gigs`.* FROM `gigs` ORDER BY date LIMIT 6 OFFSET 0
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM `gigs`[0m
+Rendered shared/_social_links.html.erb (0.7ms)
+Rendered shared/_social_links.html.erb (0.5ms)
+Rendered home/index.html.erb within layouts/application (25.1ms)
+Completed 200 OK in 46ms (Views: 32.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 20 13:56:24 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[35mSlide Load (0.3ms)[0m  SELECT `slides`.* FROM `slides`
+  [1m[36mScwidget Load (0.3ms)[0m  [1mSELECT `scwidgets`.* FROM `scwidgets`[0m
+  [1m[35mGig Load (0.3ms)[0m  SELECT `gigs`.* FROM `gigs` ORDER BY date LIMIT 6 OFFSET 0
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM `gigs`[0m
+Rendered shared/_social_links.html.erb (0.6ms)
+Rendered shared/_social_links.html.erb (0.5ms)
+Rendered home/index.html.erb within layouts/application (26.9ms)
+Completed 200 OK in 50ms (Views: 34.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 20 13:56:26 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[35mSlide Load (0.3ms)[0m  SELECT `slides`.* FROM `slides`
+  [1m[36mScwidget Load (0.2ms)[0m  [1mSELECT `scwidgets`.* FROM `scwidgets`[0m
+  [1m[35mGig Load (0.3ms)[0m  SELECT `gigs`.* FROM `gigs` ORDER BY date LIMIT 6 OFFSET 0
+  [1m[36mSQL (0.9ms)[0m  [1mSELECT COUNT(*) FROM `gigs`[0m
+Rendered shared/_social_links.html.erb (0.5ms)
+Rendered shared/_social_links.html.erb (0.4ms)
+Rendered home/index.html.erb within layouts/application (25.7ms)
+Completed 200 OK in 47ms (Views: 32.7ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 20 14:00:23 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[35mSlide Load (0.3ms)[0m  SELECT `slides`.* FROM `slides`
+  [1m[36mScwidget Load (0.5ms)[0m  [1mSELECT `scwidgets`.* FROM `scwidgets`[0m
+  [1m[35mGig Load (0.3ms)[0m  SELECT `gigs`.* FROM `gigs` ORDER BY date LIMIT 6 OFFSET 0
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT COUNT(*) FROM `gigs`[0m
+Rendered shared/_social_links.html.erb (0.6ms)
+Rendered shared/_social_links.html.erb (0.5ms)
+Rendered home/index.html.erb within layouts/application (24.0ms)
+Completed 200 OK in 46ms (Views: 32.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 20 14:00:45 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[35mSlide Load (0.3ms)[0m  SELECT `slides`.* FROM `slides`
+  [1m[36mScwidget Load (0.4ms)[0m  [1mSELECT `scwidgets`.* FROM `scwidgets`[0m
+  [1m[35mGig Load (0.3ms)[0m  SELECT `gigs`.* FROM `gigs` ORDER BY date LIMIT 6 OFFSET 0
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM `gigs`[0m
+Rendered shared/_social_links.html.erb (0.5ms)
+Rendered shared/_social_links.html.erb (0.5ms)
+Rendered home/index.html.erb within layouts/application (24.0ms)
+Completed 200 OK in 45ms (Views: 31.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 20 14:01:46 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[35mSlide Load (0.3ms)[0m  SELECT `slides`.* FROM `slides`
+  [1m[36mScwidget Load (0.2ms)[0m  [1mSELECT `scwidgets`.* FROM `scwidgets`[0m
+  [1m[35mGig Load (0.3ms)[0m  SELECT `gigs`.* FROM `gigs` ORDER BY date LIMIT 6 OFFSET 0
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM `gigs`[0m
+Rendered shared/_social_links.html.erb (0.6ms)
+Rendered shared/_social_links.html.erb (0.5ms)
+Rendered home/index.html.erb within layouts/application (26.3ms)
+Completed 200 OK in 48ms (Views: 33.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 20 14:03:01 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[35mSlide Load (0.4ms)[0m  SELECT `slides`.* FROM `slides`
+  [1m[36mScwidget Load (0.4ms)[0m  [1mSELECT `scwidgets`.* FROM `scwidgets`[0m
+  [1m[35mGig Load (0.3ms)[0m  SELECT `gigs`.* FROM `gigs` ORDER BY date LIMIT 6 OFFSET 0
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM `gigs`[0m
+Rendered shared/_social_links.html.erb (1.0ms)
+Rendered shared/_social_links.html.erb (0.5ms)
+Rendered home/index.html.erb within layouts/application (25.8ms)
+Completed 200 OK in 49ms (Views: 33.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 20 14:04:04 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[35mSlide Load (0.3ms)[0m  SELECT `slides`.* FROM `slides`
+  [1m[36mScwidget Load (0.2ms)[0m  [1mSELECT `scwidgets`.* FROM `scwidgets`[0m
+  [1m[35mGig Load (0.3ms)[0m  SELECT `gigs`.* FROM `gigs` ORDER BY date LIMIT 6 OFFSET 0
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT COUNT(*) FROM `gigs`[0m
+Rendered shared/_social_links.html.erb (0.5ms)
+Rendered shared/_social_links.html.erb (0.4ms)
+Rendered home/index.html.erb within layouts/application (24.1ms)
+Completed 200 OK in 45ms (Views: 31.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 20 14:09:30 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[35mSlide Load (0.3ms)[0m  SELECT `slides`.* FROM `slides`
+  [1m[36mScwidget Load (0.3ms)[0m  [1mSELECT `scwidgets`.* FROM `scwidgets`[0m
+  [1m[35mGig Load (37.8ms)[0m  SELECT `gigs`.* FROM `gigs` WHERE (start_date between '2012-06-20' and '2012-07-01') ORDER BY date LIMIT 8 OFFSET 0
+Mysql::Error: Unknown column 'start_date' in 'where clause': SELECT  `gigs`.* FROM `gigs` WHERE (start_date between '2012-06-20' and '2012-07-01') ORDER BY date LIMIT 8 OFFSET 0
+Rendered home/index.html.erb within layouts/application (72.0ms)
+Completed   in 210ms
+
+ActionView::Template::Error (Mysql::Error: Unknown column 'start_date' in 'where clause': SELECT  `gigs`.* FROM `gigs` WHERE (start_date between '2012-06-20' and '2012-07-01') ORDER BY date LIMIT 8 OFFSET 0):
+    43:     <div class="container_12">
+    44:       <h2 class="title">Gigs</h2>
+    45:       <ol>
+    46: 	    <% @gigs.each do |gig| %>
+    47: 	    <li>
+    48:           <div class="date">
+    49:             <%= gig.date.try(:strftime, "%b") %>
+  app/views/home/index.html.erb:46:in `_app_views_home_index_html_erb___2037307054_2182170780_0'
+
+Rendered /Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  [1m[36mGig Load (0.6ms)[0m  [1mSELECT `gigs`.* FROM `gigs` WHERE (start_date between '2012-06-20' and '2012-07-01') ORDER BY date LIMIT 8 OFFSET 0[0m
+Mysql::Error: Unknown column 'start_date' in 'where clause': SELECT  `gigs`.* FROM `gigs` WHERE (start_date between '2012-06-20' and '2012-07-01') ORDER BY date LIMIT 8 OFFSET 0
+  [1m[35mGig Load (0.3ms)[0m  SELECT `gigs`.* FROM `gigs` WHERE (start_date between '2012-06-20' and '2012-07-01') ORDER BY date LIMIT 8 OFFSET 0
+Mysql::Error: Unknown column 'start_date' in 'where clause': SELECT  `gigs`.* FROM `gigs` WHERE (start_date between '2012-06-20' and '2012-07-01') ORDER BY date LIMIT 8 OFFSET 0
+Rendered /Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.8ms)
+Rendered /Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (11.9ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 20 14:09:55 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[36mSlide Load (0.3ms)[0m  [1mSELECT `slides`.* FROM `slides`[0m
+  [1m[35mScwidget Load (0.2ms)[0m  SELECT `scwidgets`.* FROM `scwidgets`
+  [1m[36mGig Load (45.5ms)[0m  [1mSELECT `gigs`.* FROM `gigs` WHERE (date between '2012-06-20' and '2012-07-01') ORDER BY date LIMIT 8 OFFSET 0[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM `gigs` WHERE (date between '2012-06-20' and '2012-07-01')
+Rendered shared/_social_links.html.erb (0.7ms)
+Rendered shared/_social_links.html.erb (0.6ms)
+Rendered home/index.html.erb within layouts/application (85.9ms)
+Completed 200 OK in 108ms (Views: 48.6ms | ActiveRecord: 84.9ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 20 14:12:17 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[36mSlide Load (0.5ms)[0m  [1mSELECT `slides`.* FROM `slides`[0m
+  [1m[35mScwidget Load (0.3ms)[0m  SELECT `scwidgets`.* FROM `scwidgets`
+  [1m[36mGig Load (1.0ms)[0m  [1mSELECT `gigs`.* FROM `gigs` WHERE (date between '2012-06-20' and '2012-07-01') ORDER BY date LIMIT 8 OFFSET 0[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM `gigs` WHERE (date between '2012-06-20' and '2012-07-01')
+Rendered shared/_social_links.html.erb (0.7ms)
+Rendered shared/_social_links.html.erb (0.5ms)
+Rendered home/index.html.erb within layouts/application (37.5ms)
+Completed 200 OK in 75ms (Views: 44.5ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 20 14:13:46 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[36mSlide Load (0.3ms)[0m  [1mSELECT `slides`.* FROM `slides`[0m
+  [1m[35mScwidget Load (0.3ms)[0m  SELECT `scwidgets`.* FROM `scwidgets`
+  [1m[36mGig Load (0.4ms)[0m  [1mSELECT `gigs`.* FROM `gigs` WHERE (date between '2012-06-20' and '2012-07-01') ORDER BY date LIMIT 8 OFFSET 0[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM `gigs` WHERE (date between '2012-06-20' and '2012-07-01')
+Rendered shared/_social_links.html.erb (0.7ms)
+Rendered home/index.html.erb within layouts/application (41.9ms)
+Completed   in 64ms
+
+ActionView::Template::Error (undefined method `com' for nil:NilClass):
+    53:             manteniendo la energía de la gente en lo más alto…
+    54:         </p>
+    55:         <p>
+    56: 	        <%= mail_to bookings@djpaulsutcliffe.com %>
+    57: 	    </p>
+    58:       </div>
+    59:       <div>
+  app/views/layouts/application.html.erb:56:in `_app_views_layouts_application_html_erb__900044376_2173787120_0'
+
+Rendered /Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (11.4ms)
+Rendered /Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (16.7ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 20 14:13:55 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[36mSlide Load (0.3ms)[0m  [1mSELECT `slides`.* FROM `slides`[0m
+  [1m[35mScwidget Load (0.2ms)[0m  SELECT `scwidgets`.* FROM `scwidgets`
+  [1m[36mGig Load (0.4ms)[0m  [1mSELECT `gigs`.* FROM `gigs` WHERE (date between '2012-06-20' and '2012-07-01') ORDER BY date LIMIT 8 OFFSET 0[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM `gigs` WHERE (date between '2012-06-20' and '2012-07-01')
+Rendered shared/_social_links.html.erb (0.7ms)
+Rendered shared/_social_links.html.erb (0.6ms)
+Rendered home/index.html.erb within layouts/application (27.4ms)
+Completed 200 OK in 145ms (Views: 130.9ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 20 14:15:11 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[36mSlide Load (0.3ms)[0m  [1mSELECT `slides`.* FROM `slides`[0m
+  [1m[35mScwidget Load (0.2ms)[0m  SELECT `scwidgets`.* FROM `scwidgets`
+  [1m[36mGig Load (0.4ms)[0m  [1mSELECT `gigs`.* FROM `gigs` WHERE (date between '2012-06-20' and '2012-07-01') ORDER BY date LIMIT 8 OFFSET 0[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM `gigs` WHERE (date between '2012-06-20' and '2012-07-01')
+Rendered shared/_social_links.html.erb (0.7ms)
+Rendered shared/_social_links.html.erb (0.7ms)
+Rendered home/index.html.erb within layouts/application (27.4ms)
+Completed 200 OK in 80ms (Views: 63.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/blank.gif" for 127.0.0.1 at Wed Jun 20 14:15:28 -0500 2012
+
+ActionController::RoutingError (No route matches "/blank.gif"):
+  
+
+Rendered /Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 20 14:17:08 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[36mSlide Load (0.3ms)[0m  [1mSELECT `slides`.* FROM `slides`[0m
+  [1m[35mScwidget Load (0.5ms)[0m  SELECT `scwidgets`.* FROM `scwidgets`
+  [1m[36mGig Load (0.4ms)[0m  [1mSELECT `gigs`.* FROM `gigs` WHERE (date between '2012-06-20' and '2012-07-01') ORDER BY date LIMIT 8 OFFSET 0[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM `gigs` WHERE (date between '2012-06-20' and '2012-07-01')
+Rendered shared/_social_links.html.erb (0.5ms)
+Rendered shared/_social_links.html.erb (0.4ms)
+Rendered home/index.html.erb within layouts/application (25.3ms)
+Completed 200 OK in 49ms (Views: 33.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/feed" for 127.0.0.1 at Wed Jun 20 14:19:27 -0500 2012
+
+ActionController::RoutingError (No route matches "/feed"):
+  
+
+Rendered /Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 20 15:34:14 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[36mSlide Load (0.3ms)[0m  [1mSELECT `slides`.* FROM `slides`[0m
+  [1m[35mScwidget Load (0.2ms)[0m  SELECT `scwidgets`.* FROM `scwidgets`
+  [1m[36mGig Load (0.7ms)[0m  [1mSELECT `gigs`.* FROM `gigs` WHERE (date between '2012-06-20' and '2012-07-01') ORDER BY date LIMIT 8 OFFSET 0[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM `gigs` WHERE (date between '2012-06-20' and '2012-07-01')
+Rendered shared/_social_links.html.erb (1.0ms)
+Rendered shared/_social_links.html.erb (0.5ms)
+Rendered home/index.html.erb within layouts/application (27.5ms)
+Completed 200 OK in 50ms (Views: 35.0ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 20 15:40:35 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[36mSlide Load (0.3ms)[0m  [1mSELECT `slides`.* FROM `slides`[0m
+  [1m[35mScwidget Load (0.2ms)[0m  SELECT `scwidgets`.* FROM `scwidgets`
+  [1m[36mGig Load (0.9ms)[0m  [1mSELECT `gigs`.* FROM `gigs` WHERE (date between '2012-06-20' and '2012-07-01') ORDER BY date LIMIT 8 OFFSET 0[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT COUNT(*) FROM `gigs` WHERE (date between '2012-06-20' and '2012-07-01')
+Rendered shared/_social_links.html.erb (1.8ms)
+Rendered shared/_social_links.html.erb (0.5ms)
+Rendered home/index.html.erb within layouts/application (57.1ms)
+Completed 200 OK in 79ms (Views: 64.1ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 20 15:54:20 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[36mSlide Load (0.3ms)[0m  [1mSELECT `slides`.* FROM `slides`[0m
+  [1m[35mScwidget Load (0.3ms)[0m  SELECT `scwidgets`.* FROM `scwidgets`
+  [1m[36mGig Load (0.4ms)[0m  [1mSELECT `gigs`.* FROM `gigs` WHERE (date between '2012-06-20' and '2012-07-01') ORDER BY date LIMIT 8 OFFSET 0[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM `gigs` WHERE (date between '2012-06-20' and '2012-07-01')
+Rendered shared/_social_links.html.erb (0.6ms)
+Rendered shared/_social_links.html.erb (0.5ms)
+Rendered home/index.html.erb within layouts/application (51.3ms)
+Completed 200 OK in 76ms (Views: 59.2ms | ActiveRecord: 1.1ms)

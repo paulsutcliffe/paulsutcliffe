@@ -3,30 +3,18 @@
   
   <div id="preface-top">
     <div class="container_112">
-      <!-- Scroll -->
-<div id="scroll-holder">
-	<div id="makeMeScrollable">
-		<div class="scrollingHotSpotLeft"></div>
-		<div class="scrollingHotSpotRight"></div>
-		<div class="scrollWrapper">
-			<div class="scrollableArea">
-				<% @slides.each do |slide| %>
-					<%= link_to image_tag(slide.slide(:max)), '#' %>
-				<% end %>
-				
-			
-			</div>
-		</div>
-	</div>
+      <!-- Slider -->
+<div id="mySlider" class="royalSlider default">
+  <div class="royalLoadingScreen"><p class="spinner">Loading slider...</p></div>
+  <ul class="royalSlidesContainer">
+    <% @slides.each do |slide| %>
+	  <li class="royalSlide">
+	    <%= link_to image_tag(slide.slide(:max)), '#' %>
+      </li>
+    <% end %>
+  </ul>		
 </div>
-<!-- ENDS Scroll -->
-	  	
-    
-
-	
-
-	
-      
+<!-- ENDS Slider -->   
     </div>
   </div>
 
@@ -71,22 +59,6 @@
           </h3>
         </li>
         <% end %>
-<!--
-        <li>
-          <div class="date">
-            May
-            <span>
-              31
-            </span>
-          </div>
-          <h3 class="location">
-            Bizarro
-            <span>
-              Miraflores, Lima.
-            </span>
-          </h3>
-        </li>
-        -->
       </ol>
     </div>
   </section>

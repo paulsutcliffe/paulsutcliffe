@@ -268,6 +268,7 @@ INTRODUCTION
 header #introduction h2.title{position:absolute; top:100px; left:0}
 
 #introduction p{text-transform:uppercase; text-align:justify; margin-bottom:20px}
+#introduction a{color: white}
 
 #introduction .grid_4{margin-right:18%}
 header:hover + #introduction{}
@@ -276,7 +277,7 @@ header:hover + #introduction{}
 #preface-bottom{width:100%}
 
 
-#preface-top{width:100%; margin-top:40px}
+#preface-top{width:100%; margin-top:0px}
 
 header,
 #introduction,
@@ -305,6 +306,17 @@ MUSIC
 
 #music ul{margin:0 200px}
 #music ul li{margin:0 0 40px}
+
+/*
+=============================================
+SLIDER
+=============================================
+*/
+
+#mySlider {
+  position: relative;
+  width: 100%
+}
 
 /*
 =============================================
