@@ -7,7 +7,8 @@ xml.rss :version=>"2.0" do
     @gigs.each do |gig|
       xml.item do
         xml.title gig.name
-        xml.description gig.place
+        xml.link gig.link
+        xml.description gig.date.to_s + ' ' + gig.place
       end
     end
   end

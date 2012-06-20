@@ -5,7 +5,7 @@ class GigsController < InheritedResources::Base
   end
   
   def feed
-    @gigs = Gig.all
+    @gigs = Gig.order(:date).upcoming
     respond_with @gigs
   end
 end
