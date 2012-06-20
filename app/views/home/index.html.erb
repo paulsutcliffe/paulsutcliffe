@@ -2,46 +2,29 @@
 
   
   <div id="preface-top">
-    <div class="container_12">
-	      <div id="slider-ajax-container">
-	  <div id="banner-rotator" class="royalSlider default">    
-        <ul class="royalSlidesContainer">
-	      <% @slides.each do |slide| %>
-	        <li class="royalSlide">  
-		      <%= image_tag(slide.slide(:max), :class => 'royalImage') %>
-		      <div class="royalCaption">
-			    
-              </div>
-		    </li>
-	      <% end %>
-        </ul>  
-      </div>
-    </div>		
+    <div class="container_112">
+      <!-- Scroll -->
+<div id="scroll-holder">
+	<div id="makeMeScrollable">
+		<div class="scrollingHotSpotLeft"></div>
+		<div class="scrollingHotSpotRight"></div>
+		<div class="scrollWrapper">
+			<div class="scrollableArea">
+				<% @slides.each do |slide| %>
+					<%= link_to image_tag(slide.slide(:max)), '#' %>
+				<% end %>
+				
+			
+			</div>
+		</div>
+	</div>
+</div>
+<!-- ENDS Scroll -->
+	  	
     
 
-	<script>     	
-	jQuery(document).ready(function() {		
-		$('#banner-rotator').royalSlider({			
-	   		imageAlignCenter:true,
-	   		imageScaleMode: "fill",
-	   		
-	   		hideArrowOnLastSlide:true,
-	   		slideSpacing:20,
-	   		
-	   		autoScaleSlider: true,
-	   		autoScaleSliderWidth: 1150,
-	   		autoScaleSliderHeight: 400
-	    });		
-	});
-    </script>
-	<style>
-	  #banner-rotator {
-	width: 100%;
-	height: 400px;
+	
 
-	margin: 0 auto;
-}
-	</style>
 	
       
     </div>
