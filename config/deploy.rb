@@ -1,4 +1,9 @@
 require "bundler/capistrano"
+
+default_environment['PATH']='/usr/lib/ruby/gems/1.8/bin:/home/paulsutcliffe/.gems/bin:/usr/local/bin:/usr/bin:/bin'
+default_environment['GEM_PATH']='/home/paulsutcliffe/.gems:/usr/lib/ruby/gems/1.8'
+
+
 set :user, "paulsutcliffe"
 set :domain, "djpaulsutcliffe.com"
 set :project, "paulsutcliffe"
