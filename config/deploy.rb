@@ -27,6 +27,6 @@ role :db,  domain, :primary => true # This is where Rails migrations will run
 
 set :use_sudo, false
 
-after 'deploy:update_code' do
+after 'deploy:create_symlink' do
   run "chmod 775 paulsutcliffe/current/public/dispatch.fcgi"
 end
