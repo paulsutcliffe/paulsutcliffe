@@ -4531,3 +4531,282 @@ Started GET "/gigs/feed.rss" for 127.0.0.1 at Wed Jun 20 18:44:21 -0500 2012
   [1m[36mGig Load (0.6ms)[0m  [1mSELECT `gigs`.* FROM `gigs` WHERE (date between '2012-06-20' and '2012-07-31') ORDER BY date[0m
 Rendered gigs/feed.rss.builder (95.1ms)
 Completed 200 OK in 112ms (Views: 109.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 20 19:12:49 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[36mSlide Load (0.4ms)[0m  [1mSELECT `slides`.* FROM `slides`[0m
+  [1m[35mScwidget Load (0.2ms)[0m  SELECT `scwidgets`.* FROM `scwidgets`
+  [1m[36mGig Load (0.4ms)[0m  [1mSELECT `gigs`.* FROM `gigs` WHERE (date between '2012-06-20' and '2012-07-31') ORDER BY date LIMIT 12 OFFSET 0[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM `gigs` WHERE (date between '2012-06-20' and '2012-07-31')
+Rendered shared/_social_links.html.erb (0.5ms)
+Rendered shared/_social_links.html.erb (1.7ms)
+Rendered shared/_google_analytics.html.erb (0.5ms)
+Rendered home/index.html.erb within layouts/application (30.6ms)
+Completed 200 OK in 62ms (Views: 38.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 20 19:14:10 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[36mSlide Load (0.4ms)[0m  [1mSELECT `slides`.* FROM `slides`[0m
+  [1m[35mScwidget Load (0.2ms)[0m  SELECT `scwidgets`.* FROM `scwidgets`
+  [1m[36mGig Load (0.4ms)[0m  [1mSELECT `gigs`.* FROM `gigs` WHERE (date between '2012-06-20' and '2012-07-31') ORDER BY date LIMIT 12 OFFSET 0[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM `gigs` WHERE (date between '2012-06-20' and '2012-07-31')
+Rendered shared/_social_links.html.erb (0.6ms)
+Rendered shared/_social_links.html.erb (0.5ms)
+Rendered shared/_google_analytics.html.erb (0.2ms)
+Rendered home/index.html.erb within layouts/application (28.8ms)
+Completed 200 OK in 52ms (Views: 36.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/gigs/feed" for 127.0.0.1 at Wed Jun 20 19:14:14 -0500 2012
+  Processing by GigsController#feed as HTML
+Completed   in 24ms
+
+ActionView::MissingTemplate (Missing template gigs/feed with {:locale=>[:en, :en], :formats=>[:html], :handlers=>[:builder, :rjs, :rhtml, :rxml, :erb]} in view paths "/users/paulsutcliffe/rails-apps/paulsutcliffe/app/views", "/users/paulsutcliffe/rails-apps/paulsutcliffe/vendor/plugins/headliner/app/views", "/Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/dynamic_sitemaps-1.0.6/app/views", "/Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/client_side_validations-3.1.4/app/views", "/Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/inherited_resources-1.3.1/app/views"):
+  app/controllers/gigs_controller.rb:9:in `feed'
+
+Rendered /Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 20 19:16:44 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[36mSlide Load (0.5ms)[0m  [1mSELECT `slides`.* FROM `slides`[0m
+  [1m[35mScwidget Load (0.4ms)[0m  SELECT `scwidgets`.* FROM `scwidgets`
+  [1m[36mGig Load (1.2ms)[0m  [1mSELECT `gigs`.* FROM `gigs` WHERE (date between '2012-06-20' and '2012-07-31') ORDER BY date LIMIT 12 OFFSET 0[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT COUNT(*) FROM `gigs` WHERE (date between '2012-06-20' and '2012-07-31')
+ERROR: compiling _app_views_layouts_application_html_erb__900044376_2177923980_0 RAISED compile error
+/users/paulsutcliffe/rails-apps/paulsutcliffe/app/views/layouts/application.html.erb:69: syntax error, unexpected kENSURE, expecting ')'
+/users/paulsutcliffe/rails-apps/paulsutcliffe/app/views/layouts/application.html.erb:71: syntax error, unexpected kEND, expecting ')'
+Function body:           def _app_views_layouts_application_html_erb__900044376_2177923980_0(local_assigns)
+            _old_virtual_path, @_virtual_path = @_virtual_path, "layouts/application";_old_output_buffer = @output_buffer;;@output_buffer = ActionView::OutputBuffer.new;@output_buffer.safe_concat('<!DOCTYPE html>
+<html>
+<head>
+  <title>Dj Paul Sutcliffe | Sweet Pacha Asia, Joia Asia, Bizarro Miraflores</title>
+
+  <meta name="description" content="Paul Sutcliffe with more than 8 years making the crowd dance." />
+  <meta name="keywords" content="dj bizarro, dj sweet pacha, djs de asia" />
+  <meta name="robot" content="index,follow" />
+  <meta name="copyright" content="Copyright &copy; ');@output_buffer.append= ( Time.now.year );@output_buffer.safe_concat(' Paul Sutcliffe." />
+  <meta name="author" content="Kosmyka.com" />
+  <meta name="language" content="English" />
+  <meta name="revisit-after" content="1" />
+  <meta name="googlebot" content="index,follow" />
+  <meta name="city" content="Lima" />
+  <meta name="country" content="Peru" />
+  <meta name="state" content="Lima" />
+  <meta name="zip code" content="Lima 18" />
+  <meta name="subject" content="Electronic Music" />
+  <meta name="geo.position" content="-9;-75" />
+  <meta name="geo.country" content="PE" />
+  <meta name="geo.region" content="PE-LIM" />
+  <meta name="geo.placename" content="Miraflores" />
+
+  ');@output_buffer.append= ( auto_discovery_link_tag(:rss, "http://www.djpaulsutcliffe.com/gigs/feed.rss", {:title => "Dj Paul Sutcliffe Gigs"} );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('
+  ');@output_buffer.append= ( stylesheet_link_tag '/javascripts/libs/adapt/adapt.css', '/javascripts/libs/royal-slider/royalslider-skins/default/default.css', '/javascripts/libs/royal-slider/royalslider.css',  'style.css', :cache => 'powerhouse' );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('
+  ');@output_buffer.append= ( javascript_include_tag :defaults );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('
+  ');@output_buffer.append= ( javascript_include_tag '/javascripts/libs/royal-slider/royal-slider-8.1.min.js', '/javascripts/libs/royal-slider/jquery.easing.1.3.min.js', '/javascripts/libs/adapt/adapt-init.js', '/javascripts/libs/adapt/adapt.min.js', 'scripts.js', :cache => 'powerfactory' );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  ');@output_buffer.append= ( csrf_meta_tag );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('</head>
+<body>
+
+  <header>
+    <div class="container_12">
+      <h1 class="title">
+	    ');@output_buffer.append= ( link_to content_tag(:b, 'Dj') + ' Paul Sutcliffe', root_path );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('	  </h1>
+      ');@output_buffer.append= ( render 'shared/social_links' );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('    </div>
+  </header>
+  
+  <section id="introduction">
+    <div class="container_12">
+      <div class="grid_4 alpha">
+        <p>
+          Peruvian dj Paul Sutcliffe, with his sensational talent and his impressive debut EP "Don\'t Like". Bursting with solid deep-house, techno, tech-house groove, the way for what is set to be a huge party.
+        </p>
+        <p>
+          After several years on the mainstream field, dance floor monster dj Paul Sutcliffe! have a killer groovin syle, resident of Sweet Pacha(Asia, Lima), Joia(Asia, Lima), Bizarro(Miraflores, Lima) and playing on important events all over Peru.  
+        </p>
+        <p>
+	        ');@output_buffer.append= ( mail_to 'bookings@djpaulsutcliffe.com' );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('	    </p>
+      </div>
+      <div>
+        ');@output_buffer.append= ( render 'shared/social_links' );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('      </div>
+    </div>
+  </section>
+
+');@output_buffer.append= ( yield );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('
+</body>
+</html>
+');@output_buffer.append= ( render :partial => 'shared/google_analytics' );@output_buffer.safe_concat('
+');@output_buffer.to_s
+          ensure
+            @_virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+Backtrace: /users/paulsutcliffe/rails-apps/paulsutcliffe/app/views/layouts/application.html.erb:71:in `compile'
+/Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/actionpack-3.0.3/lib/action_view/template.rb:134:in `render'
+/Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/activesupport-3.0.3/lib/active_support/notifications.rb:54:in `instrument'
+/Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/actionpack-3.0.3/lib/action_view/template.rb:127:in `render'
+/Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/actionpack-3.0.3/lib/action_view/render/layouts.rb:80:in `_render_layout'
+/Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/actionpack-3.0.3/lib/action_view/render/rendering.rb:62:in `_render_template'
+/Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/activesupport-3.0.3/lib/active_support/notifications.rb:52:in `instrument'
+/Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/activesupport-3.0.3/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/activesupport-3.0.3/lib/active_support/notifications.rb:52:in `instrument'
+/Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/actionpack-3.0.3/lib/action_view/render/rendering.rb:56:in `_render_template'
+/Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/actionpack-3.0.3/lib/action_view/render/rendering.rb:26:in `render'
+/Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/actionpack-3.0.3/lib/abstract_controller/rendering.rb:114:in `_render_template'
+/Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/actionpack-3.0.3/lib/abstract_controller/rendering.rb:108:in `render_to_body'
+/Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/actionpack-3.0.3/lib/action_controller/metal/renderers.rb:47:in `render_to_body'
+/Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/actionpack-3.0.3/lib/action_controller/metal/compatibility.rb:55:in `render_to_body'
+/Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/actionpack-3.0.3/lib/abstract_controller/rendering.rb:101:in `render_to_string'
+/Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/actionpack-3.0.3/lib/abstract_controller/rendering.rb:92:in `render'
+/Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/actionpack-3.0.3/lib/action_controller/metal/rendering.rb:17:in `render'
+/Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/actionpack-3.0.3/lib/action_controller/metal/instrumentation.rb:40:in `render'
+/Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/activesupport-3.0.3/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/Users/paulsutcliffe/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/activesupport-3.0.3/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/actionpack-3.0.3/lib/action_controller/metal/instrumentation.rb:40:in `render'
+/Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/actionpack-3.0.3/lib/action_controller/metal/instrumentation.rb:78:in `cleanup_view_runtime'
+/Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/activerecord-3.0.3/lib/active_record/railties/controller_runtime.rb:15:in `cleanup_view_runtime'
+/Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/actionpack-3.0.3/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/actionpack-3.0.3/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/actionpack-3.0.3/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+/Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/actionpack-3.0.3/lib/abstract_controller/base.rb:151:in `process_action'
+/Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/actionpack-3.0.3/lib/action_controller/metal/rendering.rb:11:in `process_action'
+/Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/actionpack-3.0.3/lib/abstract_controller/callbacks.rb:18:in `process_action'
+/Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/activesupport-3.0.3/lib/active_support/callbacks.rb:450:in `_run__738958071__process_action__199225275__callbacks'
+/Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/activesupport-3.0.3/lib/active_support/callbacks.rb:409:in `send'
+/Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/activesupport-3.0.3/lib/active_support/callbacks.rb:409:in `_run_process_action_callbacks'
+/Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/activesupport-3.0.3/lib/active_support/callbacks.rb:93:in `send'
+/Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/activesupport-3.0.3/lib/active_support/callbacks.rb:93:in `run_callbacks'
+/Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/actionpack-3.0.3/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/actionpack-3.0.3/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+/Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/activesupport-3.0.3/lib/active_support/notifications.rb:52:in `instrument'
+/Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/activesupport-3.0.3/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/activesupport-3.0.3/lib/active_support/notifications.rb:52:in `instrument'
+/Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/actionpack-3.0.3/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/actionpack-3.0.3/lib/action_controller/metal/rescue.rb:17:in `process_action'
+/Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/actionpack-3.0.3/lib/abstract_controller/base.rb:120:in `process'
+/Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/actionpack-3.0.3/lib/abstract_controller/rendering.rb:40:in `process'
+/Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/actionpack-3.0.3/lib/action_controller/metal.rb:138:in `dispatch'
+/Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/actionpack-3.0.3/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/actionpack-3.0.3/lib/action_controller/metal.rb:178:in `action'
+/Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/actionpack-3.0.3/lib/action_dispatch/routing/route_set.rb:62:in `call'
+/Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/actionpack-3.0.3/lib/action_dispatch/routing/route_set.rb:62:in `dispatch'
+/Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/actionpack-3.0.3/lib/action_dispatch/routing/route_set.rb:27:in `call'
+/Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/rack-mount-0.6.14/lib/rack/mount/route_set.rb:148:in `call'
+/Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:93:in `recognize'
+/Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:68:in `optimized_each'
+/Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:92:in `recognize'
+/Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/rack-mount-0.6.14/lib/rack/mount/route_set.rb:139:in `call'
+/Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/actionpack-3.0.3/lib/action_dispatch/routing/route_set.rb:492:in `call'
+/Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/client_side_validations-3.1.4/lib/client_side_validations/middleware.rb:18:in `call'
+/Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/actionpack-3.0.3/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/actionpack-3.0.3/lib/action_dispatch/middleware/head.rb:14:in `call'
+/Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/rack-1.2.5/lib/rack/methodoverride.rb:24:in `call'
+/Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/actionpack-3.0.3/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/actionpack-3.0.3/lib/action_dispatch/middleware/flash.rb:182:in `call'
+/Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/actionpack-3.0.3/lib/action_dispatch/middleware/session/abstract_store.rb:149:in `call'
+/Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/actionpack-3.0.3/lib/action_dispatch/middleware/cookies.rb:295:in `call'
+/Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/activerecord-3.0.3/lib/active_record/query_cache.rb:32:in `call'
+/Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/activerecord-3.0.3/lib/active_record/connection_adapters/abstract/query_cache.rb:28:in `cache'
+/Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/activerecord-3.0.3/lib/active_record/query_cache.rb:12:in `cache'
+/Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/activerecord-3.0.3/lib/active_record/query_cache.rb:31:in `call'
+/Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/activerecord-3.0.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:353:in `call'
+/Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/actionpack-3.0.3/lib/action_dispatch/middleware/callbacks.rb:46:in `call'
+/Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/activesupport-3.0.3/lib/active_support/callbacks.rb:415:in `_run_call_callbacks'
+/Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/actionpack-3.0.3/lib/action_dispatch/middleware/callbacks.rb:44:in `call'
+/Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/rack-1.2.5/lib/rack/sendfile.rb:106:in `call'
+/Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/actionpack-3.0.3/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+/Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/actionpack-3.0.3/lib/action_dispatch/middleware/show_exceptions.rb:46:in `call'
+/Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/railties-3.0.3/lib/rails/rack/logger.rb:13:in `call'
+/Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/rack-1.2.5/lib/rack/runtime.rb:17:in `call'
+/Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/activesupport-3.0.3/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/rack-1.2.5/lib/rack/lock.rb:13:in `call'
+/Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/rack-1.2.5/lib/rack/lock.rb:13:in `synchronize'
+/Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/rack-1.2.5/lib/rack/lock.rb:13:in `call'
+/Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/actionpack-3.0.3/lib/action_dispatch/middleware/static.rb:30:in `call'
+/Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/railties-3.0.3/lib/rails/application.rb:168:in `call'
+/Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/railties-3.0.3/lib/rails/application.rb:77:in `send'
+/Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/railties-3.0.3/lib/rails/application.rb:77:in `method_missing'
+/Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/railties-3.0.3/lib/rails/rack/log_tailer.rb:14:in `call'
+/Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/rack-1.2.5/lib/rack/content_length.rb:13:in `call'
+/Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/rack-1.2.5/lib/rack/handler/webrick.rb:52:in `service'
+/Users/paulsutcliffe/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/Users/paulsutcliffe/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/Users/paulsutcliffe/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/Users/paulsutcliffe/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/Users/paulsutcliffe/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/Users/paulsutcliffe/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/Users/paulsutcliffe/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/Users/paulsutcliffe/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/Users/paulsutcliffe/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/Users/paulsutcliffe/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/rack-1.2.5/lib/rack/handler/webrick.rb:13:in `run'
+/Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/rack-1.2.5/lib/rack/server.rb:217:in `start'
+/Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/railties-3.0.3/lib/rails/commands/server.rb:65:in `start'
+/Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/railties-3.0.3/lib/rails/commands.rb:30
+/Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/railties-3.0.3/lib/rails/commands.rb:27:in `tap'
+/Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/railties-3.0.3/lib/rails/commands.rb:27
+script/rails:6:in `require'
+script/rails:6
+Rendered home/index.html.erb within layouts/application (46.7ms)
+Completed   in 81ms
+
+ActionView::Template::Error (compile error
+/users/paulsutcliffe/rails-apps/paulsutcliffe/app/views/layouts/application.html.erb:69: syntax error, unexpected kENSURE, expecting ')'
+/users/paulsutcliffe/rails-apps/paulsutcliffe/app/views/layouts/application.html.erb:71: syntax error, unexpected kEND, expecting ')'):
+    66: </html>
+    67: <%= render :partial => 'shared/google_analytics' %>
+  app/views/layouts/application.html.erb:71:in `compile'
+
+Rendered /Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.3ms)
+Rendered /Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (15.4ms)
+Rendered /Users/paulsutcliffe/.rvm/gems/ruby-1.8.7-p352@dreamhost/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (116.1ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 20 19:17:03 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[36mSlide Load (0.9ms)[0m  [1mSELECT `slides`.* FROM `slides`[0m
+  [1m[35mScwidget Load (0.4ms)[0m  SELECT `scwidgets`.* FROM `scwidgets`
+  [1m[36mGig Load (1.6ms)[0m  [1mSELECT `gigs`.* FROM `gigs` WHERE (date between '2012-06-20' and '2012-07-31') ORDER BY date LIMIT 12 OFFSET 0[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT COUNT(*) FROM `gigs` WHERE (date between '2012-06-20' and '2012-07-31')
+Rendered shared/_social_links.html.erb (3.3ms)
+Rendered shared/_social_links.html.erb (1.5ms)
+Rendered shared/_google_analytics.html.erb (0.2ms)
+Rendered home/index.html.erb within layouts/application (82.0ms)
+Completed 200 OK in 123ms (Views: 95.5ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/gigs/feed.rss" for 127.0.0.1 at Wed Jun 20 19:17:07 -0500 2012
+  Processing by GigsController#feed as RSS
+  [1m[36mGig Load (0.6ms)[0m  [1mSELECT `gigs`.* FROM `gigs` WHERE (date between '2012-06-20' and '2012-07-31') ORDER BY date[0m
+Rendered gigs/feed.rss.builder (123.2ms)
+Completed 200 OK in 140ms (Views: 137.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Jun 20 19:18:21 -0500 2012
+  Processing by HomeController#index as HTML
+  [1m[35mSlide Load (0.4ms)[0m  SELECT `slides`.* FROM `slides`
+  [1m[36mScwidget Load (0.5ms)[0m  [1mSELECT `scwidgets`.* FROM `scwidgets`[0m
+  [1m[35mGig Load (0.4ms)[0m  SELECT `gigs`.* FROM `gigs` WHERE (date between '2012-06-20' and '2012-07-31') ORDER BY date LIMIT 12 OFFSET 0
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT COUNT(*) FROM `gigs` WHERE (date between '2012-06-20' and '2012-07-31')[0m
+Rendered shared/_social_links.html.erb (0.7ms)
+Rendered shared/_social_links.html.erb (0.8ms)
+Rendered shared/_google_analytics.html.erb (0.4ms)
+Rendered home/index.html.erb within layouts/application (51.6ms)
+Completed 200 OK in 94ms (Views: 69.0ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/gigs/feed.rss" for 127.0.0.1 at Wed Jun 20 19:18:26 -0500 2012
+  Processing by GigsController#feed as RSS
+  [1m[35mGig Load (0.5ms)[0m  SELECT `gigs`.* FROM `gigs` WHERE (date between '2012-06-20' and '2012-07-31') ORDER BY date
+Rendered gigs/feed.rss.builder (26.6ms)
+Completed 200 OK in 136ms (Views: 40.4ms | ActiveRecord: 0.5ms)
