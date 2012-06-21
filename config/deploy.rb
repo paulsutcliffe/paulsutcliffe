@@ -26,7 +26,7 @@ role :app, domain                          # This may be the same as your `Web` 
 role :db,  domain, :primary => true # This is where Rails migrations will run
 
 set :use_sudo, false
-namespace :notifier
+namespace :notifier do
   task :chmod775, :roles => :app do
     run "chmod 775 #{application_dir}/current/public/dispatch.fcgi"
   end
